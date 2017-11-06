@@ -1,0 +1,65 @@
+@import './styles/reset.css';
+@import './styles/components/img.css';
+
+:root {
+	--z-index-sky: 0;
+	--z-index-content: 1;
+	--z-index-mountains: 2;
+	--z-index-city: 3;
+	--z-index-river: 4;
+}
+
+#scrolling-content {
+	position: relative;
+	z-index: var(--z-index-content);
+}
+
+#sky {
+	position: fixed;
+	z-index: var(--z-index-sky);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	/* hack! */
+	// transform: scale(1.4);
+}
+
+#city {
+	position: fixed;
+	z-index: var(--z-index-city);
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#city-background {
+	position: relative;
+	z-index: 0;
+
+	/* hack! */
+	bottom: -3px;
+}
+
+#city-buildings {
+	position: relative;
+	z-index: 1;
+
+	/* hack! */
+	bottom: -3px;
+
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#city-buildings > .building {
+	position: absolute;
+	bottom: 0;
+}
+
+#city-road {
+	position: relative;
+	z-index: var(--z-index-river);
+}
