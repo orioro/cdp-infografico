@@ -4,8 +4,13 @@
 	<title></title>
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.css">
 </head>
 <body>
+
+	<div style="position: relative; z-index: 10000" id="test-controls">
+		<button data-action="toggle-happiness">trocar</button>
+	</div>
 
 	<div id="fixed-elements">
 		<div id="sky">
@@ -15,7 +20,7 @@
 			<div id="city-background">
 				<img class="block-img" src="resources/animacao/cidade-triste/triste-montanha-132.svg">
 			</div>
-			<div id="city-buildings">
+			<div id="city-buildings" data-happiness-state="sad">
 
 			</div>
 			<div id="city-road">

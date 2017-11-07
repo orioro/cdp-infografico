@@ -1,6 +1,10 @@
 @import './styles/reset.css';
 @import './styles/components/img.css';
 
+@import './styles/modules/animations.css';
+@import './styles/modules/transitions.css';
+@import './styles/modules/city-buildings.css';
+
 :root {
 	--z-index-sky: 0;
 	--z-index-content: 1;
@@ -40,23 +44,6 @@
 
 	/* hack! */
 	bottom: -3px;
-}
-
-#city-buildings {
-	position: relative;
-	z-index: 1;
-
-	/* hack! */
-	bottom: -3px;
-
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#city-buildings > .building {
-	position: absolute;
-	bottom: 0;
 }
 
 #city-road {
