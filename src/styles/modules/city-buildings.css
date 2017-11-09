@@ -5,7 +5,7 @@
 	z-index: 1;
 
 	/* hack! */
-	bottom: -3px;
+	bottom: -20px;
 
 	width: 90%;
 	margin-left: auto;
@@ -16,6 +16,29 @@
 	position: absolute;
 	bottom: 0;
 }
+
+/**
+ * immediate-transition
+ */
+#city-buildings[data-happiness-state="sad"] > .building[data-happiness-state="sad"].immediate-transition {
+	opacity: 1;
+}
+#city-buildings[data-happiness-state="sad"] > .building[data-happiness-state="happy"].immediate-transition {
+	opacity: 0;
+}
+#city-buildings[data-happiness-state="happy"] > .building[data-happiness-state="sad"].immediate-transition {
+	opacity: 0;
+}
+#city-buildings[data-happiness-state="happy"] > .building[data-happiness-state="happy"].immediate-transition {
+	opacity: 1;
+}
+
+#city-buildings > .building.immediate-transition {
+/*	transition-property: opacity;
+	transition-duration: 2s;
+	transition-timing-function: ease;
+*/}
+
 
 /**
  * opacity-transition 
@@ -35,7 +58,7 @@
 
 #city-buildings > .building.opacity-transition {
 	transition-property: opacity;
-	transition-duration: .6s;
+	transition-duration: 2s;
 	transition-timing-function: ease;
 }
 

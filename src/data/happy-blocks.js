@@ -1,136 +1,160 @@
 const aux = require('../lib/auxiliary')
 
   // happyBlocks: [
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-01-0-w115-z2.svg',
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-02-114-w90-z2.svg',
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-03-200-w52-z2.svg',
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-04-249-w64-z2.svg',
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-05-312-w62-z2.svg',
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-06-377-w76-z2.svg',
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-07-456-w118-z2.svg',
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-08-568-w178-z2.svg',
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-09-564-w191-z2.svg',
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-10-859-w45-z2.svg',
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-11-923-w52-z2.svg',
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-12-1016-w25-z2.svg',
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-13-834-w139-z2.svg',
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-14-1053-w36-z2.svg',
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-15-1064-w111-z2.svg',
-  //   'resources/animacao/cidade-alegre/blocos/alegre-bloco-17-746-w88-z2.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
+  //   'resources/animacao/cidade-alegre/bloco-1.svg',
   // ].map(src => {
   //   return aux.parseImageMetadata(src)
   // }),
+
+const LEFT_ORIGIN = 22
+
 module.exports = [
   {
-    left: 0,
-    width: 115,
-    zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-01-0-w115-z2.svg',
-    class: 'opacity-transition',
+    left: 22 - LEFT_ORIGIN,
+    width: 42,
+    zIndex: 3,
+    src: 'resources/animacao/cidade-alegre/bloco-01.svg',
+    class: 'bounce-transition delay-enter-250',
   },
   {
-    left: 114,
-    width: 90,
-    zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-02-114-w90-z2.svg',
-    class: 'opacity-transition',
+    left: 66 - LEFT_ORIGIN,
+    width: 63,
+    zIndex: 3,
+    src: 'resources/animacao/cidade-alegre/bloco-02.svg',
+    class: 'bounce-transition delay-enter-300',
   },
   {
-    left: 200,
-    width: 52,
-    zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-03-200-w52-z2.svg',
-    class: 'bounce-transition delay-enter-400',
+    left: 130 - LEFT_ORIGIN,
+    width: 78,
+    zIndex: 3,
+    src: 'resources/animacao/cidade-alegre/bloco-03.svg',
+    class: 'bounce-transition delay-enter-350',
   },
   {
-    left: 249,
-    width: 64,
-    zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-04-249-w64-z2.svg',
-    class: 'bounce-transition delay-enter-450',
+    left: 211 - LEFT_ORIGIN,
+    width: 194,
+    zIndex: 3,
+    src: 'resources/animacao/cidade-alegre/bloco-04-estatal.svg',
+    class: 'opacity-transition delay-enter-2000',
   },
   {
-    left: 312,
-    width: 62,
+    left: 347 - LEFT_ORIGIN,
+    width: 31,
     zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-05-312-w62-z2.svg',
-    class: 'bounce-transition delay-enter-500',
+    src: 'resources/animacao/cidade-alegre/bloco-05-comercial.svg',
+    class: 'opacity-transition delay-enter-2000',
   },
   {
-    left: 377,
-    width: 76,
+    left: 405 - LEFT_ORIGIN,
+    width: 40,
     zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-06-377-w76-z2.svg',
-    class: 'opacity-transition'
+    src: 'resources/animacao/cidade-alegre/bloco-06.svg',
+    class: 'opacity-transition delay-enter-2000'
   },
   {
-    left: 456,
-    width: 118,
-    zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-07-456-w118-z2.svg',
-    class: 'slide-up-transition'
-  },
-  {
-    left: 568,
-    width: 178,
-    zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-08-568-w178-z2.svg',
-    class: 'slide-up-transition'
-  },
-  {
-    left: 564,
-    width: 191,
-    zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-09-564-w191-z2.svg',
-    class: 'slide-up-transition'
-  },
-  {
-    left: 859,
-    width: 45,
-    zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-10-859-w45-z2.svg',
-    class: 'opacity-transition'
-  },
-  {
-    left: 923,
-    width: 52,
-    zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-11-923-w52-z2.svg',
-    class: 'opacity-transition'
-  },
-  {
-    left: 1016,
-    width: 25,
-    zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-12-1016-w25-z2.svg',
-    class: 'opacity-transition'
-  },
-  {
-    left: 834,
-    width: 139,
-    zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-13-834-w139-z2.svg',
-    class: 'opacity-transition'
-  },
-  {
-    left: 1053,
-    width: 36,
-    zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-14-1053-w36-z2.svg',
-    class: 'opacity-transition'
-  },
-  {
-    left: 1064,
-    width: 111,
-    zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-15-1064-w111-z2.svg',
-    class: 'slide-up-transition'
-  },
-  {
-    left: 746,
+    left: 419 - LEFT_ORIGIN,
     width: 88,
+    zIndex: 3,
+    src: 'resources/animacao/cidade-alegre/bloco-07.svg',
+    class: 'immediate-transition delay-enter-300'
+  },
+  {
+    left: 512 - LEFT_ORIGIN,
+    width: 80,
+    zIndex: 3,
+    src: 'resources/animacao/cidade-alegre/bloco-08.svg',
+    class: 'slide-up-transition'
+  },
+  {
+    left: 600 - LEFT_ORIGIN,
+    width: 167,
+    zIndex: 3,
+    src: 'resources/animacao/cidade-alegre/bloco-10-mato.svg',
+    class: 'slide-up-transition'
+  },
+  {
+    left: 595 - LEFT_ORIGIN,
+    width: 39,
     zIndex: 2,
-    src: 'resources/animacao/cidade-alegre/blocos/alegre-bloco-17-746-w88-z2.svg',
-    class: 'opacity-transition'
-  }
+    src: 'resources/animacao/cidade-alegre/bloco-09-arvore.svg',
+    class: 'bounce-transition delay-enter-250'
+  },
+  {
+    left: 643 - LEFT_ORIGIN,
+    width: 33,
+    zIndex: 2,
+    src: 'resources/animacao/cidade-alegre/bloco-11-arvore.svg',
+    class: 'bounce-transition delay-enter-300'
+  },
+  {
+    left: 686 - LEFT_ORIGIN,
+    width: 28,
+    zIndex: 2,
+    src: 'resources/animacao/cidade-alegre/bloco-12-arvore.svg',
+    class: 'bounce-transition delay-enter-350'
+  },
+  {
+    left: 718 - LEFT_ORIGIN,
+    width: 39,
+    zIndex: 2,
+    src: 'resources/animacao/cidade-alegre/bloco-09-arvore.svg',
+    class: 'bounce-transition delay-enter-400'
+  },
+  {
+    left: 767 - LEFT_ORIGIN,
+    width: 99,
+    zIndex: 2,
+    src: 'resources/animacao/cidade-alegre/bloco-13-praca.svg',
+    class: 'opacity-transition delay-enter-2000'
+  },
+  {
+    left: 871 - LEFT_ORIGIN,
+    width: 52,
+    zIndex: 2,
+    src: 'resources/animacao/cidade-alegre/bloco-14-banco.svg',
+    class: 'opacity-transition delay-enter-2000'
+  },
+  {
+    left: 302 - LEFT_ORIGIN,
+    width: 644,
+    zIndex: 1,
+    src: 'resources/animacao/cidade-alegre/bloco-15-vlt-trilho.svg',
+    class: 'opacity-transition delay-enter-2000'
+  },
+  // {
+  //   left: 302 - LEFT_ORIGIN,
+  //   width: 644,
+  //   zIndex: 1,
+  //   src: 'resources/animacao/cidade-alegre/bloco-15-vlt-carro.svg',
+  //   class: 'opacity-transition delay-enter-2000'
+  // },
+  {
+    left: 931 - LEFT_ORIGIN,
+    width: 263,
+    zIndex: 2,
+    src: 'resources/animacao/cidade-alegre/bloco-16.svg',
+    class: 'slide-up-transition delay-enter-300'
+  },
+  {
+    left: 930 - LEFT_ORIGIN,
+    width: 264,
+    zIndex: 3,
+    src: 'resources/animacao/cidade-alegre/bloco-17-residencial.svg',
+    class: 'opacity-transition delay-enter-2000'
+  },
 ]

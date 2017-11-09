@@ -37,6 +37,33 @@
 .enter.delay-enter-600 {
 	transition-delay: 600ms !important;
 }
+.enter.delay-enter-650 {
+	transition-delay: 650ms !important;
+}
+.enter.delay-enter-700 {
+	transition-delay: 700ms !important;
+}
+.enter.delay-enter-750 {
+	transition-delay: 750ms !important;
+}
+.enter.delay-enter-800 {
+	transition-delay: 800ms !important;
+}
+.enter.delay-enter-850 {
+	transition-delay: 850ms !important;
+}
+.enter.delay-enter-900 {
+	transition-delay: 900ms !important;
+}
+.enter.delay-enter-950 {
+	transition-delay: 950ms !important;
+}
+.enter.delay-enter-1000 {
+	transition-delay: 1000ms !important;
+}
+.enter.delay-enter-2000 {
+	transition-delay: 2000ms !important;
+}
 
 .exit.delay-exit-0 {
 	transition-delay: 0s !important;
@@ -76,6 +103,11 @@
 }
 .exit.delay-exit-600 {
 	transition-delay: 600ms !important;
+}
+
+
+.exit.delay-exit-2000 {
+	transition-delay: 2000ms !important;
 }
 
 

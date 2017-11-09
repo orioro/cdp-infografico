@@ -35,6 +35,8 @@ gulp.task('javascript', function () {
 gulp.task('distribute', ['javascript'], function () {
   gulp.src([
     'src/index.html',
+    'src/styles.css',
+    'src/styles/**/*.css',
     'src/resources/**/*'
   ], { base: 'src' })
   .pipe(gulp.dest('dist'))

@@ -13,22 +13,22 @@ module.exports = function () {
 			if (currentHappinessState === 'sad') {
 				// to: happy
 				happyBlocks.forEach(blockElement => {
-					blockElement.classList.remove('leave')
+					blockElement.classList.remove('exit')
 					blockElement.classList.add('enter')
 				})
 				sadBlocks.forEach(blockElement => {
 					blockElement.classList.remove('enter')
-					blockElement.classList.add('leave')
+					blockElement.classList.add('exit')
 				})
 				buildingsContainer.setAttribute('data-happiness-state', 'happy')
 			} else {
 				// to: sad
 				happyBlocks.forEach(blockElement => {
 					blockElement.classList.remove('enter')
-					blockElement.classList.add('leave')
+					blockElement.classList.add('exit')
 				})
 				sadBlocks.forEach(blockElement => {
-					blockElement.classList.remove('leave')
+					blockElement.classList.remove('exit')
 					blockElement.classList.add('enter')
 				})
 				buildingsContainer.setAttribute('data-happiness-state', 'sad')
