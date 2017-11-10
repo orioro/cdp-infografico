@@ -1,0 +1,48 @@
+
+.city-car {
+  transform: translateX(-100%);
+  animation-name: left-to-right-full-width;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.city-car > img {
+  animation-name: slight-bounce;
+  animation-direction: alternate;
+  animation-duration: .1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.city-boat {
+  transform: translateX(-100%);
+  animation-name: left-to-right-full-width;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.city-boat > img {
+  animation-name: slight-bounce;
+  animation-direction: alternate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.city-cloud-1 {
+  animation-name: cloud-back-and-forth;
+  animation-direction: alternate;
+  animation-duration: 70s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.city-cloud-2 {
+  animation-name: cloud-back-and-forth;
+  animation-direction: alternate;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

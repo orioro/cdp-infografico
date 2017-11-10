@@ -1,0 +1,129 @@
+.scenery-container {
+	position: relative;
+}
+
+.scenery-container > .scenery-element {
+	position: absolute;
+	bottom: 0;
+}
+
+/**
+ * immediate-transition
+ */
+.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="sad"].immediate-transition {
+	opacity: 1;
+}
+.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="happy"].immediate-transition {
+	opacity: 0;
+}
+.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="sad"].immediate-transition {
+	opacity: 0;
+}
+.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="happy"].immediate-transition {
+	opacity: 1;
+}
+
+.scenery-container > .scenery-element.immediate-transition {
+/*	transition-property: opacity;
+	transition-duration: 2s;
+	transition-timing-function: ease;
+*/}
+
+
+/**
+ * opacity-transition 
+ */
+.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="sad"].opacity-transition {
+	opacity: 1;
+}
+.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="happy"].opacity-transition {
+	opacity: 0;
+}
+.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="sad"].opacity-transition {
+	opacity: 0;
+}
+.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="happy"].opacity-transition {
+	opacity: 1;
+}
+
+.scenery-container > .scenery-element.opacity-transition {
+	transition-property: opacity;
+	transition-duration: 2s;
+	transition-timing-function: ease;
+}
+
+/**
+ * bounce-transition
+ */
+.scenery-container > .scenery-element.bounce-transition {
+	overflow: hidden;
+	/* secure some space for the bounce effect on the top side */
+	padding-top: 50px;
+}
+.scenery-container > .scenery-element.bounce-transition > img {
+	transition-property: transform;
+	transition-duration: .6s;
+	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="sad"].bounce-transition > img {
+	/* in */
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="happy"].bounce-transition > img {
+	/* out */
+	transform: translateY(200px);
+	opacity: 1;
+}
+
+.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="sad"].bounce-transition > img {
+	/* out */
+	transform: translateY(200px);
+	opacity: 1;
+}
+
+.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="happy"].bounce-transition > img {
+	/* in */
+	transform: translateY(0);
+	opacity: 1;
+}
+
+/**
+ * slide-up-transition
+ */
+.scenery-container > .scenery-element.slide-up-transition {
+	overflow: hidden;
+}
+.scenery-container > .scenery-element.slide-up-transition > img {
+	transition-property: transform;
+	transition-duration: .6s;
+	/*transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);*/
+	transition-timing-function: ease;
+}
+
+.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="sad"].slide-up-transition > img {
+	/* in */
+	transform: translateY(0);
+	opacity: 1;
+}
+
+.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="happy"].slide-up-transition > img {
+	/* out */
+	transform: translateY(100%);
+	opacity: 1;
+}
+
+.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="sad"].slide-up-transition > img {
+	/* out */
+	transform: translateY(100%);
+	opacity: 1;
+}
+
+.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="happy"].slide-up-transition > img {
+	/* in */
+	transform: translateY(0);
+	opacity: 1;
+}
+

@@ -3,6 +3,8 @@
 <head>
 	<title></title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.css">
 </head>
@@ -12,27 +14,45 @@
 		<button data-action="toggle-happiness">trocar</button>
 	</div>
 
-	<div id="fixed-elements">
-		<div id="sky">
-			<img class="block-img" src="resources/animacao/cidade-triste/fundo.svg">
+	<div id="fixed-elements-container">
+		<div
+			id="sky"
+			class="scenery-container"
+			data-happiness-state="happy">
+			
 		</div>
 		<div id="city">
-			<div id="city-background">
-				<img class="block-img" src="resources/animacao/cidade-triste/montanha.svg">
+			<div
+				id="city-horizon"
+				class="scenery-container"
+				data-happiness-state="happy">
+				<!-- placeholder-image is used to keep the div in the correct proportion -->
+				<img class="block-img placeholder-image" src="resources/animacao/cidade-triste/montanhas.svg">
 			</div>
-			<div id="city-buildings" data-happiness-state="sad">
+			<div
+				id="city-buildings"
+				class="scenery-container"
+				data-happiness-state="happy">
 
 			</div>
-			<div id="city-road">
-				<img class="block-img" src="resources/animacao/cidade-triste/rio.svg">
+			<div
+				id="city-river"
+				class="scenery-container"
+				data-happiness-state="happy">
+				<!-- placeholder-image is used to keep the div in the correct proportion -->
+				<img class="block-img placeholder-image" src="resources/animacao/cidade-triste/rio.svg">
 			</div>
-			<div id="city-foreground">
+			<div
+				id="city-foreground"
+				class="scenery-container"
+				data-happiness-state="happy">
 				
 			</div>
 		</div>
 	</div>
+	
 
-	<div id="scrolling-content">
+<!-- 	<div id="scrolling-content">
 		<section style="height: 100vh; display: flex; justify-content: center; align-items: center; color: white;">
 
 			Lorem ipsum dolor sit amet
@@ -42,7 +62,7 @@
 		<section style="height: 100vh;">
 			
 		</section>
-	</div>
+	</div> -->
 
 	<script type="text/javascript" src="index.js"></script>
 

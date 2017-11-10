@@ -2,8 +2,11 @@
 @import './styles/components/img.css';
 
 @import './styles/modules/animations.css';
-@import './styles/modules/transitions.css';
-@import './styles/modules/city-buildings.css';
+@import './styles/modules/delays.css';
+
+@import './styles/components/scenery-container.css';
+
+@import './styles/scenery/scenery.css';
 
 :root {
 	--z-index-sky: 0;
@@ -16,37 +19,4 @@
 #scrolling-content {
 	position: relative;
 	z-index: var(--z-index-content);
-}
-
-#sky {
-	position: fixed;
-	z-index: var(--z-index-sky);
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-
-	/* hack! */
-	// transform: scale(1.4);
-}
-
-#city {
-	position: fixed;
-	z-index: var(--z-index-city);
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
-
-#city-background {
-	position: relative;
-	z-index: 0;
-
-	/* hack! */
-	bottom: -3px;
-}
-
-#city-road {
-	position: relative;
-	z-index: var(--z-index-river);
 }

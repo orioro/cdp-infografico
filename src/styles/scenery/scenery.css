@@ -1,0 +1,72 @@
+@import './moving-elements.css';
+
+#city {
+	position: fixed;
+	z-index: var(--z-index-city);
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#city .placeholder-image {
+	opacity: 0;
+}
+
+#city-horizon {
+	position: relative;
+	z-index: 0;
+}
+
+#city-buildings {
+	position: relative;
+
+	/* hack! */
+	bottom: -20px;
+
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#city-river {
+	position: relative;
+	z-index: var(--z-index-river);
+}
+
+#sky {
+	position: fixed;
+	z-index: var(--z-index-sky);
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	transition: background 1s ease;
+}
+
+#sky[data-happiness-state="sad"] {
+	background: url('../../resources/animacao/cidade-triste/sky-pattern.png');
+}
+
+#sky[data-happiness-state="happy"] {
+	background: white;
+}
+
+
+@media (max-width: 500px) {
+	#fixed-elements-container {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		overflow: auto;
+	}
+
+	#city {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 300%;
+	}
+}

@@ -1,15 +1,26 @@
-@keyframes buildingBounceOutDown {
-  20% {
-    transform: translate3d(0, 10px, 0);
+@keyframes left-to-right-full-width {
+  0% {
+    transform: translateX(-100%);
   }
-
-  40%, 45% {
-    opacity: 1;
-    transform: translate3d(0, -20px, 0);
+  100% {
+    transform: translateX(100vw)
   }
+}
 
-  to {
-    opacity: 0;
-    transform: translate3d(0, 2000px, 0);
+@keyframes slight-bounce {
+  0% {
+    transform: translateY(-3%);
+  }
+  100% {
+    transform: translateY(3%)
+  }
+}
+
+@keyframes cloud-back-and-forth {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(400%)
   }
 }
