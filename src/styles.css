@@ -1,5 +1,6 @@
 @import './styles/reset.css';
 @import './styles/components/img.css';
+@import './styles/components/tooltips.css';
 
 @import './styles/modules/animations.css';
 @import './styles/modules/delays.css';
@@ -14,6 +15,8 @@
 	--z-index-mountains: 2;
 	--z-index-city: 3;
 	--z-index-river: 4;
+
+	--bounce-transition-security-padding-top: 50px;
 }
 
 #scrolling-content {

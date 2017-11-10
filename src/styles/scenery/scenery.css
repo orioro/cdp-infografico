@@ -1,4 +1,5 @@
 @import './moving-elements.css';
+@import './pin-activation.css';
 
 #city {
 	position: fixed;
@@ -49,7 +50,7 @@
 }
 
 #sky[data-happiness-state="happy"] {
-	background: white;
+	background: #C3EEF2;
 }
 
 

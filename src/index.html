@@ -8,10 +8,19 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="bower_components/animate.css/animate.css">
 </head>
-<body>
+<body data-active-pin-set="risks-cities">
 
 	<div style="position: relative; z-index: 10000" id="test-controls">
 		<button data-action="toggle-happiness">trocar</button>
+		<select data-action="set-active-pin-set">
+			<option>Nenhum</option>
+			<option value="risks-cities" selected>Riscos cidades</option>
+			<option value="risks-businesses">Riscos empresas</option>
+			<option value="oportunities-cities">Oportunidades cidades</option>
+			<option value="oportunities-businesses">Oportunidades empresas</option>
+			<option value="actions-cities">Ações cidades</option>
+			<option value="actions-businesses">Ações empresas</option>
+		</select>
 	</div>
 
 	<div id="fixed-elements-container">

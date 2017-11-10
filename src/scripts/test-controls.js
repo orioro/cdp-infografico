@@ -8,16 +8,33 @@ module.exports = function (app, options) {
 			app.scenery.cityHorizon.setHappinessState(targetHappinessState)
 			app.scenery.cityRiver.setHappinessState(targetHappinessState)
 			app.scenery.sky.setHappinessState(targetHappinessState)
+		},
+
+		'set-active-pin-set': (e) => {
+			let targetActivePinSet = e.target.value
+
+			document.querySelector('body').setAttribute('data-active-pin-set', targetActivePinSet)
 		}
 	}
 
 	let testControls = document.querySelector('#test-controls')
 
 	testControls.addEventListener('click', e => {
+		if (e.target.tagName !== 'BUTTON') {
+			return
+		}
+
 		let action = e.target.getAttribute('data-action')
 		if (action) {
 			actions[action](e)
 		}
 	})
 
+	testControls.addEventListener('change', e => {
+		let action = e.target.getAttribute('data-action')
+
+		if (action) {
+			actions[action](e)
+		}
+	})
 }

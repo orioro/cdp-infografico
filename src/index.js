@@ -7,5 +7,5 @@ let options = Object.assign({
 
 let app = {}
 
-require('./scripts/test-controls')(app, options)
 require('./scripts/scenery')(app, options)
+require('./scripts/test-controls')(app, options)

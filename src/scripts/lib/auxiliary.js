@@ -18,11 +18,16 @@ function createElement(def) {
 	}
 
 	if (def.children) {
-		def.children.forEach(childDef => {
-			let childElement = createElement(childDef)
+		def.children.forEach(child => {
+			let childElement = child instanceof window.Element ?
+				child : createElement(child)
 
 			element.appendChild(childElement)
 		})
+	}
+
+	if (def.innerHTML) {
+		element.innerHTML = def.innerHTML
 	}
 
 	return element

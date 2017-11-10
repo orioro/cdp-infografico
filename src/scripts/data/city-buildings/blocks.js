@@ -10,7 +10,19 @@ const HAPPY_BUILDING_BLOCKS = [
       left: 22,
       width: 42,
       zIndex: 3,
-    }
+    },
+
+    pins: [
+      {
+        set: 'risks-cities',
+        contents: [
+          {
+            title: 'test title',
+            body: 'test body'
+          }
+        ]
+      }
+    ],
   },
   {
     src: 'resources/animacao/cidade-alegre/bloco-02.svg',
@@ -337,6 +349,27 @@ module.exports = SAD_BUILDING_BLOCKS.map(b => {
   b.styles = aux.calcPercentageStyles(b.styles, {
     totalWidth: 1180,
   })
+
+  // b.pins = [
+  //     {
+  //       set: 'risks-cities',
+  //       contents: [
+  //         {
+  //           title: b.src,
+  //           body: 'risks-cities'
+  //         }
+  //       ]
+  //     },
+  //     {
+  //       set: 'risks-businesses',
+  //       contents: [
+  //         {
+  //           title: b.src,
+  //           body: 'risks-businesses'
+  //         }
+  //       ]
+  //     }
+  //   ]
 
   return b
 })

@@ -7,6 +7,95 @@
 	bottom: 0;
 }
 
+.scenery-container > .scenery-element > .pin {
+	position: absolute;
+	z-index: 100;
+
+	width: 40px;
+	height: 40px;
+	background-color: darkred;
+	bottom: 102%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50px);
+	opacity: 0;
+	pointer-events: none;
+
+	transition: opacity .4s ease, transform .4s ease;
+}
+
+.scenery-container > .scenery-element > .pin > .pin-contents {
+	display: none;
+}
+
+/**
+ * Pin set activation
+ * ATTENTION: use special positioning for blocks that have bounce-transition
+ */
+body[data-active-pin-set="risks-cities"] .scenery-container > .scenery-element > .pin[data-pin-set="risks-cities"] {
+	opacity: 1;
+	transform: translateX(-50%) translateY(0);
+	pointer-events: auto;
+}
+body[data-active-pin-set="risks-cities"] .scenery-container > .scenery-element.bounce-transition > .pin[data-pin-set="risks-cities"] {
+	transform: translateX(-50%) translateY(var(--bounce-transition-security-padding-top));
+}
+
+body[data-active-pin-set="risks-businesses"] .scenery-container > .scenery-element > .pin[data-pin-set="risks-businesses"] {
+	opacity: 1;
+	transform: translateX(-50%) translateY(0);
+	pointer-events: auto;
+}
+body[data-active-pin-set="risks-businesses"] .scenery-container > .scenery-element.bounce-transition > .pin[data-pin-set="risks-businesses"] {
+	transform: translateX(-50%) translateY(var(--bounce-transition-security-padding-top));
+}
+
+body[data-active-pin-set="oportunities-cities"] .scenery-container > .scenery-element > .pin[data-pin-set="oportunities-cities"] {
+	opacity: 1;
+	transform: translateX(-50%) translateY(0);
+	pointer-events: auto;
+}
+body[data-active-pin-set="oportunities-cities"] .scenery-container > .scenery-element.bounce-transition > .pin[data-pin-set="oportunities-cities"] {
+	transform: translateX(-50%) translateY(var(--bounce-transition-security-padding-top));
+}
+
+body[data-active-pin-set="oportunities-businesses"] .scenery-container > .scenery-element > .pin[data-pin-set="oportunities-businesses"] {
+	opacity: 1;
+	transform: translateX(-50%) translateY(0);
+	pointer-events: auto;
+}
+body[data-active-pin-set="oportunities-businesses"] .scenery-container > .scenery-element.bounce-transition > .pin[data-pin-set="oportunities-businesses"] {
+	transform: translateX(-50%) translateY(var(--bounce-transition-security-padding-top));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * disable interaction for elements that do not correspond to correct
+ * happiness-state
+ */
+.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="happy"],
+.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="sad"] {
+	pointer-events: none;
+}
+
+.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="happy"] > .pin,
+.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="sad"] > .pin {
+	display: none;
+}
+
 /**
  * immediate-transition
  */
@@ -55,36 +144,36 @@
 /**
  * bounce-transition
  */
-.scenery-container > .scenery-element.bounce-transition {
+.scenery-container > .scenery-element.bounce-transition > .image-container {
 	overflow: hidden;
 	/* secure some space for the bounce effect on the top side */
-	padding-top: 50px;
+	padding-top: var(--bounce-transition-security-padding-top);
 }
-.scenery-container > .scenery-element.bounce-transition > img {
+.scenery-container > .scenery-element.bounce-transition > .image-container > img {
 	transition-property: transform;
 	transition-duration: .6s;
 	transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="sad"].bounce-transition > img {
+.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="sad"].bounce-transition > .image-container > img {
 	/* in */
 	transform: translateY(0);
 	opacity: 1;
 }
 
-.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="happy"].bounce-transition > img {
+.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="happy"].bounce-transition > .image-container > img {
 	/* out */
 	transform: translateY(200px);
 	opacity: 1;
 }
 
-.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="sad"].bounce-transition > img {
+.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="sad"].bounce-transition > .image-container > img {
 	/* out */
 	transform: translateY(200px);
 	opacity: 1;
 }
 
-.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="happy"].bounce-transition > img {
+.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="happy"].bounce-transition > .image-container > img {
 	/* in */
 	transform: translateY(0);
 	opacity: 1;
@@ -93,35 +182,35 @@
 /**
  * slide-up-transition
  */
-.scenery-container > .scenery-element.slide-up-transition {
+.scenery-container > .scenery-element.slide-up-transition > .image-container {
 	overflow: hidden;
 }
-.scenery-container > .scenery-element.slide-up-transition > img {
+.scenery-container > .scenery-element.slide-up-transition > .image-container > img {
 	transition-property: transform;
 	transition-duration: .6s;
 	/*transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);*/
 	transition-timing-function: ease;
 }
 
-.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="sad"].slide-up-transition > img {
+.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="sad"].slide-up-transition > .image-container > img {
 	/* in */
 	transform: translateY(0);
 	opacity: 1;
 }
 
-.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="happy"].slide-up-transition > img {
+.scenery-container[data-happiness-state="sad"] > .scenery-element[data-happiness-state="happy"].slide-up-transition > .image-container > img {
 	/* out */
 	transform: translateY(100%);
 	opacity: 1;
 }
 
-.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="sad"].slide-up-transition > img {
+.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="sad"].slide-up-transition > .image-container > img {
 	/* out */
 	transform: translateY(100%);
 	opacity: 1;
 }
 
-.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="happy"].slide-up-transition > img {
+.scenery-container[data-happiness-state="happy"] > .scenery-element[data-happiness-state="happy"].slide-up-transition > .image-container > img {
 	/* in */
 	transform: translateY(0);
 	opacity: 1;
