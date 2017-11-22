@@ -29,14 +29,8 @@ module.exports = function pinElement(pin, options) {
 			class: 'pin',
 			'data-pin-set': pin.set,
 		},
+		styles: pin.styles,
 		children: [
-			{
-				tagName: 'div',
-				attributes: {
-					class: 'pin-contents',
-				},
-				children: contents,
-			},
 			{
 				tagName: 'img',
 				attributes: {
@@ -44,7 +38,14 @@ module.exports = function pinElement(pin, options) {
 					src: pin.src,
 				},
 				children: contents,
-			}
+			},
+			{
+				tagName: 'div',
+				attributes: {
+					class: 'pin-contents',
+				},
+				children: contents,
+			},
 		],
 	})
 
