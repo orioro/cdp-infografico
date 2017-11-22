@@ -7,6 +7,52 @@
   }
 }
 
+@keyframes left-to-right-full-width-boat {
+  0% {
+    transform: translateX(-100%);
+  }
+
+/*  10% {
+    transform: translateX(10vw);
+  }
+
+  20% {
+    transform: translateX(20vw);
+  }*/
+
+  30% {
+    transform: translateX(30vw);
+  }
+/*
+  40% {
+    transform: translateX(40vw);
+  }
+
+  50% {
+    transform: translateX(50vw);
+  }*/
+
+  60% {
+    transform: translateX(60vw);
+  }
+
+/*  70% {
+    transform: translateX(70vw);
+  }
+
+  80% {
+    transform: translateX(80vw);
+  }
+
+  90% {
+    transform: translateX(90vw);
+  }*/
+
+  100% {
+    transform: translateX(100vw)
+  }
+}
+
 @keyframes slight-bounce {
   0% {
     transform: translateY(-3%);
@@ -16,11 +62,58 @@
   }
 }
 
+@keyframes slight-horizontal-scale {
+  0% {
+    transform: scaleX(0.91);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
 @keyframes cloud-back-and-forth {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%)
+  }
+}
+
+@keyframes helix-rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes vlt-back-and-forth {
   0% {
     transform: translateX(0);
   }
-  100% {
-    transform: translateX(400%)
+  20% {
+    transform: translateX(0);
   }
+  80% {
+    transform: translateX(240%);
+  }
+  100% {
+    transform: translateX(240%);
+  }
+}
+
+@keyframes outdoor-blink {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+/*
+  to {
+    visibility: hidden;
+  }*/
 }

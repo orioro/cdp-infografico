@@ -36,6 +36,14 @@ module.exports = function pinElement(pin, options) {
 					class: 'pin-contents',
 				},
 				children: contents,
+			},
+			{
+				tagName: 'img',
+				attributes: {
+					class: 'pin-image',
+					src: 'resources/animacao/pins/pin-azul.svg',
+				},
+				children: contents,
 			}
 		],
 	})

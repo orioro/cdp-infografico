@@ -16,6 +16,8 @@
 #city-horizon {
 	position: relative;
 	z-index: 0;
+
+	bottom: -2px;
 }
 
 #city-buildings {
@@ -41,16 +43,26 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-
-	transition: background 1s ease;
 }
 
-#sky[data-happiness-state="sad"] {
-	background: url('../../resources/animacao/cidade-triste/sky-pattern.png');
+#sky > div {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 
-#sky[data-happiness-state="happy"] {
-	background: #C3EEF2;
+#sky > div[data-happiness-state="sad"] {
+	z-index: 1;
+	background-color: #686868;
+	background-image: url('../../resources/animacao/cidade-triste/sky-pattern.png');
+}
+
+#sky > div[data-happiness-state="happy"] {
+	z-index: 2;
+	background-color: #FBFF87;
+	background: linear-gradient(-120deg, #D8FFB0 28%, #FBFF87);
 }
 
 

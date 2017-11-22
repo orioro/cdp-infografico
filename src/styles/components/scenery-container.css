@@ -11,9 +11,7 @@
 	position: absolute;
 	z-index: 100;
 
-	width: 40px;
-	height: 40px;
-	background-color: darkred;
+	width: 20px;
 	bottom: 102%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50px);
@@ -25,6 +23,12 @@
 
 .scenery-container > .scenery-element > .pin > .pin-contents {
 	display: none;
+}
+
+.scenery-container > .scenery-element > .pin > .pin-image {
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
 /**
@@ -137,7 +141,7 @@ body[data-active-pin-set="oportunities-businesses"] .scenery-container > .scener
 
 .scenery-container > .scenery-element.opacity-transition {
 	transition-property: opacity;
-	transition-duration: 2s;
+	transition-duration: 250ms;
 	transition-timing-function: ease;
 }
 

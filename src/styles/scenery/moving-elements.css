@@ -1,5 +1,5 @@
-
-.city-car {
+.city-car,
+.city-bicicle {
   transform: translateX(-100%);
   animation-name: left-to-right-full-width;
   animation-duration: 15s;
@@ -7,7 +7,8 @@
   animation-timing-function: linear;
 }
 
-.city-car > img {
+.city-car > .image-container > img,
+.city-bicicle > .image-container > img {
   animation-name: slight-bounce;
   animation-direction: alternate;
   animation-duration: .1s;
@@ -17,13 +18,13 @@
 
 .city-boat {
   transform: translateX(-100%);
-  animation-name: left-to-right-full-width;
-  animation-duration: 60s;
+  animation-name: left-to-right-full-width-boat;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
-  animation-timing-function: linear;
+  animation-timing-function: cubic-bezier(.26,.81,.8,.47);
 }
 
-.city-boat > img {
+.city-boat > .image-container > img {
   animation-name: slight-bounce;
   animation-direction: alternate;
   animation-duration: 10s;
@@ -31,6 +32,10 @@
   animation-timing-function: ease-in-out;
 }
 
+/**
+ * For clouds, the whole composition is translated,
+ * as the pins should move together
+ */
 .city-cloud-1 {
   animation-name: cloud-back-and-forth;
   animation-direction: alternate;
@@ -43,6 +48,29 @@
   animation-name: cloud-back-and-forth;
   animation-direction: alternate;
   animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.helix > .image-container > img {
+  animation-name: helix-rotate;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.vlt {
+  animation-name: vlt-back-and-forth;
+  animation-direction: alternate;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.outdoor-blink > .image-container > img {
+  animation: outdoor-blink;
+  animation-direction: alternate;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
