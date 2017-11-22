@@ -9,6 +9,8 @@
 
 @import './styles/scenery/scenery.css';
 
+@import './styles/dev.css';
+
 :root {
 	--z-index-sky: 0;
 	--z-index-content: 1;

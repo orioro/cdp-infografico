@@ -1,5 +1,4 @@
 @import './moving-elements.css';
-@import './pin-activation.css';
 
 #city {
 	position: fixed;

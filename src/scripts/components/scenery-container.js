@@ -5,10 +5,7 @@ module.exports = function sceneryContainer(options) {
 	let containerElement = options.containerElement
 	
 	options.blocks.forEach(block => {
-		containerElement.appendChild(components.sceneryElement(block, {
-			blocksTotalWidth: options.blocksTotalWidth,
-			blocksTotalHeight: options.blocksTotalHeight
-		}))
+		containerElement.appendChild(components.sceneryElement(block))
 	})
 
 	return {

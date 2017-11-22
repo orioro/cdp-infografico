@@ -6,10 +6,7 @@ module.exports = function (app, options) {
 
 	let sceneryContainer = components.sceneryContainer({
 		containerElement: skyElement,
-
-		blocks: options.sky.blocks,
-
-		blocksTotalWidth: options.sky.blocksTotalWidth,
+		blocks: options.blocks.sky,
 	})
 
 	return sceneryContainer

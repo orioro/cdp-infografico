@@ -1,7 +1,7 @@
 const aux = require('../lib/auxiliary')
 const createPinElement = require('./pin-element')
 
-module.exports = function blockElement(block, options) {
+module.exports = function blockElement(block) {
 
 	let blockName = block.name
 
@@ -11,7 +11,6 @@ module.exports = function blockElement(block, options) {
 	}
 
 	let pinElements = (block.pins || []).map(pin => {
-		console.log(pin)
 		return createPinElement(pin)
 	})
 
@@ -36,25 +35,20 @@ module.exports = function blockElement(block, options) {
 							class: 'block-img',
 						}
 					},
+			
+
+					/**
+					 * Development
+					 */
+					{
+						tagName: 'div',
+						innerHTML: block.name,
+						attributes: {
+							class: 'dev-block-label'
+						},
+					}
 				]
 			},
-
-			// {
-			// 	tagName: 'div',
-			// 	attributes: {
-			// 		class: 'pin',
-			// 		'data-pin-set': 'risks-cities',
-			// 	},
-			// 	innerHTML: `risks-cities: ${blockName}`,
-			// },
-			// {
-			// 	tagName: 'div',
-			// 	attributes: {
-			// 		class: 'pin',
-			// 		'data-pin-set': 'risks-businesses',
-			// 	},
-			// 	innerHTML: `risks-businesses: ${blockName}`,
-			// },
 		].concat(pinElements),
 	})
 

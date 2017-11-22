@@ -6,9 +6,6 @@ module.exports = function (app, options) {
 
 	return components.sceneryContainer({
 		containerElement: cityRiverElement,
-
-		blocks: options.cityRiver.blocks,
-
-		blocksTotalWidth: options.cityRiver.blocksTotalWidth,
+		blocks: options.blocks.cityRiver,
 	})
 }

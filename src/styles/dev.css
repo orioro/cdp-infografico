@@ -1,0 +1,16 @@
+.scenery-container > .scenery-element > .image-container > .dev-block-label {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%, 0);
+	font-size: 16px;
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+
+	display: none;
+}
+
+.scenery-container > .scenery-element:hover > .image-container > .dev-block-label {
+	display: block;
+}

@@ -166,8 +166,4 @@ const RIVER_BLOCKS = [
   // },
 ]
 
-module.exports = {
-  blocks: RIVER_BLOCKS,
-  blocksTotalWidth: 1100,
-  blocksTotalHeight: 0,
-}
+module.exports = RIVER_BLOCKS

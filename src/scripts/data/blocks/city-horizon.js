@@ -16,18 +16,6 @@ const SAD = [
       left: '70%',
       bottom: '90%',
     },
-
-    pins: [
-      {
-        set: 'risks-cities',
-        contents: [
-          {
-            title: 'test title',
-            body: 'test body'
-          }
-        ]
-      }
-    ],
   },
   {
     happinessState: 'sad',
@@ -90,18 +78,6 @@ const HAPPY = [
 
       bottom: '54%',
     },
-
-    pins: [
-      {
-        set: 'risks-cities',
-        contents: [
-          {
-            title: 'test title',
-            body: 'test body'
-          }
-        ]
-      }
-    ],
   },
   // armazem
   {
@@ -138,18 +114,6 @@ const HAPPY = [
       left: '56.5%',
       bottom: '62.5%',
     },
-
-    pins: [
-      {
-        set: 'risks-cities',
-        contents: [
-          {
-            title: 'test title',
-            body: 'test body'
-          }
-        ]
-      }
-    ],
   },
 
   // eolica-2
@@ -231,6 +195,4 @@ const HAPPY = [
   },
 ]
 
-module.exports = {
-  blocks: SAD.concat(HAPPY),
-}
+module.exports = SAD.concat(HAPPY)

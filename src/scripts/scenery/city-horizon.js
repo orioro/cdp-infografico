@@ -6,9 +6,6 @@ module.exports = function (app, options) {
 
 	return components.sceneryContainer({
 		containerElement: cityHorizonElement,
-
-		blocks: options.cityHorizon.blocks,
-
-		blocksTotalWidth: options.cityHorizon.blocksTotalWidth,
+		blocks: options.blocks.cityHorizon,
 	})
 }
