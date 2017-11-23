@@ -1,0 +1,75 @@
+@import './intro.css';
+@import './metas-gee-cidades.css';
+
+#slides {
+	position: fixed;
+	z-index: var(--z-index-content);
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+#slides > section.slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+/**
+ * Slide transitions
+ */
+#slides > section.slide {
+	transition-duration: 900ms;
+}
+
+/* slide-up-transition */
+#slides > section.slide.past.slide-up-past-transition {
+	opacity: 1;
+	height: 100%;
+	transform: translateY(-100%);
+	transition-property: transform;
+	transition-timing-function: cubic-bezier(0.63, 0.64, 0.3, 1);
+}
+
+#slides > section.slide.active.slide-up-past-transition {
+	transform: translateY(0%);
+}
+
+/* opacity-transition */
+#slides > section.slide.opacity-transition {
+	opacity: 0;
+	height: 100%;
+	transition: opacity .9s ease;
+}
+
+#slides > section.slide.opacity-transition.active {
+	opacity: 1;
+	height: 100%;
+}
+
+/**
+ * Slide contents
+ */
+#slides > section.slide > .slide-container {
+	padding: 40px;
+	box-sizing: border-box;
+
+	color: white;
+}
+
+#slides > section.slide .slide-title {
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 30px;
+}
+
+#slides > section.slide .slide-contents {
+
+}
+
+#slides > section.slide .slide-contents p {
+	font-size: 20px;
+	margin-bottom: 20px;
+}

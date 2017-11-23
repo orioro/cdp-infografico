@@ -1,0 +1,8 @@
+#intro {
+	background-color: darkred;
+	height: 100vh;
+}
+
+#intro > .slide-contents {
+	width: 70%;
+}

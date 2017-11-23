@@ -20,7 +20,7 @@ gulp.task('javascript', function () {
     transform: [
       // ['brfs', {}]
       // ['vueify', { global: true }],
-      // ['babelify', { 'presets': ['env'] }],
+      ['babelify', { 'presets': ['env'] }],
       // ['deamdify', {}]
     ],
   });

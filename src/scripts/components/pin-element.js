@@ -1,6 +1,6 @@
 const aux = require('../lib/auxiliary')
 
-module.exports = function pinElement(pin, options) {
+module.exports = function createPinElement(pin, options) {
 	if (!pin.set) {
 		console.warn('no set was defined for pin', pin)
 	}

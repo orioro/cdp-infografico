@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
     "browser-sync": "^2.18.13",
     "browserify": "^14.5.0",
     "gulp": "^3.9.1",
@@ -17,9 +20,9 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
-    "d3-path": "^1.0.5",
-    "d3-scale": "^1.0.6",
+    "d3-selection": "^1.2.0",
     "d3-shape": "^1.2.0",
+    "mousetrap": "^1.6.1",
     "scrollmagic": "^2.0.5",
     "tooltip.js": "^1.1.7"
   }

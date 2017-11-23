@@ -1,7 +1,7 @@
 const aux = require('../lib/auxiliary')
 const createPinElement = require('./pin-element')
 
-module.exports = function blockElement(block) {
+module.exports = function createBlockElement(block) {
 
 	let blockName = block.name
 

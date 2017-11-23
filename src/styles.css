@@ -9,19 +9,28 @@
 
 @import './styles/scenery/scenery.css';
 
+/**
+ * Slides
+ */
+@import './styles/slides/slides.css';
+
+
 @import './styles/dev.css';
 
 :root {
 	--z-index-sky: 0;
-	--z-index-content: 1;
+	--z-index-content: 9;
 	--z-index-mountains: 2;
 	--z-index-city: 3;
 	--z-index-river: 4;
 
 	--bounce-transition-security-padding-top: 50px;
+
+	--color-cdp: rgb(180, 46, 52);
+	--color-climate-change: rgb(180, 46, 52);
 }
 
-#scrolling-content {
-	position: relative;
-	z-index: var(--z-index-content);
+body {
+	font-family: 'Raleway', sans-serif;
+	line-height: 1.5;
 }

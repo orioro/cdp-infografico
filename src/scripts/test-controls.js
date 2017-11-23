@@ -1,3 +1,5 @@
+const pieChart = require('./components/pie-chart')
+
 module.exports = function (app, options) {
 
 	let actions = {
@@ -36,5 +38,38 @@ module.exports = function (app, options) {
 		if (action) {
 			actions[action](e)
 		}
+	})
+
+
+
+
+	let sandboxElement = document.querySelector('#sandbox')
+
+
+	pieChart.chart({
+		containerElement: document.querySelector('#sandbox'),
+		size: 120,
+		data: [
+			{
+				label: 'Label 1',
+				color: 'red',
+				value: 50,
+			},
+			{
+				label: 'Label 2',
+				color: 'green',
+				value: 60,
+			},
+			{
+				label: 'Label 3',
+				color: 'blue',
+				value: 77,
+			},
+			{
+				label: 'Label 4',
+				color: 'cyan',
+				value: 14,
+			}
+		]
 	})
 }
