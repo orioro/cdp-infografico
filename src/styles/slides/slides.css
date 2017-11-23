@@ -22,31 +22,30 @@
  */
 #slides > section.slide {
 	transition-duration: 900ms;
-}
-
-/* slide-up-transition */
-#slides > section.slide.past.slide-up-past-transition {
-	opacity: 1;
+	transition-property: all;
+	transition-timing-function: ease-in-out;
 	height: 100%;
-	transform: translateY(-100%);
-	transition-property: transform;
-	transition-timing-function: cubic-bezier(0.63, 0.64, 0.3, 1);
 }
 
-#slides > section.slide.active.slide-up-past-transition {
+/* slide-up-past-transition */
+#slides > section.slide.past {
+	opacity: 1;
+	transform: translateY(-100%);
+	/*transition-timing-function: cubic-bezier(0.63, 0.64, 0.3, 1);*/
+}
+
+#slides > section.slide {
 	transform: translateY(0%);
 }
 
-/* opacity-transition */
-#slides > section.slide.opacity-transition {
+/* opacity-active-transition */
+#slides > section.slide {
 	opacity: 0;
-	height: 100%;
-	transition: opacity .9s ease;
 }
 
-#slides > section.slide.opacity-transition.active {
+#slides > section.slide.active {
+	transition-delay: 200ms;
 	opacity: 1;
-	height: 100%;
 }
 
 /**
