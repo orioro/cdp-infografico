@@ -15,7 +15,7 @@ const PIN_SETS = [
 		    contents: [
 		      {
 		        title: 'Aumento da temperatura',
-		        body: 'test body'
+		        body: '<div class="chart" data-chart="cities-with-greenhouse-gas-inventory">',
 		      }
 		    ]
 		  },

@@ -155,13 +155,30 @@ class SlidesNavigation extends EventEmitter {
 
 		setTimeout(() => {
 			this.isInTransition = false
-			
+
 			this.emit('slide-transition-end', {
 				to: targetSlideElement,
 				from: currentSlideElement,
 			})
 
 		}, 900)
+
+		/**
+		 * Update controls
+		 */
+		if (targetSlideIndex === 0) {
+			this.controlElement.classList.add('at-first-slide')
+			this.controlElement.classList.remove('at-last-slide')
+
+			console.log('at first')
+
+		} else if (targetSlideIndex === this.slideElements.length - 1) {
+			this.controlElement.classList.remove('at-first-slide')
+			this.controlElement.classList.add('at-last-slide')
+		} else {
+			this.controlElement.classList.remove('at-first-slide')
+			this.controlElement.classList.remove('at-last-slide')
+		}
 	}
 
 	goToNext() {
@@ -172,8 +189,7 @@ class SlidesNavigation extends EventEmitter {
 		let currentSlideIndex = this.getCurrentSlideIndex()
 
 		if (currentSlideIndex === this.slideElements.length - 1) {
-			// last
-			
+
 		} else {
 
 			window.history.pushState(
@@ -195,8 +211,7 @@ class SlidesNavigation extends EventEmitter {
 		let currentSlideIndex = this.getCurrentSlideIndex()
 
 		if (currentSlideIndex === 0) {
-			// first
-			
+
 		} else {
 
 			window.history.pushState(

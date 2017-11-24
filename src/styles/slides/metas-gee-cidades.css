@@ -1,3 +1,7 @@
 #metas-gee-cidades {
 	/*height: 200vh;*/
 }
+
+#metas-gee-cidades .chart {
+	width: 200px;
+}

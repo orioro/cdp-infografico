@@ -88,6 +88,20 @@
 	pointer-events: auto;
 }
 
+#slides > nav > button {
+	transition: opacity .4s ease;
+}
+
+#slides > nav.at-first-slide > button.previous {
+	opacity: 0;
+	pointer-events: none;
+}
+
+#slides > nav.at-last-slide > button.next {
+	opacity: 0;
+	pointer-events: none;
+}
+
 #slides > nav > ul {
 	display: flex;
 	flex-direction: column;

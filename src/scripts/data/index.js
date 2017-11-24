@@ -1,5 +1,6 @@
 const BLOCKS = require('./blocks')
 const ALL_PINS = require('./pins')
+const CHARTS = require('./charts')
 
 let ALL_BLOCKS = BLOCKS.cityBuildings
 									.concat(BLOCKS.cityHorizon)
@@ -34,6 +35,7 @@ ALL_PINS.forEach(pin => {
 })
 
 module.exports = {
-	blocks: BLOCKS
+	blocks: BLOCKS,
+	charts: CHARTS,
 }
 

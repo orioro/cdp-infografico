@@ -31,8 +31,5 @@ module.exports = function (app, options) {
 	require('./happiness-reactions')(app, options)
 	require('./pin-sets')(app, options)
 
-
-	// navigationController.goToSlide(0)
-
-	return navigationController
+	require('./slide-reactions')(app, options)
 }

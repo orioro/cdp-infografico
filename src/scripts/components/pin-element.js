@@ -17,7 +17,7 @@ module.exports = function createPinElement(pin, options) {
 				innerHTML: content.title,
 			},
 			{
-				tagName: 'p',
+				tagName: 'div',
 				innerHTML: content.body,
 			}
 		])
