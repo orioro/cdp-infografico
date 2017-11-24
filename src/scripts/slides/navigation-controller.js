@@ -13,14 +13,22 @@ class SlidesNavigation extends EventEmitter {
 		})
 	}
 
+	computeSlideProgress(slideElement) {
+		return this.getSlideIndex(slideElement) / (this.slideElements.length - 1)
+	}
+
 	getCurrentSlide() {
 		return this.slideElements.find(el => {
 			return el.classList.contains('active')
 		})
 	}
 
+	getSlideIndex(slideElement) {
+		return this.slideElements.indexOf(slideElement)
+	}
+
 	getCurrentSlideIndex() {
-		return this.slideElements.indexOf(this.getCurrentSlide())
+		return this.getSlideIndex(this.getCurrentSlide())
 	}
 
 	goToSlide(targetSlideIndex) {

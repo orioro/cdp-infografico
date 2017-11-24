@@ -9,6 +9,10 @@ module.exports = function sceneryContainer(options) {
 	})
 
 	return {
+		getBlockElements: (happinessState) => {
+			// return containerElement.
+		},
+
 		getHappinessState: () => {
 			return containerElement.getAttribute('data-happiness-state')
 		},
