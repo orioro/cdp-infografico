@@ -9,13 +9,12 @@ module.exports = function (app, options) {
 			app.scenery.cityBuildings.setHappinessState(targetHappinessState)
 			app.scenery.cityHorizon.setHappinessState(targetHappinessState)
 			app.scenery.cityRiver.setHappinessState(targetHappinessState)
-			app.scenery.sky.setHappinessState(targetHappinessState)
 		},
 
 		'set-active-pin-set': (e) => {
 			let targetActivePinSet = e.target.value
 
-			document.querySelector('body').setAttribute('data-active-pin-set', targetActivePinSet)
+			app.scenery.activatePinSet(targetActivePinSet)
 		}
 	}
 

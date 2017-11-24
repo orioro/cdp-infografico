@@ -3,12 +3,19 @@ const components = require('../components')
 module.exports = function sceneryContainer(options) {
 
 	let containerElement = options.containerElement
+	let blockElements = []
 	
 	options.blocks.forEach(block => {
-		containerElement.appendChild(components.sceneryElement(block))
+		let blockElement = components.sceneryElement(block)
+		containerElement.appendChild(blockElement)
+
+		blockElements.push(blockElement)
 	})
 
 	return {
+		containerElement: containerElement,
+		blockElements: blockElements,
+
 		getBlockElements: (happinessState) => {
 			// return containerElement.
 		},

@@ -13,7 +13,7 @@ module.exports = function (app, options) {
 		navigationController.goToNext()
 	})
 
-	document.querySelector('#slides').addEventListener('wheel', function (e) {
+	document.querySelector('body').addEventListener('wheel', function (e) {
 		if (Math.abs(e.deltaY) > 10) {
 			if (e.deltaY > 0) {
 				navigationController.goToNext()
@@ -28,7 +28,11 @@ module.exports = function (app, options) {
 	 */
 	app.navigationController = navigationController
 
-	require('./sky-reactions')(app, options)
+	require('./happiness-reactions')(app, options)
+	require('./pin-sets')(app, options)
+
+
+	// navigationController.goToSlide(0)
 
 	return navigationController
 }

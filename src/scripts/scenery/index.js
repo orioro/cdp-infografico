@@ -20,5 +20,12 @@ module.exports = function (app, options) {
 		})
 	})
 
+	/**
+	 * Activate pin set
+	 */
+	scenery.activatePinSet = function (pinSetName) {
+		document.querySelector('body').setAttribute('data-active-pin-set', pinSetName)
+	}
+
 	app.scenery = scenery
 }

@@ -4,10 +4,17 @@ module.exports = function (app, options) {
 
 	let skyElement = document.querySelector('#sky')
 
-	let sceneryContainer = components.sceneryContainer({
-		containerElement: skyElement,
-		blocks: options.blocks.sky,
-	})
+	let skyController = {
+		updateHappySkyStyles: function (styles) {
 
-	return sceneryContainer
+			let sadSky = skyElement.querySelector('[data-happiness-state="sad"]')
+			let happySky = skyElement.querySelector('[data-happiness-state="happy"]')
+
+			for (let prop in styles) {
+				happySky.style[prop] = styles[prop]
+			}
+		},
+	}
+
+	return skyController
 }
