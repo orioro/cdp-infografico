@@ -63,7 +63,11 @@ const PIN_SETS = [
 		    contents: [
 		      {
 		        title: 'Enchentes',
-		        body: 'test body'
+		        body: '<img src="resources/graficos/cidades-riscos-enchentes.svg">'
+		      },
+		      {
+		      	title: 'Exemplos',
+		      	body: 'A cidade de SP reporta que a Seca impactou no numero de turistas na Av Paulista no domingo'
 		      }
 		    ]
 		  },
