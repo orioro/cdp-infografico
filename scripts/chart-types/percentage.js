@@ -1,23 +1,59 @@
 const D3Node = require('d3-node')
 const d3 = D3Node.d3
 
+const GRAY = '#A0A0A0'
+
+const COLOR_SETS = {
+	// cities
+	violeta: [
+		'#351923',
+		'#5B414C',
+		'#7174A5',
+		'#8D8FBA',
+	],
+	vinho: [
+		'#501D3C',
+		'#7F2D6E',
+		'#965084',
+		'#B26F9D',
+	],
+	blue: [
+		'#006B85',
+		'#13889B',
+		'#289DA3',
+		'#58A4A8',
+		'#6AB6BA',
+		'#7FCAD1',
+	],
+	green: [
+		'#123426',
+		'#22563C',
+		'#30684D',
+		'#437C62',
+		'#5E8876',
+	],
+}
+
 function pieChart(options, styles) {
 	let d3n = new D3Node({
-		styles: styles,
+		styles: '@import url("https://fonts.googleapis.com/css?family=Raleway:700");',
 	})
 
-	let size = options.size
+	let width = 400
+	let height = 300
+
+	let chartColorSet = COLOR_SETS[options.colorSet] || COLOR_SETS.blue
 
 	// leave some space for the labels and stuff
-	let outerRadius = (size - 100) / 2
-	let innerRadius = options.innerRadius || outerRadius * 2/5
+	let outerRadius = 60
+	let innerRadius = outerRadius * 2/5
 
 	let svg = d3n.createSVG()
-		.attr('width', size)
-		.attr('height', size)
+		.attr('width', width)
+		.attr('height', height)
 
 	let chartG = svg.append('g')
-		.attr('transform', 'translate(' + size / 2 + ',' + size / 2 + ')')
+		.attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
 
 	/**
 	 * The pie data generator
@@ -37,32 +73,41 @@ function pieChart(options, styles) {
 		.innerRadius(innerRadius)
 
 	let cartLabelGenerator = d3.arc()
-		.outerRadius(outerRadius)
-		.innerRadius(outerRadius)
+		.outerRadius(outerRadius * 1.15)
+		.innerRadius(outerRadius * 1.15)
 
 	/**
 	 * Compute slice sizes
 	 */
 	let slices = [
 		{
-			label: options.dataoptions.data.percentage
+			label: data.label,
+			color: '#351923',
+		}
 	]
-	// let slices = options.data.slices.map(slice => {
-	// 	return {
-	// 		label: slice.label,
-	// 		color: slice.color,
-	// 		value: slice.value / options.data.total,
-	// 	}
-	// })
 
-	// if (slicesTotal < options.data.total) {
-	// 	slices.push({
-	// 		label: 'Outros',
-	// 		isOther: true,
-	// 		color: 'gray',
-	// 		value: (options.data.total - slicesTotal) / options.data.total,
-	// 	})
-	// }
+	let slices = options.data.slices.map((slice, index) => {
+		let formattedSlice = {
+			label: Array.isArray(slice.label) ? slice.label : [slice.label],
+			color: chartColorSet[index],
+			value: slice.value / options.data.total,
+		}
+
+		let percentageStr = Math.round(formattedSlice.value * 100) + '%'
+
+		formattedSlice.label.unshift(percentageStr)
+
+		return formattedSlice
+	})
+
+	if (slicesTotal < options.data.total) {
+		slices.push({
+			label: ['Outros'],
+			isOther: true,
+			color: GRAY,
+			value: (options.data.total - slicesTotal) / options.data.total,
+		})
+	}
 
 	let arc = chartG.selectAll('.arc')
 		.data(pie(slices))
@@ -74,15 +119,38 @@ function pieChart(options, styles) {
 		.attr('d', chartArcPathGenerator)
 		.attr('fill', d => d.data.color)
 
-	arc.append('text')
+	// build the label
+	arc.append('g')
+		.attr('class', 'arc-label')
 		.attr('transform', d => `translate(${cartLabelGenerator.centroid(d)})`)
 		.attr('dy', '0.35em')
-		.text(d => d.data.label)
-		.attr('text-anchor', d => {
-	    // are we past the center?
-	    return (d.endAngle + d.startAngle)/2 > Math.PI ?
-	      'end' : 'start';
+		.each(function (d) {
+
+			// console.log(datum.data.label)
+
+			d.data.label.forEach((lineText, lineIndex) => {
+				d3.select(this)
+					.append('text')
+					.text(lineText)
+					.style('font-family', 'Raleway, sans-serif')
+					.style('font-size', '11px')
+					.style('font-weight', '700')
+					.attr('dy', (d) => {
+
+						if (d.endAngle > 11.5/6 * Math.PI) {
+							return -15 * (d.data.label.length - 1 - lineIndex) + ''
+						} else {
+							return 15 * lineIndex + ''
+						}
+					})
+					.attr('text-anchor', () => {
+				    // are we past the center?
+				    return (d.endAngle + d.startAngle)/2 > Math.PI ?
+				      'end' : 'start';
+					})
+			})
 		})
+
 
 	return d3n.svgString()
 }

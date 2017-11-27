@@ -73,8 +73,8 @@ function pieChart(options, styles) {
 		.innerRadius(innerRadius)
 
 	let cartLabelGenerator = d3.arc()
-		.outerRadius(outerRadius * 1.15)
-		.innerRadius(outerRadius * 1.15)
+		.outerRadius(outerRadius * 1.2)
+		.innerRadius(outerRadius * 1.2)
 
 	/**
 	 * Compute slice sizes
@@ -141,9 +141,10 @@ function pieChart(options, styles) {
 					.style('font-family', 'Raleway, sans-serif')
 					.style('font-size', '11px')
 					.style('font-weight', '700')
+					// .attr('fill', '#686868')
 					.attr('dy', (d) => {
 
-						if (d.endAngle > 11.5/6 * Math.PI) {
+						if (d.endAngle > 11.5/6 * Math.PI || d.endAngle < 4/6 * Math.PI) {
 							return -15 * (d.data.label.length - 1 - lineIndex) + ''
 						} else {
 							return 15 * lineIndex + ''

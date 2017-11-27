@@ -80,7 +80,8 @@ let RISCOS = [
 				},
 				{
 					label: [
-						'Condições socioeconômicas',
+						'Condições',
+						'socioeconômicas',
 						'flutuantes',
 					],
 					value: 19,

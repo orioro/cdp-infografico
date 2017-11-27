@@ -84,8 +84,9 @@ let RISCOS = [
 				},
 				{
 					label: [
-						'Acesso inadequado à água,',
-						'saneamento e higiene',
+						'Acesso inadequado',
+						'à água, saneamento',
+						'e higiene',
 					],
 					value: 2,
 				},

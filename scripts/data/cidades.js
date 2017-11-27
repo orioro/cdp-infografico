@@ -1,57 +1,86 @@
 let RISCOS_CIDADES = [
 	{
 		name: 'riscos-secas',
-		type: 'percentage',
+		type: 'pie',
 		data: {
-			percentage: 9,
-			text: [
-				'Reportaram riscos relacionados à',
-				'Secas',
-			]
+			total: 100,
+			slices: [
+				{
+					value: 9,
+					label: [
+						// 'Reportaram riscos',
+						// 'relacionados à',
+						'Secas',
+					]
+				}
+			],
 		},
 	},
 	{
 		name: 'riscos-aumento-da-temperatura',
-		type: 'percentage',
+		type: 'pie',
 		data: {
-			percentage: 14,
-			text: [
-				'Reportaram riscos relacionados à',
-				'Aumento da temperatura e ondas de calor',
-			]
+			total: 100,
+			slices: [
+				{
+					value: 14,
+					label: [
+						// 'Reportaram riscos relacionados à',
+						'Aumento da temperatura',
+						'e ondas de calor',
+					]
+				}
+			],
 		},
 	},
 	{
 		name: 'riscos-enchentes',
-		type: 'percentage',
+		type: 'pie',
 		data: {
-			percentage: 18,
-			text: [
-				'Reportaram riscos relacionados à',
-				'Enchentes',
-			]
+			total: 100,
+			slices: [
+				{
+					value: 18,
+					label: [
+						// 'Reportaram riscos relacionados à',
+						'Enchentes',
+					]
+				}
+			],
 		},
 	},
 	{
 		name: 'riscos-tempestades-intensas',
-		type: 'percentage',
+		type: 'pie',
 		data: {
-			percentage: 10,
-			text: [
-				'Reportaram riscos relacionados à',
-				'Chuvas e tempestades intensas',
-			]
+			total: 100,
+			slices: [
+				{
+					value: 10,
+					label: [
+						// 'Reportaram riscos relacionados à',
+						'Chuvas e tempestades',
+						'intensas',
+					]
+				}
+			],
 		},
 	},
 	{
 		name: 'riscos-doencas',
-		type: 'percentage',
+		type: 'pie',
 		data: {
-			percentage: 13,
-			text: [
-				'Reportaram riscos relacionados à',
-				'Doenças (insetos, vetores, vírus, água e ar',
-			]
+			total: 100,
+			slices: [
+				{
+					value: 13,
+					label: [
+						// 'Reportaram riscos relacionados à',
+						'Doenças',
+						// '(insetos, vetores, vírus, água e ar',
+					]
+				}
+			],
 		},
 	},
 
@@ -95,46 +124,66 @@ let RISCOS_CIDADES = [
 let OPORTUNIDADES_CIDADES = [
 	{
 		name: 'oportunidades-atencao-a-questoes-ambientais',
-		type: 'percentage',
+		type: 'pie',
 		data: {
-			percentage: 27,
-			text: [
-				'Reportaram oportunidades relacionadas à',
-				'Atenção crescente a preocupações ambientais',
-			]
+			total: 100,
+			slices: [
+				{
+					value: 27,
+					label: [
+						'Reportaram oportunidades relacionadas à',
+						'Atenção crescente a preocupações ambientais',
+					]
+				}
+			],
 		},
 	},
 	{
 		name: 'oportunidades-novos-negocios',
-		type: 'percentage',
+		type: 'pie',
 		data: {
-			percentage: 25,
-			text: [
-				'Reportaram oportunidades relacionadas à',
-				'Desenvolvimento de novos negócios',
-			]
+			total: 100,
+			slices: [
+				{
+					value: 25,
+					label: [
+						'Reportaram oportunidades relacionadas à',
+						'Desenvolvimento de novos negócios',
+					]
+				}
+			],
 		},
 	},
 	{
 		name: 'oportunidades-novos-negocios',
-		type: 'percentage',
+		type: 'pie',
 		data: {
-			percentage: 16,
-			text: [
-				'Reportaram oportunidades relacionadas à',
-				'Aumento do investimento em infraestrutura',
-			]
+			total: 100,
+			slices: [
+				{
+					value: 16,
+					label: [
+						'Reportaram oportunidades relacionadas à',
+						'Aumento do investimento em infraestrutura',
+					]
+				}
+			],
 		},
 	},
 	{
 		name: 'oportunidades-novos-negocios',
-		type: 'percentage',
+		type: 'pie',
 		data: {
-			percentage: 14,
-			text: [
-				'Reportaram oportunidades relacionadas à',
-				'Opções adicionais de financiamento',
-			]
+			total: 100,
+			slices: [
+				{
+					value: 14,
+					label: [
+						'Reportaram oportunidades relacionadas à',
+						'Opções adicionais de financiamento',
+					]
+				}
+			],
 		},
 	},
 ]
