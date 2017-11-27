@@ -67,7 +67,7 @@ const PIN_SETS = [
 		      },
 		      {
 		      	title: 'Exemplos',
-		      	body: 'A cidade de SP reporta que a Seca impactou no numero de turistas na Av Paulista no domingo'
+		      	body: 'O Arquipélago de <strong>San Andrés</strong> na colômbia menciona que a seca traz como consequência a  alta probabilidade de ocorrência de incêndios florestais, conflitos sociais por recursos hídricos, danos à saúde humana'
 		      }
 		    ]
 		  },

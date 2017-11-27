@@ -2,8 +2,8 @@ const path = require('path')
 const fs = require('fs')
 
 const CHART_SPECS = require('./data')
-const CHARTS_DIR = path.join(__dirname, '../src/resources/graficos')
-// const CHARTS_DIR = path.join(__dirname, 'output')
+// const CHARTS_DIR = path.join(__dirname, '../src/resources/graficos')
+const CHARTS_DIR = path.join(__dirname, 'output')
 
 const CHART_FNS = {
 	'pie': require('./chart-types/pie'),

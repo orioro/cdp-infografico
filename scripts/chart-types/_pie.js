@@ -39,19 +39,14 @@ function pieChart(options, styles) {
 		styles: '@import url("https://fonts.googleapis.com/css?family=Raleway:700");',
 	})
 
-	// let width = 400
-	// let height = 300
-	// let fontSize = '11px'
-
-	let fontSize = '33px'
-	let outerRadius = 180
-	let innerRadius = outerRadius * 2/5
-	
-	let width = 1200
-	let height = 900
-	
+	let width = 400
+	let height = 300
 
 	let chartColorSet = COLOR_SETS[options.colorSet] || COLOR_SETS.blue
+
+	// leave some space for the labels and stuff
+	let outerRadius = 60
+	let innerRadius = outerRadius * 2/5
 
 	let svg = d3n.createSVG()
 		.attr('width', width)
@@ -144,15 +139,15 @@ function pieChart(options, styles) {
 					.append('text')
 					.text(lineText)
 					.style('font-family', 'Raleway, sans-serif')
-					.style('font-size', fontSize)
+					.style('font-size', '11px')
 					.style('font-weight', '700')
 					// .attr('fill', '#686868')
 					.attr('dy', (d) => {
 
 						if (d.endAngle > 11.5/6 * Math.PI || d.endAngle < 4/6 * Math.PI) {
-							return -35 * (d.data.label.length - 1 - lineIndex) + ''
+							return -15 * (d.data.label.length - 1 - lineIndex) + ''
 						} else {
-							return 35 * lineIndex + ''
+							return 15 * lineIndex + ''
 						}
 					})
 					.attr('text-anchor', () => {
