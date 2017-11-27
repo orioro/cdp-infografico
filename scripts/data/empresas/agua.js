@@ -6,19 +6,31 @@ let RISCOS = [
 			total: 195,
 			slices: [
 				{
-					label: 'Mudanças climáticas',
+					label: [
+						'Mudanças',
+						'climáticas'
+					],
 					value: 21,
 				},
 				{
-					label: 'Qualidade da água em declínio',
+					label: [
+						'Qualidade da água',
+						'em declínio',
+					],
 					value: 21,
 				},
 				{
-					label: 'Maior estresse hídrico',
+					label: [
+						'Maior estresse',
+						'hídrico',
+					],
 					value: 23,
 				},
 				{
-					label: 'Maior escassez de água',
+					label: [
+						'Maior escassez',
+						'de água',
+					],
 					value: 49,
 				},
 			],
@@ -31,15 +43,27 @@ let RISCOS = [
 			total: 87,
 			slices: [
 				{
-					label: 'Maior dificuldade na obtenção de licenças de captação/operação',
+					label: [
+						'Maior dificuldade',
+						'na obtenção de',
+						'licenças de captação',
+						'e operação',
+					],
 					value: 11,
 				},
 				{
-					label: 'Aumento no preço da água',
+					label: [
+						'Aumento no',
+						'preço da água',
+					],
 					value: 17,
 				},
 				{
-					label: 'Regulamentação da qualidade/volume de lançamentos, levando ao aumento dos custos de conformidade',
+					label: [
+						'Regulamentação da',
+						'qualidade/volume de',
+						'lançamentos, levando ao aumento dos custos de conformidade',
+					],
 					value: 20,
 				},
 			],
@@ -52,19 +76,31 @@ let RISCOS = [
 			total: 15,
 			slices: [
 				{
-					label: 'Valores culturais e religiosos',
+					label: [
+						'Valores culturais',
+						'e religiosos',
+					],
 					value: 1,
 				},
 				{
-					label: 'Acesso inadequado à água, saneamento e higiene',
+					label: [
+						'Acesso inadequado à água,',
+						'saneamento e higiene',
+					],
 					value: 2,
 				},
 				{
-					label: 'Oposição da comunidade',
+					label: [
+						'Oposição da',
+						'comunidade',
+					],
 					value: 5,
 				},
 				{
-					label: 'Cobertura negativa da mídia',
+					label: [
+						'Cobertura negativa',
+						'da mídia',
+					],
 					value: 7,
 				},
 			],
@@ -80,15 +116,26 @@ let RISCOS_IMPACTOS = [
 			total: 195,
 			slices: [
 				{
-					label: 'Interrupção no abastecimento de água',
+					label: [
+						'Interrupção no',
+						'abastecimento de água',
+					],
 					value: 9,
 				},
 				{
-					label: 'Interrupção da produção/fábrica levando à redução nas quantidades produzidas',
+					label: [
+						'Interrupção da produção',
+						'das fábricas levando à',
+						'redução nas quantidades',
+						'produzidas',
+					],
 					value: 49,
 				},
 				{
-					label: 'Custos operacionais mais elevados',
+					label: [
+						'Custos operacionais',
+						'mais elevados',
+					],
 					value: 99,
 				},
 			],
@@ -101,15 +148,26 @@ let RISCOS_IMPACTOS = [
 			total: 87,
 			slices: [
 				{
-					label: 'Restrição ao crescimento',
+					label: [
+						'Restrição ao',
+						'crescimento',
+					],
 					value: 14,
 				},
 				{
-					label: 'Interrupção da produção/fábrica levando à redução nas quantidades produzidas',
+					label: [
+						'Interrupção da produção',
+						'das fábricas levando à',
+						'redução nas quantidades',
+						'produzidas',
+					],
 					value: 19,
 				},
 				{
-					label: 'Custos operacionais mais elevados',
+					label: [
+						'Custos operacionais',
+						'mais elevados',
+					],
 					value: 38,
 				},
 			],
@@ -126,11 +184,19 @@ let RISCOS_IMPACTOS = [
 					value: 2,
 				},
 				{
-					label: 'Interrupção da produção/fábrica levando à redução nas quantidades produzidas',
+					label: [
+						'Interrupção da produção',
+						'das fábricas levando à',
+						'redução nas quantidades',
+						'produzidas',
+					],
 					value: 4,
 				},
 				{
-					label: 'Restrição ao crescimento',
+					label: [
+						'Restrição ao',
+						'crescimento',
+					],
 					value: 5,
 				},
 			],
@@ -147,11 +213,17 @@ let OPORTUNIDADES = [
 			total: 160,
 			slices: [
 				{
-					label: 'Melhoria na relação com a comunidade',
+					label: [
+						'Melhoria na relação',
+						'com a comunidade',
+					],
 					value: 10,
 				},
 				{
-					label: 'Adaptação às Mudanças Climáticas',
+					label: [
+						'Adaptação às',
+						'Mudanças Climáticas'
+					],
 					value: 10,
 				},
 				{
@@ -159,11 +231,17 @@ let OPORTUNIDADES = [
 					value: 12,
 				},
 				{
-					label: 'Aumento no valor da marca',
+					label: [
+						'Aumento no',
+						'valor da marca',
+					],
 					value: 15,
 				},
 				{
-					label: 'Melhor eficiência hídrica',
+					label: [
+						'Melhor eficiência',
+						'hídrica',
+					],
 					value: 19,
 				},
 				{
@@ -175,3 +253,5 @@ let OPORTUNIDADES = [
 	},
 
 ]
+
+module.exports = RISCOS.concat(RISCOS_IMPACTOS).concat(OPORTUNIDADES)

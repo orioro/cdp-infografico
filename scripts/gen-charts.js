@@ -1,86 +1,50 @@
-const D3Node = require('d3-node')
-const d3 = D3Node.d3
+const path = require('path')
+const fs = require('fs')
 
+const CHART_SPECS = require('./data')
+const pieChart = require('./chart-types/pie')
 
-function pieChart(options, styles) {
-	let d3n = new D3Node({
-		styles: styles,
-	})
+const CHARTS_DIR = path.join(__dirname, 'output')
 
-	let size = options.size
+CHART_SPECS.forEach((spec) => {
+	// spec.size = 500
 
-	// leave some space for the labels and stuff
-	let outerRadius = (size - 50) / 2
-	let innerRadius = options.innerRadius || outerRadius * 2/5
+	if (spec.type === 'pie') {
+		let svgStr = pieChart(spec)
 
-	let svg = d3n.createSVG()
-		.attr('width', size)
-		.attr('height', size)
+		console.log(`chart ${spec.name}`)
 
-	let chartG = svg.append('g')
-		.attr('transform', 'translate(' + size / 2 + ',' + size / 2 + ')')
+		fs.writeFileSync(path.join(CHARTS_DIR, spec.name + '.svg'), svgStr, 'utf8')
+	}
+})
 
-	/**
-	 * The pie data generator
-	 */
-	let pie = d3.pie()
-		.sort(null)
-		.value(d => d.value )
-
-	let chartArcPathGenerator = d3.arc()
-		.outerRadius(outerRadius)
-		.innerRadius(innerRadius)
-
-	let cartLabelGenerator = d3.arc()
-		.outerRadius(outerRadius)
-		.innerRadius(outerRadius)
-
-	let arc = chartG.selectAll('.arc')
-		.data(pie(options.data))
-		.enter()
-			.append('g')
-			.attr('class', 'arc')
-
-	arc.append('path')
-		.attr('d', chartArcPathGenerator)
-		.attr('fill', d => d.data.color)
-
-	arc.append('text')
-		.attr('transform', d => `translate(${cartLabelGenerator.centroid(d)})`)
-		.attr('dy', '0.35em')
-		.text(d => d.data.label)
-		.attr('text-anchor', d => {
-	    // are we past the center?
-	    return (d.endAngle + d.startAngle)/2 > Math.PI ?
-	      'end' : 'start';
-		})
-
-	return d3n.svgString()
-}
-
-
-	console.log(pieChart({
-		size: 120,
-		data: [
-			{
-				label: 'Label 1',
-				color: 'red',
-				value: 50,
-			},
-			{
-				label: 'Label 2',
-				color: 'green',
-				value: 60,
-			},
-			{
-				label: 'Label 3',
-				color: 'blue',
-				value: 77,
-			},
-			{
-				label: 'Label 4',
-				color: 'cyan',
-				value: 14,
-			}
-		]
-	}))
+// console.log(pieChart({
+// 	name: 'riscos-impactos',
+// 	type: 'pie',
+// 	size: 400,
+// 	data: {
+// 		total: 100,
+// 		slices: [
+// 			{
+// 				label: 'Agricultura/agropecuária',
+// 				color: 'red',
+// 				value: 20,
+// 			},
+// 			{
+// 				label: 'Disponibilidade de agua para produção/serviços',
+// 				color: 'pink',
+// 				value: 17,
+// 			},
+// 			{
+// 				label: 'Transporte matéria prima/produtos e serviços',
+// 				color: 'magenta',
+// 				value: 14,
+// 			},
+// 			{
+// 				label: 'Turismo',
+// 				color: 'green',
+// 				value: 11,
+// 			},
+// 		],
+// 	}
+// }))

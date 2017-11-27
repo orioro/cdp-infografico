@@ -67,12 +67,18 @@ let RISCOS_CIDADES = [
 					value: 20,
 				},
 				{
-					label: 'Disponibilidade de agua para produção/serviços',
+					label: [
+						'Disponibilidade de água',
+						'para produção/serviços',
+					],
 					color: 'pink',
 					value: 17,
 				},
 				{
-					label: 'Transporte matéria prima/produtos e serviços',
+					label: [
+						'Transporte matéria prima /',
+						'produtos e serviços',
+					],
 					color: 'magenta',
 					value: 14,
 				},
@@ -137,6 +143,7 @@ let CIDADES = RISCOS_CIDADES.concat(OPORTUNIDADES_CIDADES)
 
 CIDADES.forEach(chart => {
 	chart.name = 'cidades-' + chart.name
+	chart.colorSet = 'violeta'
 })
 
 module.exports = CIDADES
