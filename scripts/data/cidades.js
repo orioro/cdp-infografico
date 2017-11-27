@@ -1,6 +1,6 @@
 let RISCOS_CIDADES = [
 	{
-		name: 'riscos-cidades-secas',
+		name: 'riscos-secas',
 		type: 'percentage',
 		data: {
 			percentage: 9,
@@ -11,7 +11,7 @@ let RISCOS_CIDADES = [
 		},
 	},
 	{
-		name: 'riscos-cidades-aumento-da-temperatura',
+		name: 'riscos-aumento-da-temperatura',
 		type: 'percentage',
 		data: {
 			percentage: 14,
@@ -22,7 +22,7 @@ let RISCOS_CIDADES = [
 		},
 	},
 	{
-		name: 'riscos-cidades-enchentes',
+		name: 'riscos-enchentes',
 		type: 'percentage',
 		data: {
 			percentage: 18,
@@ -33,7 +33,7 @@ let RISCOS_CIDADES = [
 		},
 	},
 	{
-		name: 'riscos-cidades-tempestades-intensas',
+		name: 'riscos-tempestades-intensas',
 		type: 'percentage',
 		data: {
 			percentage: 10,
@@ -44,7 +44,7 @@ let RISCOS_CIDADES = [
 		},
 	},
 	{
-		name: 'riscos-cidades-doencas',
+		name: 'riscos-doencas',
 		type: 'percentage',
 		data: {
 			percentage: 13,
@@ -56,7 +56,7 @@ let RISCOS_CIDADES = [
 	},
 
 	{
-		name: 'riscos-cidades-impactos',
+		name: 'riscos-impactos',
 		type: 'pie',
 		data: {
 			total: 100,
@@ -88,7 +88,7 @@ let RISCOS_CIDADES = [
 
 let OPORTUNIDADES_CIDADES = [
 	{
-		name: 'oportunidades-cidades-atencao-a-questoes-ambientais',
+		name: 'oportunidades-atencao-a-questoes-ambientais',
 		type: 'percentage',
 		data: {
 			percentage: 27,
@@ -99,7 +99,7 @@ let OPORTUNIDADES_CIDADES = [
 		},
 	},
 	{
-		name: 'oportunidades-cidades-novos-negocios',
+		name: 'oportunidades-novos-negocios',
 		type: 'percentage',
 		data: {
 			percentage: 25,
@@ -110,7 +110,7 @@ let OPORTUNIDADES_CIDADES = [
 		},
 	},
 	{
-		name: 'oportunidades-cidades-novos-negocios',
+		name: 'oportunidades-novos-negocios',
 		type: 'percentage',
 		data: {
 			percentage: 16,
@@ -121,7 +121,7 @@ let OPORTUNIDADES_CIDADES = [
 		},
 	},
 	{
-		name: 'oportunidades-cidades-novos-negocios',
+		name: 'oportunidades-novos-negocios',
 		type: 'percentage',
 		data: {
 			percentage: 14,
@@ -133,4 +133,10 @@ let OPORTUNIDADES_CIDADES = [
 	},
 ]
 
-module.exports = RISCOS_CIDADES.concat(OPORTUNIDADES_CIDADES)
+let CIDADES = RISCOS_CIDADES.concat(OPORTUNIDADES_CIDADES)
+
+CIDADES.forEach(chart => {
+	chart.name = 'cidades-' + chart.name
+})
+
+module.exports = CIDADES

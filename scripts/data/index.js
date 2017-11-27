@@ -1,3 +1,4 @@
 let CIDADES = require('./cidades')
+let EMPRESAS = require('./empresas')
 
-module.exports = CIDADES
+module.exports = CIDADES.concat(EMPRESAS)
