@@ -30,10 +30,44 @@
 	width: 500px;
 }
 
+.chart-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+.chart {
+	position: relative;
+}
+
+.chart .chart-center {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.chart .chart-center p {
+	text-align: center;
+}
+
+
+
+
 /*#metas-gee-cidades .chart {
 	width: 200px;
 }*/
 
-strong {
+#slides #metas-gee-cidades strong,
+#slides #metas-gee-cidades-2 strong,
+#slides #metas-gee-empresas strong,
+#metas-desmatamento-empresas strong,
+#metas-agua-empresas strong {
 	color: #f4bd37;
 }
