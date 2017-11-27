@@ -100,6 +100,23 @@ strong {
 
 #slides > nav > button {
 	transition: opacity .4s ease;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	padding: 0;
+	background-color: transparent;
+	border-radius: 0;
+  margin: 10px 4px;
+}
+
+#slides > nav > button.previous {
+	border-width: 0 8px 12px 8px;
+border-color: transparent transparent #ffffff transparent;
+}
+
+#slides > nav > button.next {
+	border-width: 12px 8px 0 8px;
+	border-color: #ffffff transparent transparent transparent;
 }
 
 #slides > nav.at-first-slide > button.previous {
@@ -119,7 +136,7 @@ strong {
 }
 
 #slides > nav > ul > li {
-	padding: 3px;
+	padding: 4px;
 }
 
 #slides > nav > ul > li > a {
@@ -129,7 +146,7 @@ strong {
 
 	border-radius: 50%;
 	background-color: white;
-	opacity: 0.5;
+	opacity: 0.4;
 
 	transition: opacity .4s ease;
 	cursor: pointer;
