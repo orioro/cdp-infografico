@@ -1,5 +1,7 @@
 @import './intro.css';
-@import './metas-gee-cidades.css';
+@import './metas-gee.css';
+@import './participe.css';
+@import './sobre-o-cdp.css';
 
 #slides {
 	position: fixed;
@@ -24,7 +26,7 @@
 	transition-property: all;
 	transition-timing-function: ease-in-out;
 	height: 100%;
-	
+
 	transform: translateY(0%);
 	opacity: 0;
 }
@@ -70,11 +72,19 @@
 
 }
 
-#slides > section.slide .slide-contents p {
-	font-size: 20px;
-	margin-bottom: 20px;
+#slides > section.slide .slide-contents p,
+#slides > section.slide .slide-container p {
+	/*font-size: 20px;
+	margin-bottom: 20px;*/
+	width: 80%;
+	max-width: 900px;
+	font-size: 16px;
+	margin-bottom: 24px;
 }
 
+strong {
+	font-weight: 700;
+}
 
 /**
  * Slides navigation

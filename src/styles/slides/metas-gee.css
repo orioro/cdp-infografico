@@ -1,0 +1,39 @@
+#metas-gee-cidades {
+	/*height: 200vh;*/
+}
+
+#metas-gee-cidades .text-content,
+#metas-gee-cidades-2 .text-content,
+#metas-gee-empresas .text-content,
+#metas-desmatamento-empresas .text-content,
+#metas-agua-empresas .text-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+
+#slides #metas-gee-cidades .text-content .left,
+#slides #metas-gee-cidades-2 .text-content .left,
+#slides #metas-gee-empresas .text-content .left,
+#metas-desmatamento-empresas .text-content .left,
+#metas-agua-empresas .text-content .left {
+	width: 300px;
+	margin-right: 40px;
+}
+
+#slides #metas-gee-cidades .text-content .right,
+#slides #metas-gee-cidades-2 .text-content .right,
+#slides #metas-gee-empresas .text-content .right,
+#metas-desmatamento-empresas .text-content .right,
+#metas-agua-empresas .text-content .right {
+	width: 500px;
+}
+
+/*#metas-gee-cidades .chart {
+	width: 200px;
+}*/
+
+strong {
+	color: #f4bd37;
+}
