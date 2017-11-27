@@ -1,0 +1,10 @@
+#sobre-o-cdp ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#sobre-o-cdp ul li {
+  width: 22%;
+}

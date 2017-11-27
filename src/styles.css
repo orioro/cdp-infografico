@@ -23,10 +23,12 @@
 	--z-index-mountains: 2;
 	--z-index-city: 3;
 	--z-index-river: 4;
+	--z-index-logo: 10;
 
 	--bounce-transition-security-padding-top: 50px;
 
 	--color-cdp: rgb(180, 46, 52);
+	--color-cdp-2: rgb(209, 18, 66);
 	--color-climate-change: rgb(180, 46, 52);
 }
 
@@ -35,4 +37,13 @@ body {
 	line-height: 1.5;
 
 	overflow: hidden;
+}
+
+#logo-cdp {
+  display: block;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  width: 100px;
+  z-index: var(--z-index-logo);
 }
