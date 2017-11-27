@@ -26,7 +26,7 @@ let LARGE_PIES = [
 					// com inventario e com meta
 					value: 8,
 					label: [],
-					color: 'rgb(209, 18, 66)',
+					color: '#EC8413',
 				},
 				{
 					// com inventario, mas sem meta
@@ -85,5 +85,3 @@ let LARGE_PIES = [
 ]
 
 module.exports = CIDADES.concat(EMPRESAS).concat(LARGE_PIES)
-
-
