@@ -1,0 +1,18 @@
+#riscos-cidades #cidades-impactos {
+  width: 500px;
+}
+
+#riscos-cidades #cidades-impactos h3 {
+  font-size: 16px;
+  color: #f4bd37;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+#riscos-cidades #cidades-impactos p {
+  margin-bottom: 16px;
+}
+
+#riscos-cidades #cidades-impactos img {
+  width: 250px;
+}

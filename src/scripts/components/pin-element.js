@@ -19,6 +19,9 @@ module.exports = function createPinElement(pin, options) {
 			{
 				tagName: 'div',
 				innerHTML: content.body,
+				attributes: {
+					class: 'pin-body',
+				},
 			}
 		])
 	}, [])
