@@ -131,8 +131,9 @@ let OPORTUNIDADES_CIDADES = [
 				{
 					value: 27,
 					label: [
-						'Reportaram oportunidades relacionadas à',
-						'Atenção crescente a preocupações ambientais',
+						// 'Reportaram oportunidades relacionadas à',
+						'Atenção crescente',
+						'a preocupações ambientais',
 					]
 				}
 			],
@@ -147,8 +148,9 @@ let OPORTUNIDADES_CIDADES = [
 				{
 					value: 25,
 					label: [
-						'Reportaram oportunidades relacionadas à',
-						'Desenvolvimento de novos negócios',
+						// 'Reportaram oportunidades relacionadas à',
+						'Desenvolvimento de',
+						'novos negócios',
 					]
 				}
 			],
@@ -163,8 +165,9 @@ let OPORTUNIDADES_CIDADES = [
 				{
 					value: 16,
 					label: [
-						'Reportaram oportunidades relacionadas à',
-						'Aumento do investimento em infraestrutura',
+						// 'Reportaram oportunidades relacionadas à',
+						'Aumento do investimento',
+						'em infraestrutura',
 					]
 				}
 			],
@@ -179,8 +182,9 @@ let OPORTUNIDADES_CIDADES = [
 				{
 					value: 14,
 					label: [
-						'Reportaram oportunidades relacionadas à',
-						'Opções adicionais de financiamento',
+						// 'Reportaram oportunidades relacionadas à',
+						'Opções adicionais',
+						'de financiamento',
 					]
 				}
 			],

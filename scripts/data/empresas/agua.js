@@ -62,7 +62,9 @@ let RISCOS = [
 					label: [
 						'Regulamentação da',
 						'qualidade/volume de',
-						'lançamentos, levando ao aumento dos custos de conformidade',
+						'lançamentos, levando',
+						'ao aumento dos custos',
+						'de conformidade',
 					],
 					value: 20,
 				},

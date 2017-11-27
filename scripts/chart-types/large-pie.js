@@ -1,9 +1,9 @@
 const D3Node = require('d3-node')
 const d3 = D3Node.d3
 
-function largePieChart(options, styles) {
+function largePieChart(options, styles, writeTo) {
 	let d3n = new D3Node({
-		styles: '@import url("https://fonts.googleapis.com/css?family=Raleway:700");',
+		// styles: '@import url("https://fonts.googleapis.com/css?family=Raleway:700");',
 	})
 
 	let width = 300

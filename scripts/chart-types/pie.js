@@ -1,3 +1,6 @@
+const fs = require('fs')
+const path = require('path')
+
 const D3Node = require('d3-node')
 const d3 = D3Node.d3
 
@@ -36,7 +39,8 @@ const COLOR_SETS = {
 
 function pieChart(options, styles) {
 	let d3n = new D3Node({
-		styles: '@import url("https://fonts.googleapis.com/css?family=Raleway:700");',
+		// styles: '@import url("https://fonts.googleapis.com/css?family=Raleway:700");',
+		// styles: fs.readFileSync(path.join(__dirname, '../styles.css'), 'utf8'),
 	})
 
 	// let width = 400
@@ -47,8 +51,8 @@ function pieChart(options, styles) {
 	let outerRadius = 180
 	let innerRadius = outerRadius * 2/5
 	
-	let width = 1200
-	let height = 900
+	let width = 1500
+	let height = 1500
 	
 
 	let chartColorSet = COLOR_SETS[options.colorSet] || COLOR_SETS.blue
@@ -145,7 +149,7 @@ function pieChart(options, styles) {
 					.text(lineText)
 					.style('font-family', 'Raleway, sans-serif')
 					.style('font-size', fontSize)
-					.style('font-weight', '700')
+					.style('font-weight', 'bold')
 					// .attr('fill', '#686868')
 					.attr('dy', (d) => {
 

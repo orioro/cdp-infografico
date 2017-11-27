@@ -1,0 +1,1 @@
+depends on imagemagick and inkscape to conver svgs into pngs
