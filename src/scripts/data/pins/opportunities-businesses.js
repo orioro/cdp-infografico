@@ -106,5 +106,79 @@ module.exports = {
 	      },
 	    ]
 	  },
+
+	  /**
+	   * Florestas
+	   */
+	  {
+	  	blockName: 'cidade-alegre/armazem',
+	  	src: 'resources/animacao/pins/pin-verde.svg',
+	    contents: [
+	      {
+	        body: 'Empresas que responderam nossa pesquisa sobre Florestas reportaram:',
+	      },
+	      {
+	        title: 'Oportunidades na agropecuária:',
+	      	body: [
+	      		'33.30% Maior eficiência',
+	      		'33.30% Aumento no valor da marca',
+	      		'33.30% Novos produtos/serviços ou mercados',
+	      	].join('<br>')
+	      },
+	    ]
+	  },
+	  {
+	  	blockName: 'cidade-alegre/plantacao',
+	  	src: 'resources/animacao/pins/pin-verde.svg',
+	    contents: [
+	      {
+	        body: 'Empresas que responderam nossa pesquisa sobre Florestas reportaram:',
+	      },
+	      {
+	        title: 'Oportunidades no setor da soja:',
+	      	body: [
+	      		'40% Novos produtos/serviços ou mercados',
+	      		'40% Maior transparência',
+	      		'40% Novos produtos/serviços ou mercados',
+	      	].join('<br>')
+	      },
+	    ]
+	  },
+	  {
+	  	blockName: 'cidade-alegre/bloco-12-arvore',
+	  	src: 'resources/animacao/pins/pin-verde.svg',
+	    contents: [
+	      {
+	        body: 'Empresas que responderam nossa pesquisa sobre Florestas reportaram:',
+	      },
+	      {
+	        title: 'Oportunidades no setor de recursos madeireiros:',
+	      	body: [
+	      		'28% Aumento no valor da marca',
+	      		'17% Novos produtos/serviços ou mercados',
+	      		'11% Economia de custos',
+	      		'11% Maior transparência',
+	      		'11% Aumento no valor acionário',
+	      		'11% Aumento na capacidade dos mercados de produtos sustentáveis',
+	      	].join('<br>')
+	      },
+	    ]
+	  },
+	  {
+	  	blockName: 'cidade-alegre/bloco-09-arvore',
+	  	src: 'resources/animacao/pins/pin-verde.svg',
+	    contents: [
+	      {
+	        body: 'Empresas que responderam nossa pesquisa sobre Florestas reportaram:',
+	      },
+	      {
+	        title: 'Oportunidades no setor de extração de óleo de palma:',
+	      	body: [
+	      		'50% Maior transparência',
+	      		'50% Novos produtos/serviços ou mercados',
+	      	].join('<br>')
+	      },
+	    ]
+	  },
 	],
 }

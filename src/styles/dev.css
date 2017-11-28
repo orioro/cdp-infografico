@@ -12,5 +12,6 @@
 }
 
 .scenery-container > .scenery-element:hover > .image-container > .dev-block-label {
+	/*display: block;*/
 	display: none;
 }

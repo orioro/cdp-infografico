@@ -159,5 +159,94 @@ module.exports = {
 	      },
 	    ]
 	  },
+
+	  /**
+	   * Florestas
+	   */
+	  {
+	  	blockName: 'cidade-triste/bloco-10-praca',
+	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	styles: {
+	  		left: '25%',
+	  		bottom: '95%',
+	  	},
+	    contents: [
+	      {
+	        body: 'Empresas que responderam nossa pesquisa sobre Florestas reportaram:',
+	      },
+	      {
+	        title: 'Fatores físicos de risco:',
+	        body: [
+	      		'Mudança nos extremos das precipitações e das secas',
+	      		'Incêndios florestais',
+	      	].join('<br>')
+	      },
+	      {
+	      	title: 'Impactos:',
+	      	body: [
+	      		'Custos operacionais mais altos',
+	      		'Interrupções na cadeia de fornecimento',
+	      		'Atrasos nas operações',
+	      		'Danos à propriedade',
+	      	].join('<br>')
+	      },
+	    ]
+	  },
+	  {
+	  	blockName: 'cidade-triste/bloco-03-estatal',
+	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	styles: {
+	  		left: '40%',
+	  		bottom: '85%',
+	  	},
+	    contents: [
+	      {
+	        body: 'Empresas que responderam nossa pesquisa sobre Florestas reportaram:',
+	      },
+	      {
+	        title: 'Fatores regulatórios de risco:',
+	        body: [
+	      		'Normas e padrões de rotulagem de produtos',
+	      		'Acordos voluntários',
+	      		'Regulamentos e normas sobre produtos',
+	      	].join('<br>')
+	      },
+	      {
+	      	title: 'Impactos:',
+	      	body: [
+	      		'Interrupções no transporte',
+	      		'Fechamento de operações',
+	      		'Custos operacionais mais altos',
+	      		'Interrupções na cadeia de fornecimento',
+	      		'Interrupções no transporte',
+	      	].join('<br>')
+	      },
+	    ]
+	  },
+	  {
+	  	blockName: 'cidade-triste/bloco-13-residencial',
+	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	styles: {},
+	    contents: [
+	      {
+	        body: 'Empresas que responderam nossa pesquisa sobre Florestas reportaram:',
+	      },
+	      {
+	        title: 'Fatores reputacionais de risco:',
+	        body: [
+	      		'Cobertura midiática negativa',
+	      		'Mudanças no comportamento do consumidor / demanda',
+	      	].join('<br>')
+	      },
+	      {
+	      	title: 'Impactos:',
+	      	body: [
+	      		'Danos à marca',
+	      		'Redução no valor acionário',
+	      	].join('<br>')
+	      },
+	    ]
+	  },
+	  
 	],
 }
