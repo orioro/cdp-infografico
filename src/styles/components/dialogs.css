@@ -1,0 +1,84 @@
+.dialog-contents {
+	display: none;
+}
+
+#cdp-dialog {
+	position: fixed;
+	z-index: var(--z-index-cdp-dialog);
+
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	display: none;
+}
+
+#cdp-dialog.active {
+	display: block;
+}
+
+#cdp-dialog > .dialog-backdrop {
+	position: absolute;
+	z-index: 1;
+
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	background-color: black;
+	opacity: 0.6;
+
+	cursor: pointer;
+}
+
+#cdp-dialog > .dialog {
+	position: absolute;
+	z-index: 2;
+
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#cdp-dialog > .dialog > .dialog-close {
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	cursor: pointer;
+
+	width: 30px;
+	height: 30px;
+
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+#cdp-dialog > .dialog > .dialog-close > img {
+	width: 100%;
+}
+
+#cdp-dialog > .dialog > .dialog-contents-wrapper {
+	width: 90vw;
+	height: 90vh;
+
+	background-color: white;
+
+	overflow: auto;
+
+	padding: 30px;
+	box-sizing: border-box;
+}
+
+#cdp-dialog > .dialog > .dialog-contents-wrapper > iframe {
+	height: 100%;
+	width: 100%;
+}

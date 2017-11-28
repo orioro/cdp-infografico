@@ -1,11 +1,11 @@
 @import './styles/reset.css';
 @import './styles/components/img.css';
 @import './styles/components/tooltips.css';
+@import './styles/components/scenery-container.css';
+@import './styles/components/dialogs.css';
 
 @import './styles/modules/animations.css';
 @import './styles/modules/delays.css';
-
-@import './styles/components/scenery-container.css';
 
 @import './styles/scenery/scenery.css';
 
@@ -19,11 +19,12 @@
 
 :root {
 	--z-index-sky: 0;
-	--z-index-content: 9;
-	--z-index-mountains: 2;
+	--z-index-horizon: 1;
+	--z-index-content: 2;
 	--z-index-city: 3;
 	--z-index-river: 4;
 	--z-index-logo: 10;
+	--z-index-cdp-dialog: 20;
 
 	--bounce-transition-security-padding-top: 50px;
 

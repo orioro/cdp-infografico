@@ -8,8 +8,9 @@ let RISCOS_CIDADES = [
 				{
 					value: 9,
 					label: [
-						// 'Reportaram riscos',
-						// 'relacionados à',
+						'das cidades',
+						'reportaram riscos',
+						'relacionados à',
 						'Secas',
 					]
 				}
@@ -25,7 +26,9 @@ let RISCOS_CIDADES = [
 				{
 					value: 14,
 					label: [
-						// 'Reportaram riscos relacionados à',
+						'das cidades',
+						'reportaram riscos',
+						'relacionados à',
 						'Aumento da temperatura',
 						'e ondas de calor',
 					]
@@ -42,7 +45,9 @@ let RISCOS_CIDADES = [
 				{
 					value: 18,
 					label: [
-						// 'Reportaram riscos relacionados à',
+						'das cidades',
+						'reportaram riscos',
+						'relacionados à',
 						'Enchentes',
 					]
 				}
@@ -58,7 +63,9 @@ let RISCOS_CIDADES = [
 				{
 					value: 10,
 					label: [
-						// 'Reportaram riscos relacionados à',
+						'das cidades',
+						'reportaram riscos',
+						'relacionados à',
 						'Chuvas e tempestades',
 						'intensas',
 					]
@@ -97,6 +104,9 @@ let RISCOS_CIDADES = [
 				},
 				{
 					label: [
+						'das cidades',
+						'reportaram riscos',
+						'relacionados à',
 						'Disponibilidade de água',
 						'para produção/serviços',
 					],
@@ -121,6 +131,47 @@ let RISCOS_CIDADES = [
 	}
 ]
 
+let IMPACTOS_CIDADES = [
+	{
+		name: 'riscos-impactos',
+		type: 'pie',
+		data: {
+			total: 100,
+			slices: [
+				{
+					value: 20,
+					label: [
+						'Agricultura /',
+						'Agropecuária',
+					]
+				},
+				{
+					value: 17,
+					label: [
+						'Disponibilidade de',
+						'água para',
+						'produção / serviços'
+					],
+				},
+				{
+					value: 14,
+					label: [
+						'Transporte matéria',
+						'prima / produtos',
+						'e serviços',
+					]
+				},
+				{
+					value: 11,
+					label: [
+						'Turismo'
+					],
+				}
+			],
+		},
+	},
+]
+
 let OPORTUNIDADES_CIDADES = [
 	{
 		name: 'oportunidades-atencao-a-questoes-ambientais',
@@ -131,7 +182,9 @@ let OPORTUNIDADES_CIDADES = [
 				{
 					value: 27,
 					label: [
-						// 'Reportaram oportunidades relacionadas à',
+						'das cidades',
+						'reportaram oportunidades',
+						'relacionadas à',
 						'Atenção crescente',
 						'a preocupações ambientais',
 					]
@@ -148,7 +201,9 @@ let OPORTUNIDADES_CIDADES = [
 				{
 					value: 25,
 					label: [
-						// 'Reportaram oportunidades relacionadas à',
+						'das cidades',
+						'reportaram oportunidades',
+						'relacionadas à',
 						'Desenvolvimento de',
 						'novos negócios',
 					]
@@ -157,7 +212,7 @@ let OPORTUNIDADES_CIDADES = [
 		},
 	},
 	{
-		name: 'oportunidades-novos-negocios',
+		name: 'oportunidades-investimento-em-infraestrutura',
 		type: 'pie',
 		data: {
 			total: 100,
@@ -165,7 +220,9 @@ let OPORTUNIDADES_CIDADES = [
 				{
 					value: 16,
 					label: [
-						// 'Reportaram oportunidades relacionadas à',
+						'das cidades',
+						'reportaram oportunidades',
+						'relacionadas à',
 						'Aumento do investimento',
 						'em infraestrutura',
 					]
@@ -174,7 +231,7 @@ let OPORTUNIDADES_CIDADES = [
 		},
 	},
 	{
-		name: 'oportunidades-novos-negocios',
+		name: 'oportunidades-opcoes-adicionais-de-financiamento',
 		type: 'pie',
 		data: {
 			total: 100,
@@ -182,7 +239,9 @@ let OPORTUNIDADES_CIDADES = [
 				{
 					value: 14,
 					label: [
-						// 'Reportaram oportunidades relacionadas à',
+						'das cidades',
+						'reportaram oportunidades',
+						'relacionadas à',
 						'Opções adicionais',
 						'de financiamento',
 					]
@@ -192,7 +251,7 @@ let OPORTUNIDADES_CIDADES = [
 	},
 ]
 
-let CIDADES = RISCOS_CIDADES.concat(OPORTUNIDADES_CIDADES)
+let CIDADES = RISCOS_CIDADES.concat(IMPACTOS_CIDADES).concat(OPORTUNIDADES_CIDADES)
 
 CIDADES.forEach(chart => {
 	chart.name = 'cidades-' + chart.name

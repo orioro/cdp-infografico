@@ -11,7 +11,7 @@
 	position: absolute;
 	z-index: 100;
 
-	width: 20px;
+	width: 26px;
 	bottom: 102%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50px);
@@ -53,21 +53,30 @@ body[data-active-pin-set="risks-businesses"] .scenery-container > .scenery-eleme
 	transform: translateX(-50%) translateY(var(--bounce-transition-security-padding-top));
 }
 
-body[data-active-pin-set="oportunities-cities"] .scenery-container > .scenery-element > .pin[data-pin-set="oportunities-cities"] {
+body[data-active-pin-set="opportunities-cities"] .scenery-container > .scenery-element > .pin[data-pin-set="opportunities-cities"] {
 	opacity: 1;
 	transform: translateX(-50%) translateY(0);
 	pointer-events: auto;
 }
-body[data-active-pin-set="oportunities-cities"] .scenery-container > .scenery-element.bounce-transition > .pin[data-pin-set="oportunities-cities"] {
+body[data-active-pin-set="opportunities-cities"] .scenery-container > .scenery-element.bounce-transition > .pin[data-pin-set="opportunities-cities"] {
 	transform: translateX(-50%) translateY(var(--bounce-transition-security-padding-top));
 }
 
-body[data-active-pin-set="oportunities-businesses"] .scenery-container > .scenery-element > .pin[data-pin-set="oportunities-businesses"] {
+body[data-active-pin-set="opportunities-businesses"] .scenery-container > .scenery-element > .pin[data-pin-set="opportunities-businesses"] {
 	opacity: 1;
 	transform: translateX(-50%) translateY(0);
 	pointer-events: auto;
 }
-body[data-active-pin-set="oportunities-businesses"] .scenery-container > .scenery-element.bounce-transition > .pin[data-pin-set="oportunities-businesses"] {
+body[data-active-pin-set="opportunities-businesses"] .scenery-container > .scenery-element.bounce-transition > .pin[data-pin-set="opportunities-businesses"] {
+	transform: translateX(-50%) translateY(var(--bounce-transition-security-padding-top));
+}
+
+body[data-active-pin-set="actions"] .scenery-container > .scenery-element > .pin[data-pin-set="actions"] {
+	opacity: 1;
+	transform: translateX(-50%) translateY(0);
+	pointer-events: auto;
+}
+body[data-active-pin-set="actions"] .scenery-container > .scenery-element.bounce-transition > .pin[data-pin-set="actions"] {
 	transform: translateX(-50%) translateY(var(--bounce-transition-security-padding-top));
 }
 

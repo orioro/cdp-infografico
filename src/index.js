@@ -10,5 +10,5 @@ let app = {}
 
 require('./scripts/scenery')(app, options)
 require('./scripts/slides')(app, options)
-require('./scripts/charts')(app, options)
+require('./scripts/dialogs')(app, options)
 require('./scripts/test-controls')(app, options)

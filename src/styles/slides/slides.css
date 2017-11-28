@@ -90,7 +90,7 @@ strong {
 /**
  * Slides navigation
  */
-#slides > nav {
+#slides-nav {
 	position: absolute;
 	z-index: 9999;
 	top: 50%;
@@ -99,7 +99,7 @@ strong {
 	pointer-events: auto;
 }
 
-#slides > nav > button {
+#slides-nav > button {
 	transition: opacity .4s ease;
 	width: 0;
 	height: 0;
@@ -110,37 +110,37 @@ strong {
   margin: 10px 4px;
 }
 
-#slides > nav > button.previous {
+#slides-nav > button.previous {
 	border-width: 0 8px 12px 8px;
 border-color: transparent transparent #ffffff transparent;
 }
 
-#slides > nav > button.next {
+#slides-nav > button.next {
 	border-width: 12px 8px 0 8px;
 	border-color: #ffffff transparent transparent transparent;
 }
 
-#slides > nav.at-first-slide > button.previous {
+#slides-nav.at-first-slide > button.previous {
 	opacity: 0;
 	pointer-events: none;
 }
 
-#slides > nav.at-last-slide > button.next {
+#slides-nav.at-last-slide > button.next {
 	opacity: 0;
 	pointer-events: none;
 }
 
-#slides > nav > ul {
+#slides-nav > ul {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-#slides > nav > ul > li {
+#slides-nav > ul > li {
 	padding: 4px;
 }
 
-#slides > nav > ul > li > a {
+#slides-nav > ul > li > a {
 	display: block;
 	height: 12px;
 	width: 12px;
@@ -153,7 +153,7 @@ border-color: transparent transparent #ffffff transparent;
 	cursor: pointer;
 }
 
-#slides > nav > ul > li > a:hover,
-#slides > nav > ul > li > a.active {
+#slides-nav > ul > li > a:hover,
+#slides-nav > ul > li > a.active {
 	opacity: 1;
 }

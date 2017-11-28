@@ -19,7 +19,8 @@ class SlidesNavigation extends EventEmitter {
 		 */
 		let slidesControlElement = aux.createElement({
 			tagName: 'nav',
-			styles: {
+			attributes: {
+				id: 'slides-nav',
 			},
 			children: [
 				{
@@ -61,7 +62,9 @@ class SlidesNavigation extends EventEmitter {
 			.querySelector('.next')
 			.addEventListener('click', this.goToNext.bind(this))
 
-		this.containerElement.appendChild(slidesControlElement)
+		// append the nav to the container element's parent
+		// so that it's z-index can be above the scenery elements
+		this.containerElement.parentElement.appendChild(slidesControlElement)
 		this.controlElement = slidesControlElement
 
 		window.addEventListener('hashchange', this._handleHashchange.bind(this))
@@ -79,10 +82,14 @@ class SlidesNavigation extends EventEmitter {
 
 		let targetSlideId = window.location.hash.replace(/^#/, '')
 
-		this.goToSlideById(targetSlideId)
+		let targetSlideIndex = this.getSlideIndexById(targetSlideId)
 
-		if (e) {
-			e.preventDefault()
+		if (targetSlideIndex !== -1) {
+			// found!
+			if (e) {
+				e.preventDefault()
+			}
+			this.goToSlideByIndex(targetSlideIndex)
 		}
 	}
 
@@ -104,14 +111,17 @@ class SlidesNavigation extends EventEmitter {
 		return this.getSlideIndex(this.getCurrentSlide())
 	}
 
-	goToSlideById(targetSlideId) {
+	getSlideIndexById(targetSlideId) {
+
 		let targetSlideElement = this.slideElements.find(el => {
 			return el.getAttribute('id') === targetSlideId
 		})
 
-		if (targetSlideElement) {
-			this.goToSlideByIndex(this.getSlideIndex(targetSlideElement))
+		if (!targetSlideElement) {
+			return -1
 		}
+
+		return this.getSlideIndex(targetSlideElement)
 	}
 
 	goToSlideByIndex(targetSlideIndex) {

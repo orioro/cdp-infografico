@@ -11,19 +11,25 @@ module.exports = function createPinElement(pin, options) {
 	let contents = pin.contents || []
 
 	contents = contents.reduce((acc, content) => {
-		return acc.concat([
-			{
+
+		if (content.title) {
+			acc.push({
 				tagName: 'h3',
 				innerHTML: content.title,
-			},
-			{
+			})
+		}
+
+		if (content.body) {
+			acc.push({
 				tagName: 'div',
 				innerHTML: content.body,
 				attributes: {
 					class: 'pin-body',
 				},
-			}
-		])
+			})
+		}
+
+		return acc
 	}, [])
 
 	let pinElement = aux.createElement({
