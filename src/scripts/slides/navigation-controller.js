@@ -71,6 +71,15 @@ class SlidesNavigation extends EventEmitter {
 
 		// init
 		setTimeout(() => {
+
+			if (!window.location.hash || window.location.hash === '#') {
+				window.history.pushState(
+					{},
+					'',
+					'#intro'
+				)
+			}
+
 			this._handleHashchange()
 		}, 0)
 	}
