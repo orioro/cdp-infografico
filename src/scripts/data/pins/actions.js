@@ -7,7 +7,7 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-alegre/energia-eolica-helice',
 	  	isExample: true,
-	  	src: 'resources/animacao/pins/pin-vinho.svg',
+	  	src: 'resources/animacao/pins/pin-mudancas-climaticas.svg',
 	  	contentClass: 'mudancas-climaticas',
 	    contents: [
 	      {
@@ -49,7 +49,7 @@ module.exports = {
 	   */
 	  {
 	  	blockName: 'cidade-alegre/rio',
-	  	src: 'resources/animacao/pins/pin-azul.svg',
+	  	src: 'resources/animacao/pins/pin-aguas.svg',
 	  	contentClass: 'aguas',
 	  	styles: {
 	  		left: '50%',
@@ -73,7 +73,7 @@ module.exports = {
 	   */
 	  {
 	  	blockName: 'cidade-alegre/plantacao',
-	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	src: 'resources/animacao/pins/pin-florestas.svg',
 	  	contentClass: 'florestas',
 	    contents: [
 	      {

@@ -3,7 +3,7 @@ module.exports = {
 	pins: [
 	  {
 	  	blockName: 'cidade-alegre/rio',
-	  	src: 'resources/animacao/pins/pin-vinho.svg',
+	  	src: 'resources/animacao/pins/pin-cidades.svg',
 	  	contentClass: 'cidades',
 	  	styles: {
 	  		left: '60%',
@@ -23,7 +23,7 @@ module.exports = {
 
 	  {
 	  	blockName: 'cidade-alegre/energia-solar',
-	  	src: 'resources/animacao/pins/pin-vinho.svg',
+	  	src: 'resources/animacao/pins/pin-cidades.svg',
 	  	contentClass: 'cidades',
 	    contents: [
 	      {
@@ -40,7 +40,7 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-alegre/bloco-15-vlt-trilho',
 	  	isExample: true,
-	  	src: 'resources/animacao/pins/pin-vinho.svg',
+	  	src: 'resources/animacao/pins/pin-cidades.svg',
 	  	contentClass: 'cidades',
 	  	styles: {
 	  		bottom: '120%',
@@ -59,7 +59,7 @@ module.exports = {
 
 	  {
 	  	blockName: 'cidade-alegre/bloco-05-comercial',
-	  	src: 'resources/animacao/pins/pin-vinho.svg',
+	  	src: 'resources/animacao/pins/pin-cidades.svg',
 	  	contentClass: 'cidades',
 	    contents: [
 	      {

@@ -7,7 +7,7 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-triste/nuvem-2',
 	  	isExample: true,
-	  	src: 'resources/animacao/pins/pin-vermelho.svg',
+	  	src: 'resources/animacao/pins/pin-mudancas-climaticas.svg',
 	  	contentClass: 'mudancas-climaticas',
 	    contents: [
 	      {
@@ -33,7 +33,7 @@ module.exports = {
 	  },
 	  {
 	  	blockName: 'cidade-triste/bloco-03-estatal',
-	  	src: 'resources/animacao/pins/pin-vermelho.svg',
+	  	src: 'resources/animacao/pins/pin-mudancas-climaticas.svg',
 	  	contentClass: 'mudancas-climaticas',
 	  	styles: {
 	  		left: '60%',
@@ -63,7 +63,7 @@ module.exports = {
 	  },
 	  {
 	  	blockName: 'cidade-triste/bloco-15',
-	  	src: 'resources/animacao/pins/pin-vermelho.svg',
+	  	src: 'resources/animacao/pins/pin-mudancas-climaticas.svg',
 	  	contentClass: 'mudancas-climaticas',
 	  	styles: {},
 	    contents: [
@@ -95,7 +95,7 @@ module.exports = {
 	   */
 	  {
 	  	blockName: 'cidade-triste/rio',
-	  	src: 'resources/animacao/pins/pin-azul.svg',
+	  	src: 'resources/animacao/pins/pin-aguas.svg',
 	  	contentClass: 'aguas',
 	  	styles: {
 	  		left: '20%',
@@ -121,7 +121,7 @@ module.exports = {
 	  },
 	  {
 	  	blockName: 'cidade-triste/bloco-03-estatal',
-	  	src: 'resources/animacao/pins/pin-azul.svg',
+	  	src: 'resources/animacao/pins/pin-aguas.svg',
 	  	contentClass: 'aguas',
 	  	styles: {
 	  		left: '50%',
@@ -146,7 +146,7 @@ module.exports = {
 	  },
 	  {
 	  	blockName: 'cidade-triste/bloco-14-luminoso',
-	  	src: 'resources/animacao/pins/pin-azul.svg',
+	  	src: 'resources/animacao/pins/pin-aguas.svg',
 	  	contentClass: 'aguas',
 	    contents: [
 	      {
@@ -172,7 +172,7 @@ module.exports = {
 	   */
 	  {
 	  	blockName: 'cidade-triste/bloco-10-praca',
-	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	src: 'resources/animacao/pins/pin-florestas.svg',
 	  	contentClass: 'florestas',
 	  	styles: {
 	  		left: '25%',
@@ -199,7 +199,7 @@ module.exports = {
 	  },
 	  {
 	  	blockName: 'cidade-triste/bloco-03-estatal',
-	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	src: 'resources/animacao/pins/pin-florestas.svg',
 	  	contentClass: 'florestas',
 	  	styles: {
 	  		left: '40%',
@@ -226,7 +226,7 @@ module.exports = {
 	  },
 	  {
 	  	blockName: 'cidade-triste/bloco-13-residencial',
-	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	src: 'resources/animacao/pins/pin-florestas.svg',
 	  	contentClass: 'florestas',
 	  	styles: {},
 	    contents: [

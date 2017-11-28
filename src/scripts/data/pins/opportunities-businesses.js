@@ -6,7 +6,7 @@ module.exports = {
 	   */
 	  {
 	  	blockName: 'cidade-alegre/nuvem-2',
-	  	src: 'resources/animacao/pins/pin-vermelho.svg',
+	  	src: 'resources/animacao/pins/pin-mudancas-climaticas.svg',
 	  	contentClass: 'mudancas-climaticas',
 	    contents: [
 	      {
@@ -32,7 +32,7 @@ module.exports = {
 	  },
 	  {
 	  	blockName: 'cidade-alegre/bloco-04-estatal',
-	  	src: 'resources/animacao/pins/pin-vermelho.svg',
+	  	src: 'resources/animacao/pins/pin-mudancas-climaticas.svg',
 	  	contentClass: 'mudancas-climaticas',
 	  	styles: {
 	  		left: '60%',
@@ -62,7 +62,7 @@ module.exports = {
 	  },
 	  {
 	  	blockName: 'cidade-alegre/bloco-16',
-	  	src: 'resources/animacao/pins/pin-vermelho.svg',
+	  	src: 'resources/animacao/pins/pin-mudancas-climaticas.svg',
 	  	contentClass: 'mudancas-climaticas',
 	  	styles: {},
 	    contents: [
@@ -94,7 +94,7 @@ module.exports = {
 	   */
 	  {
 	  	blockName: 'cidade-alegre/rio',
-	  	src: 'resources/animacao/pins/pin-azul.svg',
+	  	src: 'resources/animacao/pins/pin-aguas.svg',
 	  	contentClass: 'aguas',
 	  	styles: {
 	  		left: '50%',
@@ -116,7 +116,7 @@ module.exports = {
 	   */
 	  {
 	  	blockName: 'cidade-alegre/armazem',
-	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	src: 'resources/animacao/pins/pin-florestas.svg',
 	  	contentClass: 'florestas',
 	    contents: [
 	      {
@@ -134,7 +134,7 @@ module.exports = {
 	  },
 	  {
 	  	blockName: 'cidade-alegre/plantacao',
-	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	src: 'resources/animacao/pins/pin-florestas.svg',
 	  	contentClass: 'florestas',
 	    contents: [
 	      {
@@ -152,7 +152,7 @@ module.exports = {
 	  },
 	  {
 	  	blockName: 'cidade-alegre/bloco-12-arvore',
-	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	src: 'resources/animacao/pins/pin-florestas.svg',
 	  	contentClass: 'florestas',
 	    contents: [
 	      {
@@ -173,7 +173,7 @@ module.exports = {
 	  },
 	  {
 	  	blockName: 'cidade-alegre/bloco-09-arvore',
-	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	src: 'resources/animacao/pins/pin-florestas.svg',
 	  	contentClass: 'florestas',
 	    contents: [
 	      {

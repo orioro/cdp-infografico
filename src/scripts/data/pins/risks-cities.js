@@ -3,7 +3,7 @@ module.exports = {
 	pins: [
 	  {
 	  	blockName: 'cidade-triste/bloco-09',
-	  	src: 'resources/animacao/pins/pin-vinho.svg',
+	  	src: 'resources/animacao/pins/pin-cidades.svg',
 	  	contentClass: 'cidades',
 	  	styles: {
 	  		left: '28%',
@@ -22,7 +22,7 @@ module.exports = {
 	  },
 	  {
 	  	blockName: 'cidade-triste/nuvem-2',
-	  	src: 'resources/animacao/pins/pin-vinho.svg',
+	  	src: 'resources/animacao/pins/pin-cidades.svg',
 	  	contentClass: 'cidades',
 	    contents: [
 	      {
@@ -38,7 +38,7 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-triste/bloco-10-praca',
 	  	isExample: true,
-	  	src: 'resources/animacao/pins/pin-vinho.svg',
+	  	src: 'resources/animacao/pins/pin-cidades.svg',
 	  	contentClass: 'cidades',
 	  	styles: {
 	  		left: '25%',
@@ -57,7 +57,7 @@ module.exports = {
 	  },
 	  {
 	  	blockName: 'cidade-triste/bloco-13-residencial',
-	  	src: 'resources/animacao/pins/pin-vinho.svg',
+	  	src: 'resources/animacao/pins/pin-cidades.svg',
 	  	contentClass: 'cidades',
 	    contents: [
 	      {
@@ -72,7 +72,7 @@ module.exports = {
 	  },
 	  {
 	  	blockName: 'cidade-triste/rio',
-	  	src: 'resources/animacao/pins/pin-vinho.svg',
+	  	src: 'resources/animacao/pins/pin-cidades.svg',
 	  	contentClass: 'cidades',
 	  	styles: {
 	  		left: '20%',
