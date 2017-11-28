@@ -8,9 +8,10 @@ module.exports = {
 	  	blockName: 'cidade-triste/nuvem-2',
 	  	isExample: true,
 	  	src: 'resources/animacao/pins/pin-vermelho.svg',
+	  	contentClass: 'mudancas-climaticas',
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Mudanças Climáticas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Mudanças Climáticas reportaram:',
 	      },
 	      {
 	        title: 'Fatores de risco físicos:',
@@ -33,13 +34,14 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-triste/bloco-03-estatal',
 	  	src: 'resources/animacao/pins/pin-vermelho.svg',
+	  	contentClass: 'mudancas-climaticas',
 	  	styles: {
 	  		left: '60%',
 	  		bottom: '85%',
 	  	},
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Mudanças Climáticas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Mudanças Climáticas reportaram:',
 	      },
 	      {
 	        title: 'Fatores de risco regulatórios:',
@@ -62,10 +64,11 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-triste/bloco-15',
 	  	src: 'resources/animacao/pins/pin-vermelho.svg',
+	  	contentClass: 'mudancas-climaticas',
 	  	styles: {},
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Mudanças Climáticas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Mudanças Climáticas reportaram:',
 	      },
 	      {
 	        title: 'Fatores de risco reputacionais:',
@@ -93,13 +96,14 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-triste/rio',
 	  	src: 'resources/animacao/pins/pin-azul.svg',
+	  	contentClass: 'aguas',
 	  	styles: {
 	  		left: '20%',
 	  		bottom: '50%',
 	  	},
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Águas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Águas reportaram:',
 	      },
 	      {
 	        title: 'Fatores de risco físicos:',
@@ -118,12 +122,13 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-triste/bloco-03-estatal',
 	  	src: 'resources/animacao/pins/pin-azul.svg',
+	  	contentClass: 'aguas',
 	  	styles: {
 	  		left: '50%',
 	  	},
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Águas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Águas reportaram:',
 	      },
 	      {
 	        title: 'Fatores de risco regulatórios:',
@@ -142,9 +147,10 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-triste/bloco-14-luminoso',
 	  	src: 'resources/animacao/pins/pin-azul.svg',
+	  	contentClass: 'aguas',
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Águas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Águas reportaram:',
 	      },
 	      {
 	        title: 'Fatores de risco reputacionais:',
@@ -167,28 +173,26 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-triste/bloco-10-praca',
 	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	contentClass: 'florestas',
 	  	styles: {
 	  		left: '25%',
 	  		bottom: '95%',
 	  	},
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Florestas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Florestas reportaram:',
 	      },
 	      {
 	        title: 'Fatores físicos de risco:',
-	        body: [
-	      		'Mudança nos extremos das precipitações e das secas',
-	      		'Incêndios florestais',
-	      	].join('<br>')
+	        body: '<img src="resources/graficos-pq/empresas-florestas-riscos-fisico.png">',
 	      },
 	      {
 	      	title: 'Impactos:',
 	      	body: [
-	      		'Custos operacionais mais altos',
-	      		'Interrupções na cadeia de fornecimento',
-	      		'Atrasos nas operações',
-	      		'Danos à propriedade',
+	      		'33% Custos operacionais mais altos',
+	      		'33% Interrupções na cadeia de fornecimento',
+	      		'17% Atrasos nas operações',
+	      		'17% Danos à propriedade',
 	      	].join('<br>')
 	      },
 	    ]
@@ -196,30 +200,26 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-triste/bloco-03-estatal',
 	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	contentClass: 'florestas',
 	  	styles: {
 	  		left: '40%',
 	  		bottom: '85%',
 	  	},
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Florestas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Florestas reportaram:',
 	      },
 	      {
 	        title: 'Fatores regulatórios de risco:',
-	        body: [
-	      		'Normas e padrões de rotulagem de produtos',
-	      		'Acordos voluntários',
-	      		'Regulamentos e normas sobre produtos',
-	      	].join('<br>')
+	        body: '<img src="resources/graficos-pq/empresas-florestas-riscos-regulatorio.png">'
 	      },
 	      {
 	      	title: 'Impactos:',
 	      	body: [
-	      		'Interrupções no transporte',
-	      		'Fechamento de operações',
-	      		'Custos operacionais mais altos',
-	      		'Interrupções na cadeia de fornecimento',
-	      		'Interrupções no transporte',
+	      		'33% Interrupções no transporte',
+	      		'33% Fechamento de operações',
+	      		'17% Custos operacionais mais altos',
+	      		'17% Fechamento de operações',
 	      	].join('<br>')
 	      },
 	    ]
@@ -227,23 +227,21 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-triste/bloco-13-residencial',
 	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	contentClass: 'florestas',
 	  	styles: {},
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Florestas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Florestas reportaram:',
 	      },
 	      {
 	        title: 'Fatores reputacionais de risco:',
-	        body: [
-	      		'Cobertura midiática negativa',
-	      		'Mudanças no comportamento do consumidor / demanda',
-	      	].join('<br>')
+	        body: '<img src="resources/graficos-pq/empresas-florestas-riscos-reputacional.png">'
 	      },
 	      {
 	      	title: 'Impactos:',
 	      	body: [
-	      		'Danos à marca',
-	      		'Redução no valor acionário',
+	      		'67% Danos à marca',
+	      		'33% Redução no valor acionário',
 	      	].join('<br>')
 	      },
 	    ]

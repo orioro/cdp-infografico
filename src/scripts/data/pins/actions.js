@@ -8,6 +8,7 @@ module.exports = {
 	  	blockName: 'cidade-alegre/energia-eolica-helice',
 	  	isExample: true,
 	  	src: 'resources/animacao/pins/pin-vinho.svg',
+	  	contentClass: 'mudancas-climaticas',
 	    contents: [
 	      {
 	        title: 'Tipos de ações:',
@@ -49,6 +50,7 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-alegre/rio',
 	  	src: 'resources/animacao/pins/pin-azul.svg',
+	  	contentClass: 'aguas',
 	  	styles: {
 	  		left: '50%',
 	  		bottom: '50%',
@@ -72,6 +74,7 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-alegre/plantacao',
 	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	contentClass: 'florestas',
 	    contents: [
 	      {
 	        title: 'Tipos de ações:',

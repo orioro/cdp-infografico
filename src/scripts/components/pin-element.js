@@ -16,6 +16,9 @@ module.exports = function createPinElement(pin, options) {
 			acc.push({
 				tagName: 'h3',
 				innerHTML: content.title,
+				attributes: {
+					class: pin.contentClass,
+				}
 			})
 		}
 
@@ -24,7 +27,7 @@ module.exports = function createPinElement(pin, options) {
 				tagName: 'div',
 				innerHTML: content.body,
 				attributes: {
-					class: 'pin-body',
+					class: 'pin-body ' + pin.contentClass,
 				},
 			})
 		}

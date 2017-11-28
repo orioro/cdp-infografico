@@ -7,9 +7,10 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-alegre/nuvem-2',
 	  	src: 'resources/animacao/pins/pin-vermelho.svg',
+	  	contentClass: 'mudancas-climaticas',
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Mudanças Climáticas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Mudanças Climáticas reportaram:',
 	      },
 	      {
 	        title: 'Fatores físicos de oportunidade:',
@@ -32,13 +33,14 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-alegre/bloco-04-estatal',
 	  	src: 'resources/animacao/pins/pin-vermelho.svg',
+	  	contentClass: 'mudancas-climaticas',
 	  	styles: {
 	  		left: '60%',
 	  		bottom: '85%',
 	  	},
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Mudanças Climáticas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Mudanças Climáticas reportaram:',
 	      },
 	      {
 	        title: 'Fatores regulatórios de oportunidade:',
@@ -61,10 +63,11 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-alegre/bloco-16',
 	  	src: 'resources/animacao/pins/pin-vermelho.svg',
+	  	contentClass: 'mudancas-climaticas',
 	  	styles: {},
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Mudanças Climáticas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Mudanças Climáticas reportaram:',
 	      },
 	      {
 	        title: 'Outros fatores de oportunidade:',
@@ -92,13 +95,14 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-alegre/rio',
 	  	src: 'resources/animacao/pins/pin-azul.svg',
+	  	contentClass: 'aguas',
 	  	styles: {
 	  		left: '50%',
 	  		bottom: '50%',
 	  	},
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Águas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Águas reportaram:',
 	      },
 	      {
 	        title: 'Fatores de oportunidade:',
@@ -113,9 +117,10 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-alegre/armazem',
 	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	contentClass: 'florestas',
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Florestas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Florestas reportaram:',
 	      },
 	      {
 	        title: 'Oportunidades na agropecuária:',
@@ -130,9 +135,10 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-alegre/plantacao',
 	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	contentClass: 'florestas',
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Florestas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Florestas reportaram:',
 	      },
 	      {
 	        title: 'Oportunidades no setor da soja:',
@@ -147,9 +153,10 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-alegre/bloco-12-arvore',
 	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	contentClass: 'florestas',
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Florestas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Florestas reportaram:',
 	      },
 	      {
 	        title: 'Oportunidades no setor de recursos madeireiros:',
@@ -167,9 +174,10 @@ module.exports = {
 	  {
 	  	blockName: 'cidade-alegre/bloco-09-arvore',
 	  	src: 'resources/animacao/pins/pin-verde.svg',
+	  	contentClass: 'florestas',
 	    contents: [
 	      {
-	        body: 'Empresas que responderam nossa pesquisa sobre Florestas reportaram:',
+	        body: 'Empresas que responderam nosso questionário sobre Florestas reportaram:',
 	      },
 	      {
 	        title: 'Oportunidades no setor de extração de óleo de palma:',
