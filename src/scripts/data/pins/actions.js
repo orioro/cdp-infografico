@@ -6,6 +6,7 @@ module.exports = {
 	   */
 	  {
 	  	blockName: 'cidade-alegre/energia-eolica-helice',
+	  	isExample: true,
 	  	src: 'resources/animacao/pins/pin-vinho.svg',
 	    contents: [
 	      {

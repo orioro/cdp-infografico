@@ -35,6 +35,7 @@ module.exports = {
 	  },
 	  {
 	  	blockName: 'cidade-triste/bloco-10-praca',
+	  	isExample: true,
 	  	src: 'resources/animacao/pins/pin-vinho.svg',
 	  	styles: {
 	  		left: '25%',

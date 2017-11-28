@@ -37,6 +37,8 @@ module.exports = function createPinElement(pin, options) {
 		attributes: {
 			class: 'pin',
 			'data-pin-set': pin.set,
+			'show-on-start': pin.showOnStart,
+			'data-is-example-pin': pin.isExample,
 		},
 		styles: pin.styles,
 		children: [

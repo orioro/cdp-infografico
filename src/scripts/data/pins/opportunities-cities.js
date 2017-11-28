@@ -37,6 +37,7 @@ module.exports = {
 
 	  {
 	  	blockName: 'cidade-alegre/bloco-15-vlt-trilho',
+	  	isExample: true,
 	  	src: 'resources/animacao/pins/pin-vinho.svg',
 	  	styles: {
 	  		bottom: '120%',

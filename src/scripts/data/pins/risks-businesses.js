@@ -6,6 +6,7 @@ module.exports = {
 	   */
 	  {
 	  	blockName: 'cidade-triste/nuvem-2',
+	  	isExample: true,
 	  	src: 'resources/animacao/pins/pin-vermelho.svg',
 	    contents: [
 	      {
