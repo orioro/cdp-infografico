@@ -45,6 +45,10 @@ body {
   position: fixed;
   top: 40px;
   right: 40px;
-  width: 100px;
+  width: 90px;
   z-index: var(--z-index-logo);
+}
+
+#logo-cdp img {
+  width: 100%;
 }
