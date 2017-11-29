@@ -55,7 +55,7 @@
 #sky > div[data-happiness-state="sad"] {
 	z-index: 1;
 	background-color: #686868;
-	background-image: url('../../resources/animacao/cidade-triste/sky-pattern.png');
+	background-image: url('resources/animacao/cidade-triste/sky-pattern.png');
 }
 
 #sky > div[data-happiness-state="happy"] {

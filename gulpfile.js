@@ -2,6 +2,7 @@
 const gulp = require('gulp')
 const gulpSize = require('gulp-size')
 const autoprefixer = require('gulp-autoprefixer')
+const uglify = require('gulp-uglify');
 const myth = require('gulp-myth')
 const gulpIf = require('gulp-if')
 
@@ -35,6 +36,7 @@ gulp.task('distribute:javascript', function () {
   return b.bundle()
     .pipe(source('index.js'))
     .pipe(buffer())
+    .pipe(uglify())
     .pipe(gulp.dest('dist'))
     .pipe(gulpSize())
 })

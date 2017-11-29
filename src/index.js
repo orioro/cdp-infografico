@@ -16,3 +16,7 @@ require('./scripts/scenery')(app, options)
 require('./scripts/slides')(app, options)
 require('./scripts/dialogs')(app, options)
 require('./scripts/test-controls')(app, options)
+
+setTimeout(function () {
+	document.querySelector('body').classList.add('active')
+}, 400)
