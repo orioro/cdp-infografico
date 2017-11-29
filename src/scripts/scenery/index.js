@@ -41,6 +41,7 @@ module.exports = function (app, options) {
 		function _hideAllTooltips() {
 			scenery.hideAllTooltips()
 			document.removeEventListener('mousemove', _hideAllTooltips)
+			document.removeEventListener('click', _hideAllTooltips)
 		}
 
 		document.querySelector('body').setAttribute('data-active-pin-set', pinSetName)
@@ -51,11 +52,15 @@ module.exports = function (app, options) {
 			examplePinElement = document.querySelector('[data-pin-set="' + pinSetName + '"]')
 		}
 
-		setTimeout(function () {
-			examplePinElement.tooltip.show()
+		if (examplePinElement) {
+			setTimeout(function () {
 
-			document.addEventListener('mousemove', _hideAllTooltips)
-		}, 1000)
+				examplePinElement.tooltip.show()
+
+				document.addEventListener('mousemove', _hideAllTooltips)
+				document.addEventListener('click', _hideAllTooltips)
+			}, 1000)
+		}
 
 	}
 

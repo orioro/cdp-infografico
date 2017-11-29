@@ -13,6 +13,14 @@ function createElement(def) {
 
 	if (def.styles) {
 		for (let styleProperty in def.styles) {
+			/**
+			 * Prefixes
+			 */
+			if (styleProperty === 'transform') {
+				element.style['-webkit-transform'] = def.styles[styleProperty]
+				element.style['-ms-transform'] = def.styles[styleProperty]
+			}
+
 			element.style[styleProperty] = def.styles[styleProperty]
 		}
 	}

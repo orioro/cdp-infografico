@@ -23,6 +23,16 @@ module.exports = function (app, options) {
 		}
 	})
 
+	// let slideGestures = new Hammer(document.querySelector('#slides'))
+	// slideGestures.on('swipedown', function () {
+	// 	alert('swipedown')
+	// 	navigationController.goToPrevious()
+	// })
+	// slideGestures.on('swipeup', function () {
+	// 	alert('swipeup')
+	// 	navigationController.goToNext()
+	// })
+
 	/**
 	 * Expose navigation controller
 	 */

@@ -1,3 +1,7 @@
+// load polyfills
+require('es5-shim')
+require('classlist.js')
+
 const aux = require('./scripts/lib/auxiliary')
 const components = require('./scripts/components')
 
