@@ -10,13 +10,16 @@ module.exports = {
 	  		bottom: '96%',
 	  	},
 	    contents: [
+	    	{
+	    		body: 'Cidades que responderam nosso questionário reportaram:',
+	    	},
 	      {
 	        title: 'Aumento da temperatura / Ondas de calor',
 	        body: '<img src="resources/graficos-pq/cidades-riscos-aumento-da-temperatura.png">',
 	      },
 	      {
 	      	title: 'Exemplo:',
-	      	body: 'Sertãozinho no Brasil menciona que aumento da temperatura causa impactos à saúde da população e consequente sobrecarga do sistema de saúde.'
+	      	body: 'Aumento da incidência de dengue foi mencionada por várias cidades como Medellín, Caracas, Recife.'
 	      }
 	    ]
 	  },
@@ -25,13 +28,16 @@ module.exports = {
 	  	src: 'resources/animacao/pins/pin-cidades.svg',
 	  	contentClass: 'cidades',
 	    contents: [
+	    	{
+	    		body: 'Cidades que responderam nosso questionário reportaram:',
+	    	},
 	      {
 	        title: 'Chuvas / Tempestades intensas',
 	        body: '<img src="resources/graficos-pq/cidades-riscos-tempestades-intensas.png">',
 	      },
 	      {
 	      	title: 'Exemplo:',
-	      	body: 'Tempestades, ligadas à topografia local e à ocupação representa o fator de risco mais grave para a população, devido a deslizamentos de terra e inundações. A trágica história das perdas de vida e de propriedade e as graves consequências sociais e de saúde pública contribuíram para a criação do Rio de Janeiro menciona devido Centro de Operações COR'
+	      	body: 'Tempestades, ligadas à topografia local e à ocupação, representam o fator de risco mais grave para a população, devido a deslizamentos de terra e inundações. A trágica história das perdas de vidas e de propriedades e as graves consequências sociais e de saúde pública contribuíram para a criação do Centro de Operações (COR) no Rio de Janeiro.'
 	      }
 	    ]
 	  },
@@ -45,13 +51,16 @@ module.exports = {
 	  		bottom: '96%',
 	  	},
 	    contents: [
+	    	{
+	    		body: 'Cidades que responderam nosso questionário reportaram:',
+	    	},
 	      {
 	        title: 'Secas',
 	        body: '<img src="resources/graficos-pq/cidades-riscos-secas.png">',
 	      },
 	      {
 	      	title: 'Exemplo:',
-	      	body: 'O Arquipélago de <strong>San Andrés</strong> na colômbia menciona que a seca traz como consequência a  alta probabilidade de ocorrência de incêndios florestais, conflitos sociais por recursos hídricos, danos à saúde humana'
+	      	body: 'O Arquipélago de San Andrés na colômbia menciona que a seca traz como consequência a alta probabilidade de ocorrência de incêndios florestais, conflitos sociais por recursos hídricos e danos à saúde humana'
 	      }
 	    ]
 	  },
@@ -60,6 +69,9 @@ module.exports = {
 	  	src: 'resources/animacao/pins/pin-cidades.svg',
 	  	contentClass: 'cidades',
 	    contents: [
+	    	{
+	    		body: 'Cidades que responderam nosso questionário reportaram:',
+	    	},
 	      {
 	        title: 'Doenças (insetos, vetores, vírus, água e ar)',
 	        body: '<img src="resources/graficos-pq/cidades-riscos-doencas.png">'
@@ -79,6 +91,9 @@ module.exports = {
 	  		bottom: '50%',
 	  	},
 	    contents: [
+	    	{
+	    		body: 'Cidades que responderam nosso questionário reportaram:',
+	    	},
 	      {
 	        title: 'Enchentes',
 	        body: '<img src="resources/graficos-pq/cidades-riscos-enchentes.png">'

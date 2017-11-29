@@ -8,9 +8,7 @@ let RISCOS_CIDADES = [
 				{
 					value: 9,
 					label: [
-						'das cidades',
-						'reportaram riscos',
-						'relacionados à',
+						'riscos relacionados à',
 						'Secas',
 					]
 				}
@@ -26,9 +24,7 @@ let RISCOS_CIDADES = [
 				{
 					value: 14,
 					label: [
-						'das cidades',
-						'reportaram riscos',
-						'relacionados à',
+						'riscos relacionados à',
 						'Aumento da temperatura',
 						'e ondas de calor',
 					]
@@ -45,9 +41,7 @@ let RISCOS_CIDADES = [
 				{
 					value: 18,
 					label: [
-						'das cidades',
-						'reportaram riscos',
-						'relacionados à',
+						'riscos relacionados à',
 						'Enchentes',
 					]
 				}
@@ -63,9 +57,7 @@ let RISCOS_CIDADES = [
 				{
 					value: 10,
 					label: [
-						'das cidades',
-						'reportaram riscos',
-						'relacionados à',
+						'riscos relacionados à',
 						'Chuvas e tempestades',
 						'intensas',
 					]
@@ -104,9 +96,7 @@ let RISCOS_CIDADES = [
 				},
 				{
 					label: [
-						'das cidades',
-						'reportaram riscos',
-						'relacionados à',
+						'riscos relacionados à',
 						'Disponibilidade de água',
 						'para produção/serviços',
 					],
@@ -182,9 +172,7 @@ let OPORTUNIDADES_CIDADES = [
 				{
 					value: 27,
 					label: [
-						'das cidades',
-						'reportaram oportunidades',
-						'relacionadas à',
+						'oportunidades relacionadas à',
 						'Atenção crescente',
 						'a preocupações ambientais',
 					]
@@ -201,9 +189,7 @@ let OPORTUNIDADES_CIDADES = [
 				{
 					value: 25,
 					label: [
-						'das cidades',
-						'reportaram oportunidades',
-						'relacionadas à',
+						'oportunidades relacionadas à',
 						'Desenvolvimento de',
 						'novos negócios',
 					]
@@ -220,9 +206,7 @@ let OPORTUNIDADES_CIDADES = [
 				{
 					value: 16,
 					label: [
-						'das cidades',
-						'reportaram oportunidades',
-						'relacionadas à',
+						'oportunidades relacionadas à',
 						'Aumento do investimento',
 						'em infraestrutura',
 					]
@@ -239,9 +223,7 @@ let OPORTUNIDADES_CIDADES = [
 				{
 					value: 14,
 					label: [
-						'das cidades',
-						'reportaram oportunidades',
-						'relacionadas à',
+						'oportunidades relacionadas à',
 						'Opções adicionais',
 						'de financiamento',
 					]
