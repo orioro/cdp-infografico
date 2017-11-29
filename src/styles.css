@@ -52,3 +52,32 @@ body {
 #logo-cdp img {
   width: 100%;
 }
+
+#creditos {
+	opacity: 0;
+	position: fixed;
+	right: 20px;
+	bottom: 8px;
+	text-align: right;
+	z-index: 100;
+	font-size: 10px;
+	color: #000000;
+	transition: opacity ease 0.4s;
+}
+
+#creditos a {
+	text-decoration: underline;
+	padding: 0;
+	background-color: transparent;
+	font-size: 10px;
+	color: #000000;
+	transition: color ease 0.3s;
+}
+
+#creditos a:hover {
+	color: #717171;
+}
+
+#creditos.active {
+	opacity: 1;
+}
