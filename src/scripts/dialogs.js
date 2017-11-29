@@ -11,6 +11,8 @@ module.exports = function (app, options) {
 	let dialogClose = dialogElement.querySelector('.dialog-close')
 
 	function open(contents) {
+		app.scenery.hideAllTooltips()
+		
 		dialogContentsWrapper.innerHTML = contents
 		dialogElement.classList.add('active')
 	}

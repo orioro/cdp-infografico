@@ -138,4 +138,5 @@
 
 .tooltip-inner a {
   color: inherit;
+  display: block;
 }

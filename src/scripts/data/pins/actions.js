@@ -32,15 +32,27 @@ module.exports = {
 	        body: 'R$ 896,926,256.37',
 	      },
 	      {
-	      	title: 'Case:',
+	      	title: 'Cases:',
 	      	body: [
 	      		'<a href="#case">',
-	      			'MRV: Intalação de painéis solares nos empreendimentos',
+	      			'Banorte',
+	      			'<div class="dialog-contents">',
+	      				'<iframe src="resources/cases/2017_CDPLA_Case_Study_Banorte.pdf"></iframe>',
+	      			'</div>',
+	      		'</a>',
+	      		'<a href="#case">',
+	      			'Braskem',
+	      			'<div class="dialog-contents">',
+	      				'<iframe src="resources/cases/2016_CDPLA_Case Study_Braskem_PT.pdf"></iframe>',
+	      			'</div>',
+	      		'</a>',
+	      		'<a href="#case">',
+	      			'MRV',
 	      			'<div class="dialog-contents">',
 	      				'<iframe src="resources/cases/2017_CDPLA_Case_Study_MRV.pdf"></iframe>',
 	      			'</div>',
 	      		'</a>',
-	      	].join(' ')
+	      	].join('')
 	      }
 	    ]
 	  },
@@ -66,6 +78,17 @@ module.exports = {
 	      		'8.85% Recursos hídricos são levados em consideração na tomada de decisão sobre expansões',
 	      	].join('<br>')
 	      },
+	      {
+	      	title: 'Cases:',
+	      	body: [
+	      		'<a href="#case">',
+	      			'Duratex',
+	      			'<div class="dialog-contents">',
+	      				'<iframe src="resources/cases/2017_CDPLA_Case_Study_Duratex.pdf"></iframe>',
+	      			'</div>',
+	      		'</a>',
+	      	].join(' ')
+	      }
 	    ]
 	  },
 	  /**
@@ -88,7 +111,7 @@ module.exports = {
 	      	].join('<br>')
 	      },
 	      {
-	      	title: 'Case:',
+	      	title: 'Cases:',
 	      	body: [
 	      		'<a href="#case">',
 	      			'Marfrig',
