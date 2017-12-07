@@ -19,4 +19,5 @@ require('./scripts/test-controls')(app, options)
 
 setTimeout(function () {
 	document.querySelector('body').classList.add('active')
+	document.querySelector('body').style.opacity = '1'
 }, 400)
