@@ -18,18 +18,28 @@ const CHART_FNS = {
 	'large-pie': require('./chart-types/large-pie'),
 }
 
-CHART_SPECS.forEach((spec) => {
-	let chartFn = CHART_FNS[spec.type]
+const LANGUAGES = [
+	'pt',
+	'es'
+]
 
-	if (chartFn) {
-		let svgStr = chartFn(spec)
-		console.log(`chart ${spec.name}`)
+LANGUAGES.forEach(lang => {
+	CHART_SPECS.forEach((spec) => {
+		let chartFn = CHART_FNS[spec.type]
 
-		fs.writeFileSync(path.join(CHARTS_DIR, spec.name + '.svg'), svgStr, 'utf8')
+		if (chartFn) {
+			let svgStr = chartFn(spec, lang)
+			console.log(`chart ${spec.name}`)
 
-		child_process.execFile(TRIM_BASH_SCRIPT, [spec.name])
+			let chartName = lang === 'pt' ?
+				spec.name : spec.name + '_' + lang
 
-	} else {
-		console.warn('could not find chart function for ' + spec.type)
-	}
+			fs.writeFileSync(path.join(CHARTS_DIR, chartName + '.svg'), svgStr, 'utf8')
+
+			child_process.execFile(TRIM_BASH_SCRIPT, [chartName])
+
+		} else {
+			console.warn('could not find chart function for ' + spec.type)
+		}
+	})
 })

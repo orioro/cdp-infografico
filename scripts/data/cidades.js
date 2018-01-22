@@ -7,10 +7,16 @@ let RISCOS_CIDADES = [
 			slices: [
 				{
 					value: 9,
-					label: [
-						'riscos relacionados à',
-						'Secas',
-					]
+					label: {
+						pt: [
+							'riscos relacionados à',
+							'Secas',
+						],
+						es: [
+							'Riesgos relacionados a',
+							'las sequías'
+						],
+					}
 				}
 			],
 		},
@@ -23,11 +29,18 @@ let RISCOS_CIDADES = [
 			slices: [
 				{
 					value: 14,
-					label: [
-						'riscos relacionados à',
-						'Aumento da temperatura',
-						'e ondas de calor',
-					]
+					label: {
+						pt: [
+							'riscos relacionados à',
+							'Aumento da temperatura',
+							'e ondas de calor',
+						],
+						es: [
+							'riesgos relacionados a',
+							'la elevación de la',
+							'temperatura y olas de calor'
+						],
+					}
 				}
 			],
 		},
@@ -40,10 +53,16 @@ let RISCOS_CIDADES = [
 			slices: [
 				{
 					value: 18,
-					label: [
-						'riscos relacionados à',
-						'Enchentes',
-					]
+					label: {
+						pt: [
+							'riscos relacionados à',
+							'Enchentes',
+						],
+						es: [
+							'riesgos relacionados a',
+							'las inundaciones',
+						]
+					}
 				}
 			],
 		},
@@ -56,11 +75,18 @@ let RISCOS_CIDADES = [
 			slices: [
 				{
 					value: 10,
-					label: [
-						'riscos relacionados à',
-						'Chuvas e tempestades',
-						'intensas',
-					]
+					label: {
+						pt: [
+							'riscos relacionados à',
+							'Chuvas e tempestades',
+							'intensas',
+						],
+						es: [
+							'riesgos relacionados',
+							'a lluvias y tempestades',
+							'intensas'
+						],
+					}
 				}
 			],
 		},
@@ -73,52 +99,51 @@ let RISCOS_CIDADES = [
 			slices: [
 				{
 					value: 13,
-					label: [
-						// 'Reportaram riscos relacionados à',
-						'Doenças',
-						// '(insetos, vetores, vírus, água e ar',
-					]
+					label: {
+						pt: ['doenças'],
+						es: ['enfermedades']
+					}
 				}
 			],
 		},
 	},
 
-	{
-		name: 'riscos-impactos',
-		type: 'pie',
-		data: {
-			total: 100,
-			slices: [
-				{
-					label: 'Agricultura/agropecuária',
-					color: 'red',
-					value: 20,
-				},
-				{
-					label: [
-						'riscos relacionados à',
-						'Disponibilidade de água',
-						'para produção/serviços',
-					],
-					color: 'pink',
-					value: 17,
-				},
-				{
-					label: [
-						'Transporte matéria prima /',
-						'produtos e serviços',
-					],
-					color: 'magenta',
-					value: 14,
-				},
-				{
-					label: 'Turismo',
-					color: 'green',
-					value: 11,
-				},
-			],
-		}
-	}
+	// {
+	// 	name: 'riscos-impactos',
+	// 	type: 'pie',
+	// 	data: {
+	// 		total: 100,
+	// 		slices: [
+	// 			{
+	// 				label: 'Agricultura/agropecuária',
+	// 				color: 'red',
+	// 				value: 20,
+	// 			},
+	// 			{
+	// 				label: [
+	// 					'riscos relacionados à',
+	// 					'Disponibilidade de água',
+	// 					'para produção/serviços',
+	// 				],
+	// 				color: 'pink',
+	// 				value: 17,
+	// 			},
+	// 			{
+	// 				label: [
+	// 					'Transporte matéria prima /',
+	// 					'produtos e serviços',
+	// 				],
+	// 				color: 'magenta',
+	// 				value: 14,
+	// 			},
+	// 			{
+	// 				label: 'Turismo',
+	// 				color: 'green',
+	// 				value: 11,
+	// 			},
+	// 		],
+	// 	}
+	// }
 ]
 
 let IMPACTOS_CIDADES = [
@@ -130,26 +155,46 @@ let IMPACTOS_CIDADES = [
 			slices: [
 				{
 					value: 20,
-					label: [
-						'Agricultura /',
-						'Agropecuária',
-					]
+					label: {
+						pt: [
+							'Agricultura /',
+							'Agropecuária',
+						],
+						es: [
+							'Agricultura /',
+							'Agropecuaria'
+						]
+					}
 				},
 				{
 					value: 17,
-					label: [
-						'Disponibilidade de',
-						'água para',
-						'produção / serviços'
-					],
+					label: {
+						pt: [
+							'Disponibilidade de',
+							'água para',
+							'produção / serviços'
+						],
+						es: [
+							'Disponibilidad de',
+							'agua para',
+							'producción/ servicios',
+						],
+					}
 				},
 				{
 					value: 14,
-					label: [
-						'Transporte matéria',
-						'prima / produtos',
-						'e serviços',
-					]
+					label: {
+						pt: [
+							'Transporte de materia',
+							'prima / productos',
+							'y servicios'
+						],
+						es: [
+							'Transporte matéria',
+							'prima / produtos',
+							'e serviços',
+						]
+					}
 				},
 				{
 					value: 11,
@@ -171,11 +216,18 @@ let OPORTUNIDADES_CIDADES = [
 			slices: [
 				{
 					value: 27,
-					label: [
-						'oportunidades relacionadas à',
-						'Atenção crescente',
-						'a preocupações ambientais',
-					]
+					label: {
+						pt: [
+							'oportunidades relacionadas à',
+							'Atenção crescente',
+							'a preocupações ambientais',
+						],
+						es: [
+							'oportunidades relacionadas a la',
+							'atención creciente con respecto',
+							'a las preocupaciones ambientales'
+						],
+					}
 				}
 			],
 		},
@@ -188,11 +240,17 @@ let OPORTUNIDADES_CIDADES = [
 			slices: [
 				{
 					value: 25,
-					label: [
-						'oportunidades relacionadas à',
-						'Desenvolvimento de',
-						'novos negócios',
-					]
+					label: {
+						pt: [
+							'oportunidades relacionadas à',
+							'Desenvolvimento de',
+							'novos negócios',
+						],
+						es: [
+							'oportunidades relacionadas al',
+							'desarrollo de nuevos negocios'
+						],
+					}
 				}
 			],
 		},
@@ -205,11 +263,18 @@ let OPORTUNIDADES_CIDADES = [
 			slices: [
 				{
 					value: 16,
-					label: [
-						'oportunidades relacionadas à',
-						'Aumento do investimento',
-						'em infraestrutura',
-					]
+					label: {
+						pt: [
+							'oportunidades relacionadas à',
+							'Aumento do investimento',
+							'em infraestrutura',
+						],
+						es: [
+							'oportunidades relacionadas al',
+							'aumento de la inversión',
+							'en infraestructura'
+						],
+					}
 				}
 			],
 		},
@@ -222,11 +287,18 @@ let OPORTUNIDADES_CIDADES = [
 			slices: [
 				{
 					value: 14,
-					label: [
-						'oportunidades relacionadas à',
-						'Opções adicionais',
-						'de financiamento',
-					]
+					label: {
+						pt: [
+							'oportunidades relacionadas à',
+							'Opções adicionais',
+							'de financiamento',
+						],
+						es: [
+							'oportunidades relacionadas a las',
+							'opciones adicionales',
+							'de financiación'
+						],
+					}
 				}
 			],
 		},

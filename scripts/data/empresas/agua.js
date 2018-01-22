@@ -6,31 +6,55 @@ let RISCOS = [
 			total: 195,
 			slices: [
 				{
-					label: [
-						'Mudanças',
-						'climáticas'
-					],
+					label: {
+						pt: [
+							'Mudanças',
+							'climáticas'
+						],
+						es: [
+							'Cambios',
+							'climáticos'
+						],
+					},
 					value: 21,
 				},
 				{
-					label: [
-						'Qualidade da água',
-						'em declínio',
-					],
+					label: {
+						pt: [
+							'Qualidade da água',
+							'em declínio',
+						],
+						es: [
+							'Calidad del agua',
+							'en declive'
+						]
+					},
 					value: 21,
 				},
 				{
-					label: [
-						'Maior estresse',
-						'hídrico',
-					],
+					label: {
+						pt: [
+							'Maior estresse',
+							'hídrico',
+						],
+						es: [
+							'Mayor estrés',
+							'hídrico'
+						],
+					},
 					value: 23,
 				},
 				{
-					label: [
-						'Maior escassez',
-						'de água',
-					],
+					label: {
+						pt: [
+							'Maior escassez',
+							'de água',
+						],
+						es: [
+							'Mayor escasez',
+							'de agua'
+						],
+					},
 					value: 49,
 				},
 			],
@@ -43,29 +67,52 @@ let RISCOS = [
 			total: 87,
 			slices: [
 				{
-					label: [
-						'Maior dificuldade',
-						'na obtenção de',
-						'licenças de captação',
-						'e operação',
-					],
+					label: {
+						pt: [
+							'Maior dificuldade',
+							'na obtenção de',
+							'licenças de captação',
+							'e operação',
+						],
+						es: [
+							'Mayor dificultad',
+							'en la obtención de',
+							'licencias para la captación',
+							'y operación'
+						],
+					},
 					value: 11,
 				},
 				{
-					label: [
-						'Aumento no',
-						'preço da água',
-					],
+					label: {
+						pt: [
+							'Aumento no',
+							'preço da água',
+						],
+						es: [
+							'Aumento en el',
+							'precio del agua'
+						]
+					},
 					value: 17,
 				},
 				{
-					label: [
-						'Regulamentação da',
-						'qualidade/volume de',
-						'lançamentos, levando',
-						'ao aumento dos custos',
-						'de conformidade',
-					],
+					label: {
+						pt: [
+							'Regulamentação da',
+							'qualidade/volume de',
+							'lançamentos, levando',
+							'ao aumento dos custos',
+							'de conformidade',
+						],
+						es: [
+							'Reglamentación de la',
+							'calidad/volumen de',
+							'lanzamientos, conduciendo',
+							'al aumento de los costos',
+							'de conformidad'
+						],
+					},
 					value: 20,
 				},
 			],
@@ -78,32 +125,57 @@ let RISCOS = [
 			total: 15,
 			slices: [
 				{
-					label: [
-						'Valores culturais',
-						'e religiosos',
-					],
+					label: {
+						pt: [
+							'Valores culturais',
+							'e religiosos',
+						],
+						es: [
+							'Valores culturales',
+							'y religiosos'
+						],
+					},
 					value: 1,
 				},
 				{
-					label: [
-						'Acesso inadequado',
-						'à água, saneamento',
-						'e higiene',
-					],
+					label: {
+						pt: [
+							'Acesso inadequado',
+							'à água, saneamento',
+							'e higiene',
+						],
+						es: [
+							'Acceso inadecuado',
+							'al agua, saneamiento',
+							'e higiene'
+						],
+					},
 					value: 2,
 				},
 				{
-					label: [
-						'Oposição da',
-						'comunidade',
-					],
+					label: {
+						pt: [
+							'Oposição da',
+							'comunidade',
+						],
+						es: [
+							'Oposición de',
+							'la comunidad'
+						],
+					},
 					value: 5,
 				},
 				{
-					label: [
-						'Cobertura negativa',
-						'da mídia',
-					],
+					label: {
+						pt: [
+							'Cobertura negativa',
+							'da mídia',
+						],
+						es: [
+							'Cobertura negativa',
+							'de los medios'
+						],
+					},
 					value: 7,
 				},
 			],
@@ -119,26 +191,46 @@ let RISCOS_IMPACTOS = [
 			total: 195,
 			slices: [
 				{
-					label: [
-						'Interrupção no',
-						'abastecimento de água',
-					],
+					label: {
+						pt: [
+							'Interrupção no',
+							'abastecimento de água',
+						],
+						es: [
+							'Interrupción en el',
+							'suministro de agua'
+						],
+					},
 					value: 9,
 				},
 				{
-					label: [
-						'Interrupção da produção',
-						'das fábricas levando à',
-						'redução nas quantidades',
-						'produzidas',
-					],
+					label: {
+						pt: [
+							'Interrupção da produção',
+							'das fábricas levando à',
+							'redução nas quantidades',
+							'produzidas',
+						],
+						es: [
+							'Interrupción de la',
+							'producción/fábrica',
+							'conduciendo a la reducción',
+							'de las cantidades producidas'
+						],
+					},
 					value: 49,
 				},
 				{
-					label: [
-						'Custos operacionais',
-						'mais elevados',
-					],
+					label: {
+						pt: [
+							'Custos operacionais',
+							'mais elevados',
+						],
+						es: [
+							'Costos operativos',
+							'más elevados'
+						],
+					},
 					value: 99,
 				},
 			],
@@ -151,26 +243,46 @@ let RISCOS_IMPACTOS = [
 			total: 87,
 			slices: [
 				{
-					label: [
-						'Restrição ao',
-						'crescimento',
-					],
+					label: {
+						pt: [
+							'Restrição ao',
+							'crescimento',
+						],
+						es: [
+							'Restricción al',
+							'crecimiento'
+						],
+					},
 					value: 14,
 				},
 				{
-					label: [
-						'Interrupção da produção',
-						'das fábricas levando à',
-						'redução nas quantidades',
-						'produzidas',
-					],
+					label: {
+						pt: [
+							'Interrupção da produção',
+							'das fábricas levando à',
+							'redução nas quantidades',
+							'produzidas',
+						],
+						es: [
+							'Interrupción de la producción',
+							'de las fábricas conduciendo a',
+							'la reducción de las cantidades',
+							'producidas'
+						],
+					},
 					value: 19,
 				},
 				{
-					label: [
-						'Custos operacionais',
-						'mais elevados',
-					],
+					label: {
+						pt: [
+							'Custos operacionais',
+							'mais elevados',
+						],
+						es: [
+							'Costos operativos',
+							'más elevados'
+						],
+					},
 					value: 38,
 				},
 			],
@@ -183,23 +295,44 @@ let RISCOS_IMPACTOS = [
 			total: 18,
 			slices: [
 				{
-					label: 'Dano à marca',
+					label: {
+						pt: [
+							'Dano à marca',
+						],
+						es: [
+							'Daño a la marca'
+						],
+					},
 					value: 2,
 				},
 				{
-					label: [
-						'Interrupção da produção',
-						'das fábricas levando à',
-						'redução nas quantidades',
-						'produzidas',
-					],
+					label: {
+						pt: [
+							'Interrupção da produção',
+							'das fábricas levando à',
+							'redução nas quantidades',
+							'produzidas',
+						],
+						es: [
+							'Interrupción de la',
+							'producción/fábrica',
+							'conduciendo a la reducción',
+							'de las cantidades producidas'
+						],
+					},
 					value: 4,
 				},
 				{
-					label: [
-						'Restrição ao',
-						'crescimento',
-					],
+					label: {
+						pt: [
+							'Restrição ao',
+							'crescimento',
+						],
+						es: [
+							'Restricción al',
+							'crecimiento'
+						],
+					},
 					value: 5,
 				},
 			],
@@ -216,39 +349,69 @@ let OPORTUNIDADES = [
 			total: 160,
 			slices: [
 				{
-					label: [
-						'Melhoria na relação',
-						'com a comunidade',
-					],
+					label: {
+						pt: [
+							'Melhoria na relação',
+							'com a comunidade',
+						],
+						es: [
+							'Mejora en la relación',
+							'con la comunidad'
+						],
+					},
 					value: 10,
 				},
 				{
-					label: [
-						'Adaptação às',
-						'Mudanças Climáticas'
-					],
+					label: {
+						pt: [
+							'Adaptação às',
+							'Mudanças Climáticas'
+						],
+						es: [
+							'Adaptación frente a',
+							'los cambios climáticos'
+						],
+					},
 					value: 10,
 				},
 				{
-					label: 'Inovação',
+					label: {
+						pt: 'Inovação',
+						es: 'Innovación',
+					},
 					value: 12,
 				},
 				{
-					label: [
-						'Aumento no',
-						'valor da marca',
-					],
+					label: {
+						pt: [
+							'Aumento no',
+							'valor da marca',
+						],
+						es: [
+							'Aumento en el',
+							'valor de la marca'
+						],
+					},
 					value: 15,
 				},
 				{
-					label: [
-						'Melhor eficiência',
-						'hídrica',
-					],
+					label: {
+						pt: [
+							'Melhor eficiência',
+							'hídrica',
+						],
+						es: [
+							'Mejor eficiencia',
+							'hídrica'
+						],
+					},
 					value: 19,
 				},
 				{
-					label: 'Redução de custos',
+					label: {
+						pt: 'Redução de custos',
+						es: 'Reducción de costos',
+					},
 					value: 20,
 				},
 			],

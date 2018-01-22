@@ -6,25 +6,44 @@ let RISCOS = [
 			total: 249,
 			slices: [
 				{
-					label: [
-						'Mudança na',
-						'precipitação média',
-					],
+					label: {
+						pt: [
+							'Mudança na',
+							'precipitação média',
+						],
+						es: [
+							'Cambio en la',
+							'precipitación promedio'
+						],
+					},
 					value: 34,
 				},
 				{
-					label: [
-						'Alteração da',
-						'temperatura média',
-					],
+					label: {
+						pt: [
+							'Alteração da',
+							'temperatura média',
+						],
+						es: [
+							'Alteración de la',
+							'temperatura promedio'
+						],
+					},
 					value: 29,
 				},
 				{
-					label: [
-						'Mudança nos',
-						'extremos das precipitações',
-						'e das secas',
-					],
+					label: {
+						pt: [
+							'Mudança nos',
+							'extremos das precipitações',
+							'e das secas',
+						],
+						es: [
+							'Cambio en los extremos',
+							'de las precipitaciones',
+							'y de sequías'
+						],
+					},
 					value: 60,
 				},
 			],
@@ -37,28 +56,49 @@ let RISCOS = [
 			total: 272,
 			slices: [
 				{
-					label: 'Impostos de carbono',
+					label: {
+						pt: 'Impostos de carbono',
+						es: 'Impuestos de carbono',
+					},
 					value: 30,
 				},
 				{
-					label: [
-						'Impostos e regulamentos',
-						'sobre combustível / energia',
-					],
+					label: {
+						pt: [
+							'Impostos e regulamentos',
+							'sobre combustível / energia',
+						],
+						es: [
+							'Impuestos y reglamentos',
+							'sobre combustible / energía',
+						],
+					},
 					value: 28,
 				},
 				{
-					label: [
-						'Regulamentos ambientais',
-						'gerais, incluindo planejamento',
-					],
+					label: {
+						pt: [
+							'Regulamentos ambientais',
+							'gerais, incluindo planejamento',
+						],
+						es: [
+							'Reglamentos ambientales',
+							'generales, incluyendo planificación'
+						],
+					},
 					value: 51,
 				},
 				{
-					label: [
-						'Incertezas dos',
-						'Regulamentos novos',
-					],
+					label: {
+						pt: [
+							'Incertezas dos',
+							'Regulamentos novos',
+						],
+						es: [
+							'Incertidumbre de los',
+							'nuevos reglamentos'
+						],
+					},
 					value: 29,
 				},
 			],
@@ -71,23 +111,40 @@ let RISCOS = [
 			total: 146,
 			slices: [
 				{
-					label: [
-						'Alteração do',
-						'comportamento do',
-						'consumidor',
-					],
+					label: {
+						pt: [
+							'Alteração do',
+							'comportamento do',
+							'consumidor',
+						],
+						es: [
+							'Alteración del',
+							'comportamiento del',
+							'consumidor'
+						],
+					},
 					value: 34,
 				},
 				{
-					label: [
-						'Condições',
-						'socioeconômicas',
-						'flutuantes',
-					],
+					label: {
+						pt: [
+							'Condições',
+							'socioeconômicas',
+							'flutuantes',
+						],
+						es: [
+							'Condiciones',
+							'socioeconómicas',
+							'fluctuantes'
+						],
+					},
 					value: 19,
 				},
 				{
-					label: 'Reputação',
+					label: {
+						pt: 'Reputação',
+						es: 'Reputación',
+					},
 					value: 48,
 				},
 			],
@@ -103,25 +160,44 @@ let RISCOS_IMPACTOS = [
 			total: 249,
 			slices: [
 				{
-					label: [
-						'Incapacidade de',
-						'fazer negócios',
-					],
+					label: {
+						pt: [
+							'Incapacidade de',
+							'fazer negócios',
+						],
+						es: [
+							'Incapacidad de',
+							'realizar negocios'
+						],
+					},
 					value: 26,
 				},
 				{
-					label: [
-						'Aumento do custo',
-						'operacional',
-					],
+					label: {
+						pt: [
+							'Aumento do custo',
+							'operacional',
+						],
+						es: [
+							'Aumento del costo',
+							'operativo'
+						],
+					},
 					value: 88,
 				},
 				{
-					label: [
-						'Redução/interrupção',
-						'da capacidade',
-						'de produção',
-					],
+					label: {
+						pt: [
+							'Redução/interrupção',
+							'da capacidade',
+							'de produção',
+						],
+						es: [
+							'Reducción/interrupción',
+							'de la capacidad',
+							'de la producción',
+						],
+					},
 					value: 95,
 				},
 			],
@@ -134,25 +210,44 @@ let RISCOS_IMPACTOS = [
 			total: 272,
 			slices: [
 				{
-					label: [
-						'Aumento do',
-						'custo do capital',
-					],
+					label: {
+						pt: [
+							'Aumento do',
+							'custo do capital',
+						],
+						es: [
+							'Aumento del',
+							'costo del capital'
+						],
+					},
 					value: 21,
 				},
 				{
-					label: [
-						'Aumento do custo',
-						'operacional',
-					],
+					label: {
+						pt: [
+							'Aumento do custo',
+							'operacional',
+						],
+						es: [
+							'Aumento del costo',
+							'operativo'
+						],
+					},
 					value: 176,
 				},
 				{
-					label: [
-						'Redução da demanda',
-						'por produtos e',
-						'serviços',
-					],
+					label: {
+						pt: [
+							'Redução da demanda',
+							'por produtos e',
+							'serviços',
+						],
+						es: [
+							'Reducción de la demanda',
+							'por productos y',
+							'servicios'
+						],
+					},
 					value: 22,
 				},
 			],
@@ -165,26 +260,46 @@ let RISCOS_IMPACTOS = [
 			total: 146,
 			slices: [
 				{
-					label: [
-						'Redução da demanda',
-						'por produtos e',
-						'serviços',
-					],
+					label: {
+						pt: [
+							'Redução da demanda',
+							'por produtos e',
+							'serviços',
+						],
+						es: [
+							'Reducción de la demanda',
+							'por productos y',
+							'servicios'
+						],
+					},
 					value: 55,
 				},
 				{
-					label: [
-						'Redução dos preços',
-						'das ações',
-						'(avaliação de mercado)',
-					],
+					label: {
+						pt: [
+							'Redução dos preços',
+							'das ações',
+							'(avaliação de mercado)',
+						],
+						es: [
+							'Reducción de los precios',
+							'de las acciones',
+							'(evaluación de mercado)'
+						],
+					},
 					value: 24,
 				},
 				{
-					label: [
-						'Aumento do custo',
-						'operacional',
-					],
+					label: {
+						pt: [
+							'Aumento do custo',
+							'operacional',
+						],
+						es: [
+							'Aumento del costo',
+							'operativo'
+						],
+					},
 					value: 15,
 				},
 			],
@@ -200,25 +315,45 @@ let OPORTUNIDADES = [
 			total: 114,
 			slices: [
 				{
-					label: [
-						'Alteração do padrão',
-						'de precipitação',
-					],
+					label: {
+						pt: [
+							'Alteração do padrão',
+							'de precipitação',
+						],
+						es: [
+							'Alteración en el estándar',
+							'de precipitación',
+						],
+					},
 					value: 19,
 				},
 				{
-					label: [
-						'Alteração na',
-						'temperatura média',
-					],
+					label: {
+						pt: [
+							'Alteração na',
+							'temperatura média',
+						],
+						es: [
+							'Alteración en la',
+							'temperatura promedio'
+						],
+					},
 					value: 21,
 				},
 				{
-					label: [
-						'Alteração entre',
-						'os extremos de',
-						'precipitação e das secas',
-					],
+					label: {
+						pt: [
+							'Alteração entre',
+							'os extremos de',
+							'precipitação e das secas',
+						],
+						es: [
+							'Alteración entre',
+							'los extremos de',
+							'precipitación y de',
+							'las sequías'
+						],
+					},
 					value: 24,
 				},
 			],
@@ -231,24 +366,42 @@ let OPORTUNIDADES = [
 			total: 225,
 			slices: [
 				{
-					label: [
-						'Regulamentos ambientais',
-						'gerais, incluindo planejamento',
-					],
+					label: {
+						pt: [
+							'Regulamentos ambientais',
+							'gerais, incluindo planejamento',
+						],
+						es: [
+							'Reglamentos ambientales',
+							'generales, incluyendo planificación'
+						],
+					},
 					value: 29,
 				},
 				{
-					label: [
-						'Regimes de Cap',
-						'and Trade',
-					],
+					label: {
+						pt: [
+							'Regimes de Cap',
+							'and Trade',
+						],
+						es: [
+							'Regímenes de Cap',
+							'and Trade'
+						],
+					},
 					value: 29,
 				},
 				{
-					label: [
-						'Regulamentação sobre',
-						'energia renovável',
-					],
+					label: {
+						pt: [
+							'Regulamentação sobre',
+							'energia renovável',
+						],
+						es: [
+							'Reglamentación sobre',
+							'energía renovable'
+						],
+					},
 					value: 39,
 				},
 			],
@@ -261,21 +414,36 @@ let OPORTUNIDADES = [
 			total: 135,
 			slices: [
 				{
-					label: [
-						'Alteração do comportamento',
-						'do consumidor',
-					],
+					label: {
+						pt: [
+							'Alteração do comportamento',
+							'do consumidor',
+						],
+						es: [
+							'Alteración en el',
+							'comportamiento del consumidor',
+						],
+					},
 					value: 40,
 				},
 				{
-					label: [
-						'Outros geradores',
-						'de oportunidades',
-					],
+					label: {
+						pt: [
+							'Outros geradores',
+							'de oportunidades',
+						],
+						es: [
+							'Otros generadores',
+							'de oportunidad',
+						],
+					},
 					value: 23,
 				},
 				{
-					label: 'Reputação',
+					label: {
+						pt: 'Reputação',
+						es: 'Reputación',
+					},
 					value: 47,
 				},
 			],
@@ -291,22 +459,38 @@ let OPORTUNIDADES_IMPACTOS = [
 			total: 114,
 			slices: [
 				{
-					label: [
-						'Maior demanda',
-						'por produtos e serviços',
-						'existentes',
-					],
+					label: {
+						pt: [
+							'Maior demanda',
+							'por produtos e serviços',
+							'existentes',
+						],
+						es: [
+							'Mayor demanda',
+							'por productos/servicios',
+							'existentes'
+						],
+					},
 					value: 39,
 				},
 				{
-					label: 'Novos produtos/serviços',
+					label: {
+						pt: 'Novos produtos/serviços',
+						es: 'Nuevos productos/servicios',
+					},
 					value: 20,
 				},
 				{
-					label: [
-						'Redução de custos',
-						'operacionais',
-					],
+					label: {
+						pt: [
+							'Redução de custos',
+							'operacionais',
+						],
+						es: [
+							'Reducción de costos',
+							'operativos',
+						],
+					},
 					value: 21,
 				},
 			],
@@ -319,22 +503,38 @@ let OPORTUNIDADES_IMPACTOS = [
 			total: 225,
 			slices: [
 				{
-					label: 'Novos produtos/serviços',
+					label: {
+						pt: 'Novos produtos/serviços',
+						es: 'Nuevos productos/servicios',
+					},
 					value: 51,
 				},
 				{
-					label: [
-						'Maior demanda por',
-						'produtos e serviços',
-						'existentes',
-					],
+					label: {
+						pt: [
+							'Maior demanda',
+							'por produtos e serviços',
+							'existentes',
+						],
+						es: [
+							'Mayor demanda',
+							'por productos/servicios',
+							'existentes'
+						],
+					},
 					value: 29,
 				},
 				{
-					label: [
-						'Redução de custos',
-						'operacionais',
-					],
+					label: {
+						pt: [
+							'Redução de custos',
+							'operacionais',
+						],
+						es: [
+							'Reducción de costos',
+							'operativos',
+						],
+					},
 					value: 47,
 				},
 			],
@@ -347,22 +547,38 @@ let OPORTUNIDADES_IMPACTOS = [
 			total: 135,
 			slices: [
 				{
-					label: [
-						'Maior demanda por',
-						'produtos e serviços',
-						'existentes',
-					],
+					label: {
+						pt: [
+							'Maior demanda',
+							'por produtos e serviços',
+							'existentes',
+						],
+						es: [
+							'Mayor demanda',
+							'por productos/servicios',
+							'existentes'
+						],
+					},
 					value: 49,
 				},
 				{
-					label: [
-						'Maior preço',
-						'da ação (avaliação de mercado)',
-					],
+					label: {
+						pt: [
+							'Maior preço',
+							'da ação (avaliação de mercado)',
+						],
+						es: [
+							'Mayor precio de',
+							'la acción (evaluación de mercado)'
+						],
+					},
 					value: 18,
 				},
 				{
-					label: 'Novos produtos/serviços',
+					label: {
+						pt: 'Novos produtos/serviços',
+						es: 'Nuevos productos/servicios',
+					},
 					value: 18,
 				},
 			],

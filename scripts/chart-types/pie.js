@@ -37,7 +37,13 @@ const COLOR_SETS = {
 	],
 }
 
-function pieChart(options, styles) {
+const LANG_OTHERS = {
+	pt: 'Outros',
+	es: 'Otros',
+	en: 'Others',
+}
+
+function pieChart(options, language) {
 	let d3n = new D3Node({
 		// styles: '@import url("https://fonts.googleapis.com/css?family=Raleway:700");',
 		// styles: fs.readFileSync(path.join(__dirname, '../styles.css'), 'utf8'),
@@ -102,8 +108,15 @@ function pieChart(options, styles) {
 	})
 
 	let slices = options.data.slices.map((slice, index) => {
+
+		let label = slice.label[language] || 'MISSING'
+
+		if (!label === 'MISSING') {
+			console.warn(`missing label for slice in language ${language} ${JSON.stringify(slice)}`)
+		}
+
 		let formattedSlice = {
-			label: Array.isArray(slice.label) ? slice.label : [slice.label],
+			label: Array.isArray(label) ? label : [label],
 			color: chartColorSet[index],
 			value: slice.value / options.data.total,
 		}
@@ -117,7 +130,7 @@ function pieChart(options, styles) {
 
 	if (slicesTotal < options.data.total) {
 		slices.push({
-			label: ['Outros'],
+			label: [LANG_OTHERS[language]],
 			isOther: true,
 			color: GRAY,
 			value: (options.data.total - slicesTotal) / options.data.total,

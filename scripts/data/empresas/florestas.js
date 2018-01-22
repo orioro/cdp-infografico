@@ -6,17 +6,27 @@ let RISCOS = [
 			total: 100,
 			slices: [
 				{
-					label: [
-						'Mudança nos extremos',
-						'das precipitações',
-						'e das secas',
-					],
+					label: {
+						pt: [
+							'Mudança nos extremos',
+							'das precipitações',
+							'e das secas',
+						],
+						es: [
+							'Cambio en los extremos',
+							'de las precipitaciones',
+							'y de sequías'
+						],
+					},
 					value: 75,
 				},
 				{
-					label: [
-						'Incêndios florestais',
-					],
+					label: {
+						pt: [
+							'Incêndios florestais',
+						],
+						es: 'Incendios forestales',
+					},
 					value: 25,
 				},
 			],
@@ -29,24 +39,40 @@ let RISCOS = [
 			total: 100,
 			slices: [
 				{
-					label: [
-						'Normas e padrões',
-						'de rotulagem de',
-						'produtos',
-					],
+					label: {
+						pt: [
+							'Normas e padrões',
+							'de rotulagem de',
+							'produtos',
+						],
+						es: [
+							'Normas y estándares',
+							'de rotulado de',
+							'productos'
+						],
+					},
 					value: 33.33,
 				},
 				{
-					label: [
-						'Acordos voluntários',
-					],
+					label: {
+						pt: [
+							'Acordos voluntários',
+						],
+						es: 'Acuerdos voluntarios',
+					},
 					value: 33.33,
 				},
 				{
-					label: [
-						'Regulamentos e normas',
-						'sobre produtos',
-					],
+					label: {
+						pt: [
+							'Regulamentos e normas',
+							'sobre produtos',
+						],
+						es: [
+							'Reglamentos y normas',
+							'sobre productos'
+						],
+					},
 					value: 33.34,
 				},
 			],
@@ -66,11 +92,18 @@ let RISCOS = [
 					value: 67,
 				},
 				{
-					label: [
-						'Mudanças no',
-						'comportamento do',
-						'consumidor / demanda',
-					],
+					label: {
+						pt: [
+							'Mudanças no',
+							'comportamento do',
+							'consumidor / demanda',
+						],
+						es: [
+							'Cambio en el',
+							'comportamiento del',
+							'consumidor / demanda',
+						],
+					},
 					value: 33,
 				},
 			],

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=1200, initial-scale=0.1, user-scalable=yes">
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- ****** favicons do faviconit.com ****** -->
+	<link rel="shortcut icon" href="/resources/faviconit/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="/resources/faviconit/favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="/resources/faviconit/favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="/resources/faviconit/favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/resources/faviconit/favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="/resources/faviconit/favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/resources/faviconit/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/resources/faviconit/favicon-16.png">
+	<link rel="apple-touch-icon" href="/resources/faviconit/favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/resources/faviconit/favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/resources/faviconit/favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/resources/faviconit/favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/resources/faviconit/favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/resources/faviconit/favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/resources/faviconit/favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/resources/faviconit/favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/resources/faviconit/favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="/resources/faviconit/favicon-144.png">
+	<meta name="msapplication-config" content="/resources/faviconit/browserconfig.xml">
+	<!-- ****** favicons do faviconit.com ****** -->
+</head>
+<body style="opacity: 0">
+
+	<div style="position: fixed; bottom: 0; z-index: 10000; display: none;" id="test-controls">
+		<button data-action="toggle-happiness">trocar</button>
+		<select data-action="set-active-pin-set">
+			<option>Nenhum</option>
+			<option value="risks-cities" selected>Riscos cidades</option>
+			<option value="risks-businesses">Riscos empresas</option>
+			<option value="opportunities-cities">Oportunidades cidades</option>
+			<option value="opportunities-businesses">Oportunidades empresas</option>
+			<option value="actions">Ações</option>
+		</select>
+	</div>
+
+	<div id="fixed-elements-container">
+		<div id="tooltip-container">
+
+		</div>
+		<div
+			id="sky"
+			class="scenery-container"
+			data-happiness-state="sad">
+
+			<div
+				class="scenery-element"
+				data-happiness-state="sad">
+			</div>
+			<div
+				class="scenery-element opacity-transition"
+				data-happiness-state="happy">
+			</div>
+
+		</div>
+		<div id="city">
+			<div
+				id="city-horizon"
+				class="scenery-container"
+				data-happiness-state="sad">
+				<!-- placeholder-image is used to keep the div in the correct proportion -->
+				<img class="block-img placeholder-image" src="resources/animacao/cidade-triste/montanhas.svg">
+			</div>
+			<div
+				id="city-buildings"
+				class="scenery-container"
+				data-happiness-state="sad">
+
+			</div>
+			<div
+				id="city-river"
+				class="scenery-container"
+				data-happiness-state="sad">
+				<!-- placeholder-image is used to keep the div in the correct proportion -->
+				<img class="block-img placeholder-image" src="resources/animacao/cidade-triste/rio.svg">
+			</div>
+			<div
+				id="city-foreground"
+				class="scenery-container"
+				data-happiness-state="sad">
+
+			</div>
+		</div>
+
+		<div id="slides">
+			<section
+				id="intro"
+				data-happiness-state="sad"
+				data-happy-sky-opacity="0"
+				class="slide slide-up-past">
+				<div class="slide-container">
+					<h1 class="slide-title">
+						Navegando por una economía en transición
+					</h1>
+
+					<div class="slide-contents">
+						<p>
+							El acuerdo de París, firmado el 2015 y con el compromiso inédito de reducir las emisiones de gases en todos los 195 países que lo firmaron, tiene como objetivo limitar el calentamiento global a menos de 2°C hasta el 2100. Alcanzar ese objetivo reduciría la probabilidad de graves impactos climáticos que pueden perjudicar la salud humana, los sistemas naturales, que no solamente son medios de subsistencia humana, pero también mantienen toda la vida en la Tierra y las economías de todo el mundo. 
+						</p>
+						<p>
+							La visión de CDP es de una economía próspera que trabaja para personas y para el planeta a largo plazo.Nuestra misión es el enfoque en los inversionistas, empresas y ciudades para que adopten medidas urgentes para construir una economía realmente sostenible, midiendo, comprendiendo y reduciendo su impacto ambiental.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="contexto-global"
+				data-happiness-state="sad"
+				data-happy-sky-opacity="0"
+				class="slide slide-up-past">
+				<div class="slide-container">
+					<h2 class="slide-title">
+						Aumento global de emisiones de Gases de Efecto Invernadero (GEI)
+					</h2>
+
+					<div class="slide-contents">
+						<p>
+							Hasta el día de hoy, el “crecimiento económico” ha estado intrínsecamente conectado al “aumento del uso de combustibles fósiles”, contribuyendo drásticamente con el aumento de las emisiones de CO2 en la atmosfera a cada año. Una de sus consecuencias es la elevación de la temperatura. Desde 1750 – inicio de la Revolución Industrial-  la temperatura de la Tierra ha aumentado 1°C, y si seguimos por este camino, se prevé que la temperatura terrestre aumente 5°C hasta el final del siglo. Acuerdos de responsabilidad global a respecto de este asunto son cruciales. El acuerdo de París, del 2015, tiene como objetivo dejar el aumento de la temperatura global en menos de 2°C. Sin embargo, algunos estudios han demostrado que aunque se cumplan todas las metas, la temperatura de la Tierra, probablemente, aumentará en por lo menos 3°C hasta el año 2100. Para mantener el aumento de la temperatura dentro del límite de 2°C en relación a los niveles pre industrial, es necesario que hasta el 2050 se reduzcan las emisiones entre el 41% y el 72% con respecto a los niveles del 2010.
+						</p>
+					</div>
+				</div>
+
+			</section>
+			<section
+				id="metas-gee-cidades"
+				data-happiness-state="sad"
+				data-happy-sky-opacity="0.1"
+				class="slide">
+				<div class="slide-container">
+					<!-- <h2 class="slide-title">
+						Metas de redução das Cidades da América Latina
+					</h2> -->
+					<h2 class="slide-title">Ciudades que tienen datos de inventarios de GEI</h2>
+
+					<div class="text-content">
+						<div class="left">
+							<p>En el 2017, 155 ciudades respondieron al cuestionario de CDP sobre <strong>Ciudades</strong>.</p>
+						</div>
+						<div class="right chart-info">
+							<div class="chart">
+								<img
+								src="resources/graficos/cidades-com-inventario-gee.svg" alt="">
+								<div class="chart-center">
+									<p>
+										155<br>
+										ciudades<br>
+										en total
+									</p>
+								</div>
+							</div>
+							<div class="info">
+								<h3>El 25%</h3>
+								<p>
+									de las ciudades participantes (38) informaron sus datos de inventarios de Gases de Efecto Invernadero (GEI).
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="metas-gee-cidades-2"
+				data-happiness-state="sad"
+				data-happy-sky-opacity="0.1"
+				class="slide">
+				<div class="slide-container">
+					<h2 class="slide-title">
+						Metas de reducción de las Ciudades de Latinoamérica
+					</h2>
+					<div class="text-content">
+						<div class="left">
+							<p>De las 38 ciudades con inventario, solamente 8 (21%) reportaron metas de reducción de GEI.</p>
+							<p>Estas ciudades pretenden reducir cerca de 14,5 millones de toneladas de CO2e hasta el 2040.</p>
+							<p>Esto equivale a plantar 378 millones de árboles en 10 años.</p>
+						</div>
+						<div class="right chart-info">
+							<div class="chart">
+								<img
+								src="resources/graficos/cidades-com-metas-de-reducao-gee.svg" alt="">
+								<div class="chart-center">
+									<p>
+										38<br>
+										ciudades con<br>
+										inventario
+									</p>
+								</div>
+							</div>
+							<div class="info">
+								<h3 class="red">El 21%</h3>
+								<p>cuenta con metas de reducción.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="metas-gee-empresas"
+				data-happiness-state="sad"
+				data-happy-sky-opacity="0.2"
+				class="slide">
+				<div class="slide-container">
+					<h2 class="slide-title">
+						Las empresas también están comprometidas con la reducción de emisión de GEI
+					</h2>
+					<div class="text-content">
+						<div class="left">
+							<p>En 2017, 95 empresas respondieron a nuestro cuestionario acerca de los <strong>Cambios Climáticos</strong>.</p>
+						</div>
+						<div class="right chart-info">
+							<div class="chart">
+								<img
+								src="resources/graficos/empresas-com-metas-de-reducao-gee.svg" alt="">
+								<div class="chart-center">
+									<p>
+										95<br>
+										empresas<br>
+										en total
+									</p>
+								</div>
+							</div>
+							<div class="info">
+								<h3>El 70,5%</h3>
+								<p>
+									de las empresas está comprometida con la reducción de sus emisiones de GEI totalizando 37.693.636 ton de CO<sub>2e</sub> hasta el 2030.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="metas-desmatamento-empresas"
+				data-happiness-state="sad"
+				data-happy-sky-opacity="0.3"
+				class="slide">
+				<div class="slide-container">
+					<h2 class="slide-title">
+						Empresas están comprometidas con la reducción de la deforestación
+					</h2>
+					<div class="text-content">
+						<div class="left">
+							<p>En 2017, 11 empresas respondieron a nuestro cuestionario de <strong>Bosques</strong>.</p>
+						</div>
+						<div class="right chart-info">
+							<div class="chart">
+								<img
+								src="resources/graficos/empresas-com-metas-de-reducao-desmatamento.svg" alt="">
+								<div class="chart-center">
+									<p>
+										11<br>
+										empresas<br>
+										en total
+									</p>
+								</div>
+							</div>
+							<div class="info">
+								<h3>El 72,7%</h3>
+								<p>
+									de las empresas está comprometida con la disminución de la tasa de deforestación.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="metas-agua-empresas"
+				data-happiness-state="sad"
+				data-happy-sky-opacity="0.4"
+				class="slide">
+				<div class="slide-container">
+					<h2 class="slide-title">
+						Empresas están comprometidas con la reducción del consumo de agua
+					</h2>
+					<div class="text-content">
+						<div class="left">
+							<p>En 2017, 25 empresas respondieron a nuestro cuestionario de <strong>Aguas</strong>.</p>
+						</div>
+						<div class="right chart-info">
+							<div class="chart">
+								<img
+								src="resources/graficos/empresas-com-metas-de-reducao-agua.svg" alt="">
+								<div class="chart-center">
+									<p>
+										25<br>
+										empresas<br>
+										en total
+									</p>
+								</div>
+							</div>
+							<div class="info">
+								<h3>El 68%</h3>
+								<p>
+									de las Empresas está comprometida con la reducción del consumo de los recursos hídricos.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="riscos-cidades"
+				data-happiness-state="sad"
+				data-happy-sky-opacity="0.5"
+				data-active-pin-set="risks-cities"
+				class="slide no-pointer-events">
+				<div class="slide-container">
+					<h2 class="slide-title">
+						Riesgos reportados por las ciudades en Latinoamérica
+					</h2>
+					<div id="cidades-impactos">
+						<h3>Impactos</h3>
+						<p>El 63% de las ciudades reportaron que los riesgos climáticos pueden afectar la permanencia y la llegada de nuevas empresas en la región, los impactos son:</p>
+						<img src="resources/cidades-riscos-impactos.png" alt="">
+
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="riscos-empresas"
+				data-happiness-state="sad"
+				data-happy-sky-opacity="0.5"
+				data-active-pin-set="risks-businesses"
+				class="slide no-pointer-events">
+				<div class="slide-container">
+					<h2 class="slide-title">
+						Riscos reportados pelas Empresas na América Latina
+					</h2>
+				</div>
+			</section>
+
+			<section
+				id="oportunidades-cidades"
+				data-happiness-state="happy"
+				data-happy-sky-opacity="0.9"
+				data-active-pin-set="opportunities-cities"
+				class="slide no-pointer-events dark-text">
+				<div class="slide-container">
+					<h2 class="slide-title">
+						Oportunidades reportadas pelas Cidades na América Latina
+					</h2>
+				</div>
+			</section>
+
+			<section
+				id="oportunidades-empresas"
+				data-happiness-state="happy"
+				data-happy-sky-opacity="0.9"
+				data-active-pin-set="opportunities-businesses"
+				class="slide no-pointer-events dark-text">
+				<div class="slide-container">
+					<h2 class="slide-title">
+						Oportunidades reportadas pelas Empresas na América Latina
+					</h2>
+				</div>
+			</section>
+
+			<section
+				id="acoes"
+				data-happiness-state="happy"
+				data-happy-sky-opacity="1"
+				data-active-pin-set="actions"
+				class="slide no-pointer-events dark-text">
+				<div class="slide-container">
+					<h2 class="slide-title">
+						Ações tomadas por Cidades e Empresas na América Latina
+					</h2>
+				</div>
+			</section>
+
+			<section
+				id="participe"
+				data-happiness-state="happy"
+				data-happy-sky-opacity="1"
+				class="slide dark-text">
+				<div class="slide-container">
+					<h2 class="slide-title">
+						Você não está sozinho
+					</h2>
+					<p>Agir no combate às mudanças climáticas representa uma das oportunidades de negócios mais significativas deste século. Centenas de empresas e cidades em todo o mundo agora já reconhecem que a transição para uma economia de baixo carbono é a única maneira de garantir o crescimento econômico sustentável e a prosperidade para todos no médio e longo prazo.</p>
+					<!-- <p>As cidades são vitais nessa transição e muitas estão catalisando essa mudança. Mais do que nunca, cidades do mundo todo estão liderando o caminho para construção de uma economia sustentável. Empresas que medem seus riscos ambientais são capazes de gerenciá-los de maneira mais estratégica.</p> -->
+					<div id="participe-links">
+						<a href="http://www.globalcovenantofmayors.org/" target="_blank">Saiba como sua cidade pode se juntar ao Pacto Global de Prefeitos para o Clima e Energia</a>
+						<a href="https://www.wemeanbusinesscoalition.org/take-action/" target="_blank">Engaje-se, saiba mais sobre o Take Action e sobre como sua empresa pode começar agir em relação aos desafios climáticos</a>
+					</div>
+				</div>
+			</section>
+
+			<section
+				id="sobre-o-cdp"
+				data-happiness-state="happy"
+				data-happy-sky-opacity="1"
+				class="slide dark-text">
+				<div class="slide-container">
+					<h2 class="slide-title">
+						Sobre o CDP
+					</h2>
+					<p>Considerada a principal iniciativa do setor financeiro em relação à mitigação das mudanças climáticas, o CDP se concentra em investidores, empresas e cidades para que tomem medidas urgentes a fim de criar uma economia verdadeiramente sustentável, através da medição, compreensão e mitigação de seus impactos ambientais.</p>
+					<ul>
+						<li><strong>+5000 Empresas em mais de 80 países</strong> - representando mais da metade da capitalização de mercado mundial</li>
+						<li><strong>+800 Investidores institucionais solicitando informação</strong> - um terço de todo o capital de investimento mundial</li>
+						<li><strong>+500 Cidades compartilhando as melhores práticas</strong> - cerca de 390 milhões de pessoas, 61 megacidades</li>
+						<li><strong>+100 compradores públicos e corporativos com USD3,5 trilhões em compras</strong> - grandes clientes do mundo todo engajando suas cadeias de fornecedores</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<!-- end #slides -->
+
+	</div>
+
+	<div id="creditos">
+		Criado por <a href="http://www.oitentaedois.com/" target="_blank">oitentaedois</a> e <a href="http://tacto.habemus.website" target="_blank">tacto</a>.
+	</div>
+
+	<div id="logo-cdp">
+		<img src="resources/logo-cdp.svg" alt="cdp - disclosure insight action">
+	</div>
+
+	<div id="cdp-dialog">
+		<div class="dialog-backdrop"></div>
+		<div class="dialog">
+			<button class="dialog-close">
+				<img src="resources/close.svg">
+			</button>
+			<div class="dialog-contents-wrapper">
+				<!-- dialog-contents go here -->
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="index.js?v=1"></script>
+
+</body>
+</html>
