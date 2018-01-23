@@ -61,6 +61,24 @@ body.active {
   width: 100%;
 }
 
+#language-switcher {
+	margin-top: 10px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+#language-switcher a {
+	color: white;
+	display: block;
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+#language-switcher a:hover,
+#language-switcher a.current-language {
+	text-decoration: underline;
+}
+
 #creditos {
 	opacity: 0;
 	position: fixed;

@@ -111,7 +111,7 @@ function pieChart(options, language) {
 
 		let label = slice.label[language] || 'MISSING'
 
-		if (!label === 'MISSING') {
+		if (label === 'MISSING') {
 			console.warn(`missing label for slice in language ${language} ${JSON.stringify(slice)}`)
 		}
 

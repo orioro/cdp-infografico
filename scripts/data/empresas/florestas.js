@@ -85,10 +85,16 @@ let RISCOS = [
 			total: 100,
 			slices: [
 				{
-					label: [
-						'Cobertura midiática',
-						'negativa',
-					],
+					label: {
+						pt: [
+							'Cobertura midiática',
+							'negativa',
+						],
+						es: [
+							'Cobertura negativa',
+							'de los medios'
+						],
+					},
 					value: 67,
 				},
 				{

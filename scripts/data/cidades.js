@@ -198,9 +198,14 @@ let IMPACTOS_CIDADES = [
 				},
 				{
 					value: 11,
-					label: [
-						'Turismo'
-					],
+					label: {
+						pt: [
+							'Turismo'
+						],
+						es: [
+							'Turismo'
+						],
+					},
 				}
 			],
 		},
