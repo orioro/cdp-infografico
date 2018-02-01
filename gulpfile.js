@@ -56,6 +56,8 @@ gulp.task('distribute', ['distribute:javascript', 'distribute:css'], function ()
 
   gulp.src([
     'src/index.html',
+    'src/es.html',
+    'src/en.html',
     'src/resources/**/*'
   ], { base: 'src' })
   .pipe(gulp.dest('dist'))
@@ -68,6 +70,8 @@ gulp.task('develop', ['distribute:javascript'], function () {
   gulp.watch([
     'dist/**/*.js',
     'src/index.html',
+    'src/es.html',
+    'src/en.html',
     'src/**/*.css',
   ], browserSync.reload)
 
